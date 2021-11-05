@@ -18,29 +18,27 @@ public class SecondTask {
     }
 
     private int getValueFromInput() {
-        int value = 0;
+        int number = 0;
         System.out.print("Input value (100 <= value <= 999): ");
         boolean check = true;
+        Scanner scanner = new Scanner(System.in);
         while (check) {
-            Scanner scanner = new Scanner(System.in);
-            value = scanner.nextInt();
+            number = scanner.nextInt();
             scanner.nextLine();
-            //if (scanner.hasNext())
-            if (checkValue(value))
+            if (checkValue(number))
                 check = false;
             else
                 System.out.print("WARNING: Wrong value, 100 <= value <= 999. Try again: ");
-            scanner.close();
         }
-        return value;
+        return number;
     }
 
-    boolean checkValue(int value) {
-        return (value >= 100 && value <= 999);
+    boolean checkValue(int number) {
+        return (number >= 100 && number <= 999);
     }
 
     void setNewValue() {
-        int[] digits = getDigitsArrFromValue();
+        int[] digits = getDigitsArrFromValue(value);
         digits = sortIntArrByDecreasing(digits);
         value = fromDigitsArrToNumber(digits);
     }
@@ -53,11 +51,11 @@ public class SecondTask {
         return number;
     }
 
-    int[] getDigitsArrFromValue() {
+    int[] getDigitsArrFromValue(int number) {
         int[] digits = new int[3];
         for (int i = 0; i < digits.length; i++) {
-            digits[i] = value % 10;
-            value /= 10;
+            digits[i] = number % 10;
+            number /= 10;
         }
         return digits;
     }

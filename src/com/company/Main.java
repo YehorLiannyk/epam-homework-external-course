@@ -3,9 +3,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        //callFirstTask();
-        //callSecondTask(); // generate an exception
-        //callThirdTask();
+        System.out.println("Task 1");
+        callFirstTask();
+        System.out.println("Task 2");
+        callSecondTask();
+        System.out.println("Task 3");
+        callThirdTask();
+        System.out.println("Task 4");
         callFourthTask();
 
     }
@@ -34,6 +38,6 @@ public class Main {
     static void callFourthTask() {
         FourTask fourTask = new FourTask();
         System.out.println("Your value: " + fourTask.getValue());
-        System.out.println("Amount of binary one in value: " + fourTask.GetAmountOfBinaryOne());
+        System.out.println("Amount of binary one in value: " + fourTask.getAmountOfBinaryOne());
     }
 }

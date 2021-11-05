@@ -19,9 +19,9 @@ public class FirstTask {
         System.out.print("Input value: ");
         digit = scanner.nextInt();
         scanner.nextLine();
-        scanner.close();
         return digit;
     }
+
 
     void setNewValue() {
         if (value > 0)
