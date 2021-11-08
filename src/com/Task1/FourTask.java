@@ -1,58 +1,57 @@
-package com.company;
+package com.Task1;
 
 import java.util.Scanner;
 
-public class SecondTask {
+public class FourTask {
     private int value;
 
-    SecondTask(int value) {
-
-        if (checkValue(value))
-            this.value = value;
-        else
-            value = 0;
+    FourTask(int value) {
+        this.value = value;
     }
 
-    SecondTask() {
+    FourTask() {
         this.value = getValueFromInput();
     }
 
     private int getValueFromInput() {
         int number = 0;
-        System.out.print("Input value (100 <= value <= 999): ");
-        boolean check = true;
         Scanner scanner = new Scanner(System.in);
-        while (check) {
-            number = scanner.nextInt();
-            scanner.nextLine();
-            if (checkValue(number))
-                check = false;
-            else
-                System.out.print("WARNING: Wrong value, 100 <= value <= 999. Try again: ");
-        }
+        System.out.print("Input value: ");
+        number = scanner.nextInt();
+        scanner.nextLine();
         return number;
+        }
+
+    int getAmountOfBinaryOne() {
+        return fromDecToBinary(value);
     }
 
-    boolean checkValue(int number) {
-        return (number >= 100 && number <= 999);
-    }
-
-    void setNewValue() {
-        int[] digits = getDigitsArrFromValue(value);
-        digits = sortIntArrByDecreasing(digits);
-        value = fromDigitsArrToNumber(digits);
-    }
-
-    int fromDigitsArrToNumber(int[] digits) {
+    int sumOddNumbers(int[] digits) {
         int number = 0;
         for (int i = 0; i < digits.length; i++) {
-            number = (number * 10) + digits[i];
+            if (digits[i] % 2 != 0) {
+                number += digits[i];
+            }
         }
         return number;
+    }
+
+    int getAmountOfDigitsInInt(int number) {
+        int i = 0;
+        boolean check = true;
+        while(check) {
+            if (number != 0) {
+                number /= 10;
+                i++;
+            }
+            else
+                check = false;
+        }
+        return i;
     }
 
     int[] getDigitsArrFromValue(int number) {
-        int[] digits = new int[3];
+        int[] digits = new int[getAmountOfDigitsInInt(number)];
         for (int i = 0; i < digits.length; i++) {
             digits[i] = number % 10;
             number /= 10;
@@ -73,6 +72,16 @@ public class SecondTask {
         return arr;
     }
 
+    int fromDecToBinary(int number) {
+        int count = 0;
+        while(number > 0)
+        {
+            if(number % 2 == 1)
+                count++;
+            number = number / 2;
+        }
+        return count;
+    }
 
     int getValue() {
         return value;
