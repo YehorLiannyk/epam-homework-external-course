@@ -3,9 +3,7 @@ package Task4Test;
 import main.ua.university.Task4.*;
 import org.junit.jupiter.api.Test;
 import main.ua.university.Task4.Main;
-
 import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class Task4Test {
