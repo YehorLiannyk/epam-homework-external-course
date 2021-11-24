@@ -1,0 +1,19 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(«ã×Äıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(™«á¼
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(à¯äùÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¬İn
+S	java:S106"9Replace this use of System.out or System.err by a logger.(«™Û¤úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ğôê•ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ïû„ÿûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(µ¾ê‚
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ˆ§ˆÿÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(»‘ª 
+M	java:S106("9Replace this use of System.out or System.err by a logger.(¯á±
+M	java:S106)"9Replace this use of System.out or System.err by a logger.(¾ô­
+h
+java:S1192"MDefine a constant instead of duplicating this literal "Your value: " 4 times.(«™Û¤úÿÿÿÿ
+n
+java:S1192"SDefine a constant instead of duplicating this literal "Your value after: " 3 times.(ğôê•ùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µ­Õˆ
