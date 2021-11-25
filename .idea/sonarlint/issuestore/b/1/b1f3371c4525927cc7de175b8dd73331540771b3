@@ -1,0 +1,8 @@
+
+_
+java:S1128"=Remove this unused import 'org.junit.jupiter.api.Assertions'.(œ³«õøÿÿÿÿ8û³ˆóÔ/
+O
+java:S1128	"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ü³ˆóÔ/
+U
+java:S1128"8Remove this unused import 'org.junit.Assert.assertThat'.(ò‚ó×8ü³ˆóÔ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ş®ã·øÿÿÿÿ

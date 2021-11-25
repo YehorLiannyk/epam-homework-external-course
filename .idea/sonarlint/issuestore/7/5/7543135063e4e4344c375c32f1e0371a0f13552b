@@ -1,0 +1,12 @@
+
+T
+java:S1854">Remove this useless assignment to local variable "rectangles".(Ş½¸Á
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ğ¶¦m
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÕÊ»œşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(õ®Ñùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(†º£úÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(áıíûÿÿÿÿ8‘ØÑñÔ/
+U	java:S106."9Replace this use of System.out or System.err by a logger.(†§¼¨8–ØÑñÔ/
+Q
+java:S1128"4Remove this unused import 'java.security.Signature'.(ªñ»8ÿ•ëñÔ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦Ñ©±
