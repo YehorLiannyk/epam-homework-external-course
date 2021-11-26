@@ -19,8 +19,13 @@ public class Number {
     }
 
     public Number() {
+        number = getRandomNumber();
+    }
+
+    public int getRandomNumber() {
         Random random = new Random();
         number = random.nextInt((max) + min);
+        return number;
     }
 
     public int getMin() {

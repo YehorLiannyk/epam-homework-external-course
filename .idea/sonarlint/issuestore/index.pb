@@ -45,12 +45,8 @@ i
 9.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml,b\8\b8d96649614bd84192f3496ef7d33bab1d1e5ec1
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-Q
-!src/test/Task4Test/Task4Test.java,2\2\226fe70e98b2cbf5bcf02e46ab3a6d4026f63500
 U
 %src/test/Task5Test/RectangleTest.java,6\6\66776e6b883c5d73dcbf64e5bb39312e801d3111
-Z
-*src/test/Task5Test/ArrayRectangleTest.java,b\1\b1f3371c4525927cc7de175b8dd73331540771b3
 [
 +src/main/ua/university/Task5/Rectangle.java,0\f\0f790f98ee662bd97e2e6cf8493d959ca985bca5
 `
@@ -61,3 +57,5 @@ A
 EPAM_Homework.iml,7\e\7ecbcbd294f6291ef496dcb47f1831c0ec5298eb
 Z
 *src/main/ua/university/Task6/Employee.java,8\6\86e73074c602a3ab79e207027845bdccb2ca7022
+Q
+!src/test/Task4Test/Task4Test.java,2\2\226fe70e98b2cbf5bcf02e46ab3a6d4026f63500

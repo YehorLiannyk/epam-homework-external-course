@@ -12,6 +12,10 @@ public class NumberController {
         this.numberView = numberView;
     }
 
+    public int[][] getStatistic() {
+        return statistic;
+    }
+
     public void inputValueFromMinToMax(int min, int max) {
         numberView.inputValueFromMinToMax(min, max);
     }
@@ -69,7 +73,7 @@ public class NumberController {
         numberView.printStatistic(statistic);
     }
 
-    int[][] addStatistic(int realNumber, int userNumber, int[] range) {
+    public int[][] addStatistic(int realNumber, int userNumber, int[] range) {
         int[][] arr;
         if (statistic == null) {
             statistic = new int[1][];
@@ -83,25 +87,25 @@ public class NumberController {
         return arr;
     }
 
-    int findFreeIndex(int[][] arr) {
+    public int findFreeIndex(int[][] arr) {
         int index = -1;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == null)
+            if (arr[i] == null) {
                 index = i;
+                break;
+            }
         }
         return index;
     }
 
-
-
-    boolean checkingRangeEquality(NumberController numberController, int[] range) {
-        boolean check = true;
+    public boolean checkingRangeEquality( int[] range) {
+        boolean check = false;
             if (range[0] != range[1]) {
                 numberView.wrongNumber();
             }
             else {
                 numberView.successText(range[0]);
-                check = false;
+                check = true;
             }
         return check;
     }

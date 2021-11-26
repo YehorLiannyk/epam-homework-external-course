@@ -2,7 +2,7 @@ package main.ua.university.Lesson7Task;
 
 import java.util.Scanner;
 
-class NumberView {
+public class NumberView {
 
     void inputValueFromMinToMax(int min, int max) {
         System.out.print("Input value from " + min + " to " + max + ": ");

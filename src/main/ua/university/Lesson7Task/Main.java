@@ -24,14 +24,14 @@ public class Main {
     }
 
     static void guessNumberCycle(NumberController numberController, int[] range) {
-        boolean check = true;
-        while (check) {
+        boolean check = false;
+        while (!check) {
             numberController.tryToGuessText(range);
             int userNumber = getNumberFromInput(numberController, range);
             int realNumber = numberController.getNumber();
             range = numberController.getNumberRange(realNumber, userNumber, range);
-            check = numberController.checkingRangeEquality(numberController, range);
-            numberController.setStatistic(numberController.addStatistic(realNumber,userNumber, range));
+            check = numberController.checkingRangeEquality(range);
+            numberController.setStatistic(numberController.addStatistic(realNumber, userNumber, range));
         }
     }
 
