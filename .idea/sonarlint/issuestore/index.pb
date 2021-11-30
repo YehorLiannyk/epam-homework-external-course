@@ -59,3 +59,11 @@ Z
 *src/main/ua/university/Task6/Employee.java,8\6\86e73074c602a3ab79e207027845bdccb2ca7022
 Q
 !src/test/Task4Test/Task4Test.java,2\2\226fe70e98b2cbf5bcf02e46ab3a6d4026f63500
+Z
+*src/test/Task5Test/ArrayRectangleTest.java,b\1\b1f3371c4525927cc7de175b8dd73331540771b3
+Q
+!src/test/Task6Test/Task6Test.java,b\0\b069b274d848787cd80e0e355d0e700972617665
+Y
+)src/main/ua/university/Task7/Deposit.java,c\d\cd64c6b0770065e94dae91cd9aa86125b7e1929e
+]
+-src/main/ua/university/Task7/BaseDeposit.java,3\1\31f5af6b8599467343a9faf33b2ea647b659efd3

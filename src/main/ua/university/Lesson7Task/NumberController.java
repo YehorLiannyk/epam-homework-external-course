@@ -1,35 +1,21 @@
 package main.ua.university.Lesson7Task;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class NumberController {
     private Number number;
     private NumberView numberView;
-    private int[][] statistic;
+    private User user;
+
 
     public NumberController(Number number, NumberView numberView) {
         this.number = number;
         this.numberView = numberView;
     }
 
-    public int[][] getStatistic() {
-        return statistic;
-    }
-
-    public void inputValueFromMinToMax(int min, int max) {
-        numberView.inputValueFromMinToMax(min, max);
-    }
-
-    public void inputValueFromMinToMax(int[] range) {
-        inputValueFromMinToMax(range[0], range[1]);
-    }
-
-    public void tryToGuessText(int min, int max) {
-        numberView.tryToGuessText(min, max);
-    }
-
-    public void tryToGuessText(int[] numbers) {
-        tryToGuessText(numbers[0], numbers[1]);
+    void tryToGuessText(int[] numbers) {
+        numberView.tryToGuessMessage(numbers[0], numbers[1]);
     }
 
     public int getNumber() {
@@ -38,10 +24,6 @@ public class NumberController {
 
     public void setNumber(int number) {
         this.number.setNumber(number);
-    }
-
-    public void setStatistic(int[][] statistic) {
-        this.statistic = statistic;
     }
 
     public int[] getNumberRange(int realNumber, int userNumber, int[] range) {
@@ -61,19 +43,11 @@ public class NumberController {
         return new int[] {min, max};
     }
 
-    public int getMin() {
-        return number.getMin();
+    public void printStatistic(User user) {
+        numberView.printStatistic(user.getStatistic());
     }
 
-    public int getMax() {
-        return number.getMax();
-    }
-
-    public void printStatistic() {
-        numberView.printStatistic(statistic);
-    }
-
-    public int[][] addStatistic(int realNumber, int userNumber, int[] range) {
+    public int[][] addStatistic(int[][] statistic, int realNumber, int userNumber, int[] range) {
         int[][] arr;
         if (statistic == null) {
             statistic = new int[1][];
@@ -101,14 +75,117 @@ public class NumberController {
     public boolean checkingRangeEquality( int[] range) {
         boolean check = false;
             if (range[0] != range[1]) {
-                numberView.wrongNumber();
+                NumberView.println(NumberView.WRONG_NUMBER_MSG);
             }
             else {
-                numberView.successText(range[0]);
+                numberView.successMessage(range[0]);
                 check = true;
             }
         return check;
     }
+
+    public void guessNumberCycle(int[] range) {
+        boolean check = false;
+        while (!check) {
+            tryToGuessText(range);
+            int userNumber = getNumberFromInputWithinRange(range);
+            int realNumber = getNumber();
+            range = getNumberRange(realNumber, userNumber, range);
+            check = checkingRangeEquality(range);
+            user.setStatistic(addStatistic(user.getStatistic(), realNumber, userNumber, range));
+        }
+    }
+
+    public void guessNumberFunc(User user) {
+        this.user = user;
+        int[] range = {number.getMin(), number.getMax()};
+        guessNumberCycle(range);
+        //printStatistic(user); // print general statistic in the end
+    }
+
+    int inputNumber() {
+        int number = -1;
+        boolean check = true;
+        while (check) {
+            try {
+                Scanner sc = new Scanner(System.in);
+                number = sc.nextInt();
+                sc.nextLine();
+                check = false;
+            } catch (InputMismatchException e) {
+                numberView.printOwnError("Use only digits");
+                NumberView.print(NumberView.TRY_AGAIN_MSG);
+            }
+        }
+        return number;
+    }
+
+    public int getNumberFromInputWithinRange(int[] range) {
+        numberView.inputValueFromMinToMax(range);
+        int number = -1;
+        boolean check = true;
+        while (check) {
+            try {
+                number = inputNumber();
+                if (number < range[0] || number > range[1]) {
+                    throw new IllegalArgumentException();
+                }
+                check = false;
+            }
+            catch (IllegalArgumentException e) {
+                numberView.printOwnError("Your number is out of range");
+                NumberView.print(NumberView.TRY_AGAIN_MSG);
+            }
+            catch (InputMismatchException e) {
+                numberView.printOwnError("It isn't a number");
+                NumberView.print(NumberView.TRY_AGAIN_MSG);
+            }
+        }
+        return number;
+    }
+
+    public int getNumberFromInput() {
+        int number = -1;
+        boolean check = true;
+        while (check) {
+            try {
+                number = inputNumber();
+                check = false;
+            }
+            catch (InputMismatchException e) {
+                numberView.printOwnError("Use only digits");
+                NumberView.print(NumberView.TRY_AGAIN_MSG);
+            }
+        }
+        return number;
+    }
+
+    public String getStringFromInput() {
+        Scanner sc = new Scanner(System.in);
+        String line = sc.nextLine();
+        return line;
+    }
+
+    int getAmountOfPlayers() {
+        NumberView.print(NumberView.INPUT_AMOUNT_OF_PLAYERS);
+        return getNumberFromInput();
+    }
+
+    public User[] getUsers() {
+        int amount = getAmountOfPlayers();
+        User[] users = new User[amount];
+        return users;
+    }
+
+    public User createUser() {
+        NumberView.print(NumberView.INPUT_USERNAME);
+        return new User(getStringFromInput());
+    }
+
+    public void printStatisticFromAllUsers(User[] users, NumberController numberController) {
+        numberView.printStatisticFromAllUsers(users, numberController);
+    }
+
 
 
 }

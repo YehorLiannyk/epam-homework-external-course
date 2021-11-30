@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Number {
     private int number;
 
-    private final int min = 0;
-    private final int max = 100;
+    private int min = 0;
+    private int max = 100;
 
     public int getNumber() {
         return number;
