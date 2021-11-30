@@ -1,4 +1,4 @@
-package main.ua.university.Lesson7Task;
+package main.ua.university.Lesson7Task.Number;
 
 public class User {
     private String name;

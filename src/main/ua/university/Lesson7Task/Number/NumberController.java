@@ -1,4 +1,4 @@
-package main.ua.university.Lesson7Task;
+package main.ua.university.Lesson7Task.Number;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -186,6 +186,10 @@ public class NumberController {
         numberView.printStatisticFromAllUsers(users, numberController);
     }
 
+    public User playWithUser(User user, NumberController numberController) {
+        numberController.guessNumberFunc(user);
+        return user;
+    }
 
 
 }

@@ -67,3 +67,7 @@ Y
 )src/main/ua/university/Task7/Deposit.java,c\d\cd64c6b0770065e94dae91cd9aa86125b7e1929e
 ]
 -src/main/ua/university/Task7/BaseDeposit.java,3\1\31f5af6b8599467343a9faf33b2ea647b659efd3
+Q
+!src/test/Task7Test/Task7Test.java,9\a\9a46cf653befef92ddf60940a2001a60daef607e
+R
+"src/test/Task7Test/ClientTest.java,8\7\87e4c7ec5a9e7532890fe6da657832c8fcba311e

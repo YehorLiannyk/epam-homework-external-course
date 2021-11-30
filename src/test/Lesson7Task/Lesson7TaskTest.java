@@ -1,9 +1,9 @@
 package Lesson7Task;
 import static org.junit.jupiter.api.Assertions.*;
-import main.ua.university.Lesson7Task.*;
-import main.ua.university.Lesson7Task.Number;
-import main.ua.university.Task5.ArrayRectangle;
-import main.ua.university.Task5.Rectangle;
+
+import main.ua.university.Lesson7Task.Number.Number;
+import main.ua.university.Lesson7Task.Number.NumberController;
+import main.ua.university.Lesson7Task.Number.NumberView;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
