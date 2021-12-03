@@ -71,3 +71,7 @@ Q
 !src/test/Task7Test/Task7Test.java,9\a\9a46cf653befef92ddf60940a2001a60daef607e
 R
 "src/test/Task7Test/ClientTest.java,8\7\87e4c7ec5a9e7532890fe6da657832c8fcba311e
+e
+5src/main/ua/university/Lesson7Task/Number/Number.java,7\6\76cbd3a217c23f1b30a5ff42ccd5b92172998cf4
+o
+?src/main/ua/university/Lesson7Task/Number/NumberController.java,e\a\ea1d01c2f0b12f664d4b7083cf48750493f37732
