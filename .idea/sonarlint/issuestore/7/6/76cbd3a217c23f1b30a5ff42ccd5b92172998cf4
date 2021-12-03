@@ -1,0 +1,8 @@
+
+3
+java:S2119"Save and re-use this "Random".(¼İÅf
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ
++
+java:S1700"Rename field "number"(òù´Ê
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ë¬íğûÿÿÿÿ

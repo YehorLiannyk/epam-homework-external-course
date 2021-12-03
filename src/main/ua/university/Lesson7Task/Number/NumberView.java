@@ -33,7 +33,7 @@ public class NumberView {
 
     void printStatistic(int[][] statistic) {
         for (int i = 0; i < statistic.length; i++) {
-            println("Step #" + i + ": " + "My number = " + statistic[i][0] + ", user's number = " + statistic[i][1]);
+            print("Step #" + i + ": " + "My number = " + statistic[i][0] + ", user's number = " + statistic[i][1]);
             println(", " + "range from " + statistic[i][2] + " to " + statistic[i][3]);
         }
     }

@@ -10,7 +10,7 @@ public class GameNumber {
         NumberController numberController = new NumberController(getNumber(), getNumberView());
         User[] users = numberController.getUsers();
 
-        int mode = 0; // HARDCODE/ choosing game mode
+        int mode = 1; // HARDCODE/ choosing game mode
 
         if (mode == 0)
             playWithTheSameNumber(users, numberController);
