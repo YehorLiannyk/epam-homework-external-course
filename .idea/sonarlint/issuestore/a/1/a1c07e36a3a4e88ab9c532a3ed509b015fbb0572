@@ -1,0 +1,17 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(éºéã
+S
+java:S1854"=Remove this useless assignment to local variable "topNumber".(’œ´Å
+D
+java:S1481".Remove this unused "topNumber" local variable.(’œ´Å
+‰
+java:S1319"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(ı‡ìí
+
+java:S1319"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(ôç‡Şúÿÿÿÿ
+ˆ
+java:S1319#"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(¬áš*
+‰
+java:S1319:"sThe return type of this method should be an interface such as "Map" rather than the implementation "LinkedHashMap".(èÈã
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ûâ©¶şÿÿÿÿ
+^
+java:S3824B"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(€¨øÉ
