@@ -101,7 +101,5 @@ V
 &src/test/Task8Test/DataLengthTest.java,8\6\86adc0f5b4166a1c0f8e807edbc56f4d1f3b883c
 U
 %src/test/Task8Test/DefaultArrays.java,9\c\9cd6ebbf4966c6f2d5e55ceca45b5ed5d05cd05b
-V
-&src/main/ua/university/Task8/Main.java,8\c\8c9bb1899ffc1e96c910e71eff2b52f4afa4dfdb
 W
 'src/main/ua/university/Task5/Task5.java,7\5\7543135063e4e4344c375c32f1e0371a0f13552b
