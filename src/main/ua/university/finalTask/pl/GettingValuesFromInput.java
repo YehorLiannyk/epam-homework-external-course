@@ -65,7 +65,7 @@ public class GettingValuesFromInput {
     }
 
 
-    private static boolean isThisId(int id) {
+    public static boolean isThisId(int id) {
         if (id <= IDHelper.getEndIDNumber() && id >= IDHelper.getStartIDNumber())
             return true;
         else {

@@ -183,22 +183,25 @@ public class CityHelper {
         return check;
     }
 
-    public City getCityAfterChangingName(City city, String newName) {
-        City newCity = new City(city);
+    public City getCityAfterChangingName(City city, String newName, int id) {
+        City newCity = new City(city, id);
         newCity.setCityName(newName);
         return newCity;
     }
 
-    public City getCityAfterChangingPopulation(City city, int population) {
-        City newCity = new City(city);
+    public City getCityAfterChangingPopulation(City city, int population, int id) {
+        City newCity = new City(city, id);
         newCity.setPopulation(population);
         return newCity;
     }
 
-    public City getCityAfterChangingCapitalStatus(City city, boolean isCapital) {
-        City newCity = new City(city);
+    public City getCityAfterChangingCapitalStatus(City city, boolean isCapital, int id) {
+        City newCity = new City(city, id);
         newCity.setCapital(isCapital);
         return newCity;
     }
 
+    public City createNewCity(Country country, String cityName, int population, boolean isCapital, int id) {
+        return new City(country, cityName, population, isCapital, id);
+    }
 }

@@ -202,6 +202,38 @@
         </void>
        </object>
       </void>
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.City">
+        <void property="cityName">
+         <string>Slutsk</string>
+        </void>
+        <void property="country">
+         <object idref="Country2"/>
+        </void>
+        <void property="id">
+         <int>243433</int>
+        </void>
+        <void property="population">
+         <int>60000</int>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.City">
+        <void property="cityName">
+         <string>Salihorsk</string>
+        </void>
+        <void property="country">
+         <object idref="Country2"/>
+        </void>
+        <void property="id">
+         <int>915217</int>
+        </void>
+        <void property="population">
+         <int>150000</int>
+        </void>
+       </object>
+      </void>
      </object>
     </void>
     <void property="countryName">
@@ -209,6 +241,81 @@
     </void>
     <void property="id">
      <int>134213</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="main.ua.university.finalTask.bll.Country" id="Country3">
+    <void property="cities">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.City">
+        <void property="cityName">
+         <string>New York</string>
+        </void>
+        <void property="country">
+         <object idref="Country3"/>
+        </void>
+        <void property="id">
+         <int>289538</int>
+        </void>
+        <void property="population">
+         <int>8000000</int>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.City">
+        <void property="cityName">
+         <string>Los Ageles</string>
+        </void>
+        <void property="country">
+         <object idref="Country3"/>
+        </void>
+        <void property="id">
+         <int>586420</int>
+        </void>
+        <void property="population">
+         <int>4000000</int>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.City">
+        <void property="capital">
+         <boolean>true</boolean>
+        </void>
+        <void property="cityName">
+         <string>Wanshington</string>
+        </void>
+        <void property="country">
+         <object idref="Country3"/>
+        </void>
+        <void property="id">
+         <int>978942</int>
+        </void>
+        <void property="population">
+         <int>700000</int>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="countryName">
+     <string>United States of America</string>
+    </void>
+    <void property="id">
+     <int>210838</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="main.ua.university.finalTask.bll.Country">
+    <void property="countryName">
+     <string>Norway</string>
+    </void>
+    <void property="id">
+     <int>689267</int>
     </void>
    </object>
   </void>

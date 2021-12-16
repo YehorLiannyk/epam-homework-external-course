@@ -39,7 +39,6 @@ public class Menu {
         }
     }
 
-
     public void callStartMenu() {
         int value = getStartMenuActionNumber();
         switch (value) {

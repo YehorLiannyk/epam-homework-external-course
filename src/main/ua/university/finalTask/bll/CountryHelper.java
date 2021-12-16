@@ -99,12 +99,12 @@ public class CountryHelper {
         return countries;
     }
 
-    public Country createNewCountryByName(String name) {
-        return new Country(name);
+    public Country createNewCountryByName(String name, int id) {
+        return new Country(name, id);
     }
 
-    public Country getCountryAfterChangingName(Country country, String newName) {
-        Country newCountry = new Country(country);
+    public Country getCountryAfterChangingName(Country country, String newName, int id) {
+        Country newCountry = new Country(country, id);
         newCountry.setCountryName(newName);
         return newCountry;
     }
