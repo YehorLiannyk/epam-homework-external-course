@@ -5,13 +5,14 @@ import main.ua.university.finalTask.bll.IDHelper;
 import java.util.Scanner;
 
 public class GettingValuesFromInput {
+
     public static int getValueInRange(int start, int end) {
         int value = 0;
         boolean check = true;
         while (check) {
-            value = getInt("Input number: ");
+            value = getInt(StringConst.INPUT_NUMBER);
             if (value < start || value > end)
-                System.out.println("Wrong number. Try again");
+                System.out.println(StringConst.WRONG_NUMBER_TRY_AGAIN);
             else
                 check = false;
         }
@@ -22,7 +23,7 @@ public class GettingValuesFromInput {
         Scanner sc = new Scanner(System.in);
         System.out.print(msg);
         while (!sc.hasNextInt()) {
-            System.err.print("Wrong value, input only digits: ");
+            System.err.print(StringConst.WRONG_VALUE_INPUT_ONLY_DIGITS);
             sc.next();
         }
         return sc.nextInt();
@@ -32,7 +33,7 @@ public class GettingValuesFromInput {
         Scanner sc = new Scanner(System.in);
         System.out.print(msg);
         while (!sc.hasNextDouble()) {
-            System.err.print("Wrong value, input only real digits: ");
+            System.err.print(StringConst.WRONG_VALUE_INPUT_ONLY_REAL_DIGITS);
             sc.next();
         }
         return sc.nextDouble();
@@ -55,9 +56,9 @@ public class GettingValuesFromInput {
                 number = Integer.parseInt(text);
                 if (isThisId(number)) check = false;
             } catch (NumberFormatException e) {
-                System.err.print("Wrong value, input only real digits: ");
+                System.err.print(StringConst.WRONG_VALUE_INPUT_ONLY_REAL_DIGITS);
             } catch (IllegalArgumentException e) {
-                System.err.print("Wrong value, use the right format 'XXXXXX': ");
+                System.err.print(StringConst.WRONG_VALUE_USE_THE_RIGHT_FORMAT_FOR_ID);
             }
         }
         return number;
@@ -76,7 +77,7 @@ public class GettingValuesFromInput {
         Scanner sc = new Scanner(System.in);
         System.out.print(msg);
         while (!sc.hasNextBoolean()) {
-            System.err.print("Wrong value, : ");
+            System.err.print(StringConst.WRONG_VALUE_USE_ONLY_TRUE_OR_FALSE);
             sc.next();
         }
         return sc.nextBoolean();

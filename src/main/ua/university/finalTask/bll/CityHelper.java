@@ -1,5 +1,6 @@
 package main.ua.university.finalTask.bll;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Objects;
@@ -27,19 +28,21 @@ public class CityHelper {
 
     public City findNeededCity(Country country, String nameCity) {
         cityExistingCheck(country, nameCity);
-        for (var city : country.getCities()) {
-            if (Objects.equals(city.getCityName(), nameCity))
-                return city;
-        }
+        if (country.getCities() != null)
+            for (var city : country.getCities()) {
+                if (Objects.equals(city.getCityName(), nameCity))
+                    return city;
+            }
         return null;
     }
 
     public City findNeededCity(Country country, int idCity) {
         cityExistingCheck(country, idCity);
-        for (var city : country.getCities()) {
-            if (Objects.equals(city.getId(), idCity))
-                return city;
-        }
+        if (country.getCities() != null)
+            for (var city : country.getCities()) {
+                if (Objects.equals(city.getId(), idCity))
+                    return city;
+            }
         return null;
     }
 
@@ -77,7 +80,7 @@ public class CityHelper {
     }
 
     public Country addNewCity(Country country, City newCity) {
-        List<City> list = country.getCities();
+        List<City> list = country.getCities() != null ? country.getCities() : new ArrayList<>();
         list.add(newCity);
         country.setCities(list);
         return country;
@@ -120,40 +123,35 @@ public class CityHelper {
         if (!exist)
             throw new NoSuchElementException();
     }
+
     public boolean isThisCityExist(Country country, String nameCity) {
         boolean check = false;
-        for (var city : country.getCities())
-            if (Objects.equals(nameCity, city.getCityName())) {
-                check = true;
-                break;
-            }
+        if (country.getCities() != null) {
+            for (var city : country.getCities())
+                if (Objects.equals(nameCity, city.getCityName())) {
+                    check = true;
+                    break;
+                }
+        }
         return check;
     }
 
     public boolean isThisCityExist(List<Country> countries, String nameCity) {
         boolean check = false;
         for (var country : countries)
-            for (var city : country.getCities())
-                if (Objects.equals(nameCity, city.getCityName())) {
-                    check = true;
-                    break;
-                }
+            if (country.getCities() != null) {
+                for (var city : country.getCities())
+                    if (Objects.equals(nameCity, city.getCityName())) {
+                        check = true;
+                        break;
+                    }
+            }
         return check;
     }
 
     public boolean isThisCityExist(Country country, int idCity) {
         boolean check = false;
-        for (var city : country.getCities())
-            if (Objects.equals(idCity, city.getId())) {
-                check = true;
-                break;
-            }
-        return check;
-    }
-
-    public boolean isThisCityExist(List<Country> countries, int idCity) {
-        boolean check = false;
-        for (var country : countries)
+        if (country.getCities() != null)
             for (var city : country.getCities())
                 if (Objects.equals(idCity, city.getId())) {
                     check = true;
@@ -162,34 +160,45 @@ public class CityHelper {
         return check;
     }
 
+    public boolean isThisCityExist(List<Country> countries, int idCity) {
+        boolean check = false;
+        for (var country : countries)
+            if (country.getCities() != null)
+                for (var city : country.getCities())
+                    if (Objects.equals(idCity, city.getId())) {
+                        check = true;
+                        break;
+                    }
+        return check;
+    }
+
     public boolean isThisCityExistInCountry(Country country, City city) {
         boolean check = false;
-        for (var cityItem : country.getCities())
-            if (Objects.equals(cityItem, city)) {
-                check = true;
-                break;
-            }
+        if (country.getCities() != null)
+            for (var cityItem : country.getCities())
+                if (Objects.equals(cityItem, city)) {
+                    check = true;
+                    break;
+                }
         return check;
     }
 
     public City getCityAfterChangingName(City city, String newName) {
-        city.setCityName(newName);
-        return city;
+        City newCity = new City(city);
+        newCity.setCityName(newName);
+        return newCity;
     }
 
     public City getCityAfterChangingPopulation(City city, int population) {
-        city.setPopulation(population);
-        return city;
+        City newCity = new City(city);
+        newCity.setPopulation(population);
+        return newCity;
     }
 
     public City getCityAfterChangingCapitalStatus(City city, boolean isCapital) {
-        city.setCapital(isCapital);
-        return city;
-    }
-
-    public City getCityAfterChangingCounty(City city, Country country) {
-        city.setCountry(country);
-        return city;
+        City newCity = new City(city);
+        newCity.setCapital(isCapital);
+        return newCity;
     }
 
 }

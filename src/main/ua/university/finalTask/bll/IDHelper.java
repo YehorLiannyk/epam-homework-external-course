@@ -11,17 +11,21 @@ public class IDHelper {
     }
 
     private static boolean isThisIDFree(int id) {
-        ///
-        //
-        //
-        ///
+       /* for (var country : countries)
+            if (country.getId() == id)
+                return false;
+
+        for (var country : countries)
+            for (var city : country.getCities())
+                if (city.getId() == id)
+                    return false;*/
         return true;
     }
 
     private static int generateNewID() {
         Random random = new Random();
         int id = startIDNumber + random.nextInt((endIDNumber - startIDNumber) + 1); // example: 100 + rand(999 - 100 + 1) => (max = 999), (min = 100)
-        while(!isThisIDFree(id))
+        while (!isThisIDFree( id))
             id = startIDNumber + random.nextInt((endIDNumber - startIDNumber) + 1); // example: 100 + rand(999 - 100 + 1) => (max = 999), (min = 100)
         return id;
     }
@@ -33,6 +37,5 @@ public class IDHelper {
     public static int getEndIDNumber() {
         return endIDNumber;
     }
-
 
 }

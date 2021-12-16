@@ -7,7 +7,7 @@ public class City implements Serializable {
     private Country country;
     private String cityName;
     private int population;
-    private boolean isCapital = false;
+    private boolean isCapital;
 
     public City(Country country, String cityName, int population, boolean isCapital) {
         this.country = country;
@@ -25,6 +25,10 @@ public class City implements Serializable {
 
     public Country getCountry() {
         return country;
+    }
+
+    public City (City oldCity) {
+        this(oldCity.getCountry(), oldCity.getCityName(), oldCity.getPopulation());
     }
 
     public void setCountry(Country country) {
@@ -65,13 +69,13 @@ public class City implements Serializable {
 
 
     public String getCityInfoInFormat() {
-        final StringBuilder sb = new StringBuilder("\t\t").append("cityName = '").append(cityName);
+        final StringBuilder sb = new StringBuilder("\t\t").append("cityName = '").append(cityName).append("'");
         sb.append('\t').append("ID = '").append(id).append('\'');
         if (isCapital)
             sb.append('\t').append("capital of ").append(country.getCountryName());
         else
             sb.append('\t').append("country = '").append(country.getCountryName()).append('\'');
-        sb.append('\t').append("peopleAmount = ").append(population);
+        sb.append('\t').append("peopleAmount = '").append(population).append("'");
         return sb.toString();
     }
 }

@@ -3,14 +3,9 @@ package main.ua.university.finalTask.bll;
 import java.io.Serializable;
 import java.util.List;
 
-/*@XmlRootElement(name = "country")
-@XmlAccessorType(XmlAccessType.FIELD)*/
 public class Country implements Serializable {
-    /*@XmlAttribute(name = "id")*/
     private int id;
-    /*@XmlElement(name = "citiesArray")*/
     private List<City> cities;
-    /*@XmlElement(name = "nameOfCountry")*/
     String countryName;
 
     public Country(List<City> cities, String countryName) {
@@ -21,6 +16,10 @@ public class Country implements Serializable {
 
     public Country(String countryName) {
         this(null, countryName);
+    }
+
+    public Country(Country oldCountry) {
+        this(oldCountry.getCities(),oldCountry.getCountryName());
     }
 
     public Country() {

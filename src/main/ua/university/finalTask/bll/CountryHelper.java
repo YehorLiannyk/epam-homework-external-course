@@ -1,5 +1,6 @@
 package main.ua.university.finalTask.bll;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Objects;
@@ -47,10 +48,10 @@ public class CountryHelper {
     public boolean isThisCountryExist(List<Country> countries, String nameCountry) {
         boolean check = false;
         for (var country : countries)
-            if (Objects.equals(nameCountry, country.getCountryName())) {
-                check = true;
-                break;
-            }
+                if (Objects.equals(nameCountry, country.getCountryName())) {
+                    check = true;
+                    break;
+                }
         return check;
     }
 
@@ -66,11 +67,13 @@ public class CountryHelper {
 
     public boolean doesCountryHaveCapital(Country country) {
         AtomicBoolean check = new AtomicBoolean(false);
-        country.getCities().forEach(city -> {
-            if (city.isCapital()) {
-                check.set(true);
-            }
-        });
+        if(country.getCities() != null) {
+            country.getCities().forEach(city -> {
+                if (city.isCapital()) {
+                    check.set(true);
+                }
+            });
+        }
         return check.get();
     }
 
@@ -79,7 +82,10 @@ public class CountryHelper {
         list.set(index, newCountry);
         return list;
     }
+
     public List<Country> addNewCountryToCountryList(List<Country> countries, Country country) {
+        if(countries == null)
+            countries = new ArrayList<>();
         countries.add(country);
         return countries;
     }
@@ -97,5 +103,10 @@ public class CountryHelper {
         return new Country(name);
     }
 
+    public Country getCountryAfterChangingName(Country country, String newName) {
+        Country newCountry = new Country(country);
+        newCountry.setCountryName(newName);
+        return newCountry;
+    }
 
 }

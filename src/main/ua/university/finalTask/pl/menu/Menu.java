@@ -1,11 +1,6 @@
 package main.ua.university.finalTask.pl.menu;
 
-import main.ua.university.finalTask.bll.City;
-import main.ua.university.finalTask.bll.CityHelper;
-import main.ua.university.finalTask.bll.Country;
-import main.ua.university.finalTask.bll.CountryHelper;
-import main.ua.university.finalTask.dal.DataReader;
-import main.ua.university.finalTask.dal.DataWriter;
+import main.ua.university.finalTask.bll.*;
 import main.ua.university.finalTask.pl.GettingValuesFromInput;
 import main.ua.university.finalTask.pl.StringConst;
 
@@ -16,12 +11,25 @@ import java.util.NoSuchElementException;
 public class Menu {
     List<Country> countries;
     MenuHelper menuHelper;
+    DALConnector dalConnector = new DALConnector();
 
     public Menu() {
-        countries = DataReader.readCountriesFromFile();
+        countries = dalConnector.getCountries();
         CountryHelper countryHelper = new CountryHelper();
         CityHelper cityHelper = new CityHelper(countryHelper);
         menuHelper = new MenuHelper(this, countryHelper, cityHelper);
+    }
+
+    private void finishAndSave(List<Country> list) {
+        System.out.println(StringConst.WAIT_IM_SAVING_ALL_INFORMATION);
+        try {
+            dalConnector.writeToFile(list);
+            System.out.println(StringConst.SUCCESS_SAVING);
+        } catch (FileNotFoundException e) {
+            System.err.println("There is a problem: " + e.getMessage());
+            e.printStackTrace();
+        }
+        System.out.println(StringConst.BYE_MSG);
     }
 
     public void startProgram() {
@@ -31,17 +39,6 @@ public class Menu {
         }
     }
 
-    private void finishAndSave(List<Country> list) {
-        System.out.println(StringConst.WAIT_IM_SAVING_ALL_INFORMATION);
-        try {
-            DataWriter.writeCountriesToFile(list);
-            System.out.println(StringConst.SUCCESS_SAVING);
-        } catch (FileNotFoundException e) {
-            System.err.println("There is a problem: " + e.getMessage());
-            e.printStackTrace();
-        }
-        System.out.println(StringConst.BYE_MSG);
-    }
 
     public void callStartMenu() {
         int value = getStartMenuActionNumber();
@@ -64,7 +61,7 @@ public class Menu {
                 break;
             }
             case 4: {
-                //callDeleteMenu()
+                callDeleteMenu();
                 break;
             }
             default:
@@ -94,13 +91,19 @@ public class Menu {
                     break;
                 }
                 case 1: {
-                    Country country = callCountryCriteriaMenu(countries);
-                    menuHelper.showCountryPage(country);
+                    try {
+                        Country country = callCountryCriteriaMenu(countries);
+                        menuHelper.showCountryPage(country);
+                    } catch (NullPointerException e) {
+                    }
                     break;
                 }
                 case 2: {
-                    City city = callCityCriteriaMenu(countries);
-                    menuHelper.showCityPage(city);
+                    try {
+                        City city = callCityCriteriaMenu(countries);
+                        menuHelper.showCityPage(city);
+                    } catch (NullPointerException e) {
+                    }
                     break;
                 }
                 default:
@@ -171,6 +174,7 @@ public class Menu {
                 }
                 case 2: {
                     countries = menuHelper.addingNewCityToCountry(countries, country);
+                    System.out.println(StringConst.CITY_WAS_SUCCESSFULLY_ADDED);
                     break;
                 }
                 case 3: {
@@ -182,14 +186,13 @@ public class Menu {
                     break;
                 }
                 case 5: {
-
+                    countries = menuHelper.getCountryListAfterCountryNameChange(countries, country);
                     break;
                 }
                 default:
                     break;
             }
         }
-        return;
     }
 
     int getCountryMenuActionNumber() {
@@ -215,11 +218,21 @@ public class Menu {
                     break;
                 }
                 case 1: {
-                    callCountryCriteriaMenu(countries);
+                    try {
+                        Country country = callCountryCriteriaMenu(countries);
+                        countries = menuHelper.deletingCountry(countries, country);
+                        System.out.println(StringConst.COUNTRY_DELETE_MSG);
+                    } catch (NullPointerException e) {
+                    }
                     break;
                 }
                 case 2: {
-
+                    try {
+                        City city = callCityCriteriaMenu(countries);
+                        countries = menuHelper.deletingCity(countries, city);
+                        System.out.println(StringConst.CITY_DELETE_MSG);
+                    } catch (NullPointerException e) {
+                    }
                     break;
                 }
                 default:
@@ -283,13 +296,7 @@ public class Menu {
                     break;
                 }
                 case 1: {
-                    try {
-                        countries = menuHelper.deletingCity(countries, city);
-                        System.out.println(StringConst.CITY_DELETE_MSG);
-                        active = false;
-                    } catch (NoSuchElementException e) {
-                        System.err.println(StringConst.ERR_CITY_DOES_NOT_HAVE_COUNTRY);
-                    }
+                    active = tryCityDelete(city, active);
                     break;
                 }
                 case 2: {
@@ -304,26 +311,31 @@ public class Menu {
                     countries = menuHelper.getCountryListAfterCityCapitalStatusChange(countries, city);
                     break;
                 }
-                case 5: {
-                    countries = menuHelper.getCountryListAfterCityCountryChange(countries, city);
-                    break;
-                }
                 default:
                     break;
             }
         }
-        return;
+    }
+
+    private boolean tryCityDelete(City city, boolean active) {
+        try {
+            countries = menuHelper.deletingCity(countries, city);
+            System.out.println(StringConst.CITY_DELETE_MSG);
+            active = false;
+        } catch (NoSuchElementException e) {
+            System.err.println(StringConst.ERR_CITY_DOES_NOT_HAVE_COUNTRY);
+        }
+        return active;
     }
 
     int getCityMenuActionNumber() {
         final int start = 0;
-        final int end = 5;
+        final int end = 4;
         System.out.println(StringConst.CHOOSE_NEXT_ACTION_MSG);
         System.out.println("1 - Delete the city");
         System.out.println("2 - Change city name");
         System.out.println("3 - Change population");
         System.out.println("4 - Change capital status");
-        System.out.println("5 - Change country");
         System.out.println(StringConst.MENU_BACK);
         return GettingValuesFromInput.getValueInRange(start, end);
     }

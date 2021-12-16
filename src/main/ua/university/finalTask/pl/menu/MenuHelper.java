@@ -116,17 +116,6 @@ public class MenuHelper {
         return name;
     }
 
-    City findCityById(Country country) {
-        City city = null;
-        try {
-            int id = getCityId(country);
-            city = cityHelper.findNeededCity(country, id);
-        } catch (NoSuchElementException e) {
-            System.err.println(StringConst.ERR_THERE_IS_NO_CITY);
-        }
-        return city;
-    }
-
     private int getCityId(Country country) {
         int id = GettingValuesFromInput.getObjectId(StringConst.INPUT_CITY_ID);
         while (!cityHelper.isThisCityExist(country, id)) {
@@ -165,16 +154,29 @@ public class MenuHelper {
         System.out.println(city.getCityInfoInFormat());
     }
 
-    Country addNewCityByCountry(Country country) {
+    Country addNewCityToCountry(Country country) {
         City newCity = createNewCityByCountry(country);
         cityHelper.addNewCity(country, newCity);
         return country;
     }
 
     City createNewCityByCountry(Country country) {
-        String cityName = GettingValuesFromInput.getString("Input city name: ");
-        int population = GettingValuesFromInput.getInt("Input population of the city: ");
-        boolean isCapital = isCapital(country);
+        boolean check = true;
+        String cityName = "";
+        int population = 0;
+        boolean isCapital = false;
+        while (check) {
+            try {
+                cityName = GettingValuesFromInput.getString("Input city name: ");
+                if (cityHelper.isThisCityExist(country, cityName))
+                    throw new IllegalArgumentException();
+                population = GettingValuesFromInput.getInt("Input population of the city: ");
+                isCapital = isCapital(country);
+                check = false;
+            } catch (IllegalArgumentException e) {
+                System.out.println("There is city with this name already! Choose another name");
+            }
+        }
         return new City(country, cityName, population, isCapital);
     }
 
@@ -193,13 +195,15 @@ public class MenuHelper {
     }
 
     City getCityForDelete(Country country) {
-        String cityName = GettingValuesFromInput.getString("Input city name you want to delete: ");
-        City city = findCityByName(country);
-        return city;
+        System.out.println("Input city name you want to delete");
+        return findCityByName(country);
     }
 
     void printCitiesByCountry(Country country) {
-        System.out.print(country.getCitiesInfoInFormat(country.getCities()));
+        if(country.getCities() != null)
+            System.out.print(country.getCitiesInfoInFormat(country.getCities()));
+        else
+            System.out.println("There is no any cities yet");
     }
 
     List<Country> deletingCountry(List<Country> countries, Country country) {
@@ -211,21 +215,42 @@ public class MenuHelper {
     }
 
     List<Country> addingNewCityToCountry(List<Country> countries, Country country) {
-        return countryHelper.updateCountryInCountryList(countries, country, addNewCityByCountry(country));
+        return countryHelper.updateCountryInCountryList(countries, country, addNewCityToCountry(country));
     }
 
     List<Country> deletingCityFromCountry(List<Country> countries, Country country) {
-        return countryHelper.updateCountryInCountryList(countries, country, deleteCityFromCountry(country));
+        if (country.getCities() != null)
+            return countryHelper.updateCountryInCountryList(countries, country, deleteCityFromCountry(country));
+        else {
+            System.out.println("There is no any cities yet");
+            return countries;
+        }
     }
 
     List<Country> addNewCountry(List<Country> countries) {
-        Country newCountry = createNewCountry();
+        Country newCountry = createNewCountry(countries);
         return countryHelper.addNewCountryToCountryList(countries, newCountry);
     }
 
-    Country createNewCountry() {
-        String countryName = GettingValuesFromInput.getString("Input country name: ");
+    Country createNewCountry(List<Country> countries) {
+        boolean check = true;
+        String countryName = "";
+        while (check) {
+            try {
+                countryName = GettingValuesFromInput.getString("Input country name: ");
+                if (countryHelper.isThisCountryExist(countries, countryName))
+                    throw new IllegalArgumentException();
+                check = false;
+            } catch (IllegalArgumentException e) {
+                System.out.println("There is country with this name already! Choose another name");
+            }
+        }
         return countryHelper.createNewCountryByName(countryName);
+    }
+
+    List<Country> getCountryListAfterCountryNameChange(List<Country> countries, Country country) {
+        String newName = getNewCountryName();
+        return countryHelper.updateCountryInCountryList(countries, country, countryHelper.getCountryAfterChangingName(country, newName));
     }
 
     List<Country> getCountryListAfterCityNameChange(List<Country> countries, City city) {
@@ -253,37 +278,25 @@ public class MenuHelper {
         return countries;
     }
 
-    List<Country> getCountryListAfterCityCountryChange(List<Country> countries, City city) {
-        Country country = getNewCityCountry(countries);
-        if (country == city.getCountry()) {
-            System.out.println("The city is in this country already");
-        } else {
-            City newCity = cityHelper.getCityAfterChangingCounty(city, country);
-            countries = cityHelper.updateCityInCountryList(countries, city, newCity);
-        }
-        return countries;
-    }
-
-    Country getNewCityCountry(List<Country> countries) {
-        System.out.println("Write name of new country for city");
-        return findCountryByName(countries);
-    }
-
 
     private boolean wasTrueAndCityNotCapitalAndCountryHasCapitalAlready(City city, boolean isCapital) {
         return isCapital && !city.isCapital() && countryHelper.doesCountryHaveCapital(city.getCountry());
     }
 
     boolean getNewCityCapitalStatus() {
-        return GettingValuesFromInput.getBoolean("Input new capital status for city: ");
+        return GettingValuesFromInput.getBoolean(StringConst.INPUT_NEW_CAPITAL_STATUS_FOR_CITY);
     }
 
     int getNewCityPopulation() {
-        return GettingValuesFromInput.getInt("Input new population for the city: ");
+        return GettingValuesFromInput.getInt(StringConst.INPUT_NEW_POPULATION_FOR_THE_CITY);
     }
 
     String getNewCityName() {
-        return GettingValuesFromInput.getString("Input new name for the city: ");
+        return GettingValuesFromInput.getString(StringConst.INPUT_NEW_NAME_FOR_THE_CITY);
+    }
+
+    String getNewCountryName() {
+        return GettingValuesFromInput.getString(StringConst.INPUT_NEW_NAME_FOR_THE_COUNTRY);
     }
 
 }
