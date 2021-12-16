@@ -1,6 +1,6 @@
 package main.ua.university.finalTask.dal;
 
-import main.ua.university.finalTask.bll.Country;
+import main.ua.university.finalTask.bll.country.Country;
 
 import java.beans.XMLEncoder;
 import java.io.*;

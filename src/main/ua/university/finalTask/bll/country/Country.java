@@ -1,14 +1,15 @@
-package main.ua.university.finalTask.bll;
+package main.ua.university.finalTask.bll.country;
 
+import main.ua.university.finalTask.bll.city.City;
 import main.ua.university.finalTask.pl.GettingValuesFromInput;
 
 import java.io.Serializable;
 import java.util.List;
 
 public class Country implements Serializable {
+    String countryName;
     private int id;
     private List<City> cities;
-    String countryName;
 
     public Country(List<City> cities, String countryName, int id) {
         this.cities = cities;
@@ -21,7 +22,7 @@ public class Country implements Serializable {
     }
 
     public Country(Country oldCountry, int id) {
-        this(oldCountry.getCities(),oldCountry.getCountryName(), id);
+        this(oldCountry.getCities(), oldCountry.getCountryName(), id);
     }
 
     public Country() {
@@ -35,13 +36,13 @@ public class Country implements Serializable {
         this.cities = cities;
     }
 
-    public void setId(int id) {
-        if(GettingValuesFromInput.isThisId(id))
-            this.id = id;
-    }
-
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        if (GettingValuesFromInput.isThisId(id))
+            this.id = id;
     }
 
     public String getCountryName() {

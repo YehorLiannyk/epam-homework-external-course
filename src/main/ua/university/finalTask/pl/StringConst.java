@@ -4,10 +4,10 @@ public class StringConst {
     public static final String CHOOSE_NEXT_ACTION_MSG = "Choose your next action: ";
     public static final String MENU_BACK = "0 - Back to previous menu";
     public static final String MENU_EXIT = "0 - Exit the program";
-    public static final String INPUT_COUNTRY_ID= "Input id of country you're looking for: ";
-    public static final String INPUT_COUNTRY_NAME= "Input name of country you're looking for: ";
-    public static final String INPUT_CITY_ID= "Input id of country you're looking for: ";
-    public static final String INPUT_CITY_NAME= "Input name of city you're looking for: ";
+    public static final String INPUT_COUNTRY_ID = "Input id of country you're looking for: ";
+    public static final String INPUT_COUNTRY_NAME = "Input name of country you're looking for: ";
+    public static final String INPUT_CITY_ID = "Input id of country you're looking for: ";
+    public static final String INPUT_CITY_NAME = "Input name of city you're looking for: ";
     public static final String COUNTRY_INFO = "Information about this country";
     public static final String CITY_INFO = "Information about this city";
     public static final String COUNTRY_DELETE_MSG = "Country was successfully deleted";

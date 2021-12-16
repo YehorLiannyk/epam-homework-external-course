@@ -1,4 +1,6 @@
-package main.ua.university.finalTask.bll;
+package main.ua.university.finalTask.bll.country;
+
+import main.ua.university.finalTask.bll.city.City;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,10 +50,10 @@ public class CountryHelper {
     public boolean isThisCountryExist(List<Country> countries, String nameCountry) {
         boolean check = false;
         for (var country : countries)
-                if (Objects.equals(nameCountry, country.getCountryName())) {
-                    check = true;
-                    break;
-                }
+            if (Objects.equals(nameCountry, country.getCountryName())) {
+                check = true;
+                break;
+            }
         return check;
     }
 
@@ -67,7 +69,7 @@ public class CountryHelper {
 
     public boolean doesCountryHaveCapital(Country country) {
         AtomicBoolean check = new AtomicBoolean(false);
-        if(country.getCities() != null) {
+        if (country.getCities() != null) {
             country.getCities().forEach(city -> {
                 if (city.isCapital()) {
                     check.set(true);
@@ -84,7 +86,7 @@ public class CountryHelper {
     }
 
     public List<Country> addNewCountryToCountryList(List<Country> countries, Country country) {
-        if(countries == null)
+        if (countries == null)
             countries = new ArrayList<>();
         countries.add(country);
         return countries;
@@ -108,5 +110,4 @@ public class CountryHelper {
         newCountry.setCountryName(newName);
         return newCountry;
     }
-
 }

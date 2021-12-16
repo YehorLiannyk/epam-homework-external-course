@@ -1,6 +1,10 @@
 package main.ua.university.finalTask.pl.menu;
 
 import main.ua.university.finalTask.bll.*;
+import main.ua.university.finalTask.bll.city.City;
+import main.ua.university.finalTask.bll.city.CityHelper;
+import main.ua.university.finalTask.bll.country.Country;
+import main.ua.university.finalTask.bll.country.CountryHelper;
 import main.ua.university.finalTask.pl.GettingValuesFromInput;
 import main.ua.university.finalTask.pl.StringConst;
 

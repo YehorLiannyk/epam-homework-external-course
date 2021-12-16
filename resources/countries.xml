@@ -2,11 +2,11 @@
 <java version="16.0.2" class="java.beans.XMLDecoder">
  <object class="java.util.ArrayList">
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.Country" id="Country0">
+   <object class="main.ua.university.finalTask.bll.country.Country" id="Country0">
     <void property="cities">
      <object class="java.util.ArrayList">
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="capital">
          <boolean>true</boolean>
         </void>
@@ -25,7 +25,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Odesa</string>
         </void>
@@ -41,7 +41,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Lviv</string>
         </void>
@@ -57,7 +57,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Kharkiv</string>
         </void>
@@ -73,7 +73,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Donetsk</string>
         </void>
@@ -89,7 +89,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Sevastopol</string>
         </void>
@@ -115,11 +115,11 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.Country" id="Country1">
+   <object class="main.ua.university.finalTask.bll.country.Country" id="Country1">
     <void property="cities">
      <object class="java.util.ArrayList">
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="capital">
          <boolean>true</boolean>
         </void>
@@ -138,7 +138,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Lyublin</string>
         </void>
@@ -154,7 +154,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Lodz</string>
         </void>
@@ -180,11 +180,11 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.Country" id="Country2">
+   <object class="main.ua.university.finalTask.bll.country.Country" id="Country2">
     <void property="cities">
      <object class="java.util.ArrayList">
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="capital">
          <boolean>true</boolean>
         </void>
@@ -203,7 +203,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Slutsk</string>
         </void>
@@ -219,7 +219,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Salihorsk</string>
         </void>
@@ -245,11 +245,11 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.Country" id="Country3">
+   <object class="main.ua.university.finalTask.bll.country.Country" id="Country3">
     <void property="cities">
      <object class="java.util.ArrayList">
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>New York</string>
         </void>
@@ -265,7 +265,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="cityName">
          <string>Los Ageles</string>
         </void>
@@ -281,7 +281,7 @@
        </object>
       </void>
       <void method="add">
-       <object class="main.ua.university.finalTask.bll.City">
+       <object class="main.ua.university.finalTask.bll.city.City">
         <void property="capital">
          <boolean>true</boolean>
         </void>
@@ -310,7 +310,7 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.Country">
+   <object class="main.ua.university.finalTask.bll.country.Country">
     <void property="countryName">
      <string>Norway</string>
     </void>
@@ -320,12 +320,84 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.Country">
+   <object class="main.ua.university.finalTask.bll.country.Country" id="Country4">
+    <void property="cities">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.city.City">
+        <void property="capital">
+         <boolean>true</boolean>
+        </void>
+        <void property="cityName">
+         <string>Tokyo</string>
+        </void>
+        <void property="country">
+         <object idref="Country4"/>
+        </void>
+        <void property="id">
+         <int>650318</int>
+        </void>
+        <void property="population">
+         <int>8600000</int>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.city.City">
+        <void property="cityName">
+         <string>Kyoto</string>
+        </void>
+        <void property="country">
+         <object idref="Country4"/>
+        </void>
+        <void property="id">
+         <int>901393</int>
+        </void>
+        <void property="population">
+         <int>3000000</int>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
     <void property="countryName">
      <string>Japan</string>
     </void>
     <void property="id">
      <int>188045</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="main.ua.university.finalTask.bll.country.Country" id="Country5">
+    <void property="cities">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.city.City">
+        <void property="capital">
+         <boolean>true</boolean>
+        </void>
+        <void property="cityName">
+         <string>Paris</string>
+        </void>
+        <void property="country">
+         <object idref="Country5"/>
+        </void>
+        <void property="id">
+         <int>618974</int>
+        </void>
+        <void property="population">
+         <int>6000000</int>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="countryName">
+     <string>France</string>
+    </void>
+    <void property="id">
+     <int>550477</int>
     </void>
    </object>
   </void>

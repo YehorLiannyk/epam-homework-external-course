@@ -1,5 +1,7 @@
 package main.ua.university.finalTask.bll;
 
+import main.ua.university.finalTask.bll.country.Country;
+
 import java.util.List;
 import java.util.Random;
 
@@ -17,10 +19,10 @@ public class IDHelper {
                 return false;
 
         for (var country : countries)
-            if(country.getCities() != null)
-            for (var city : country.getCities())
-                if (city.getId() == id)
-                    return false;
+            if (country.getCities() != null)
+                for (var city : country.getCities())
+                    if (city.getId() == id)
+                        return false;
         return true;
     }
 

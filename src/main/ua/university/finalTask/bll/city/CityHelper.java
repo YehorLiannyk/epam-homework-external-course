@@ -1,4 +1,7 @@
-package main.ua.university.finalTask.bll;
+package main.ua.university.finalTask.bll.city;
+
+import main.ua.university.finalTask.bll.country.Country;
+import main.ua.university.finalTask.bll.country.CountryHelper;
 
 import java.util.ArrayList;
 import java.util.List;
