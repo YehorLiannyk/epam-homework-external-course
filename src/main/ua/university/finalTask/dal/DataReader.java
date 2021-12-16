@@ -5,23 +5,23 @@ import main.ua.university.finalTask.bll.Country;
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DataReader {
-    /*public static List<Country> readCountryFromFile() {
+    public static List<Country> readCountriesFromFile() {
         List<Country> countries = new ArrayList<>();
         try (XMLDecoder xmlDecoder = new XMLDecoder(new BufferedInputStream(
-                new FileInputStream(FilePath.pathDir + "product.xml")))) {
-            countries.add((Country) xmlDecoder.readObject());
+                new FileInputStream(FilePath.pathDir + FilePath.countriesFile)))) {
+            countries = (List<Country>) xmlDecoder.readObject();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         return countries;
-    }*/
+    }
 
-    public static List<Country> readCountriesFromFile()  {
+/*    public static List<Country> readCountriesFromFile()  {
         XMLDecoder in = null;
         try {
             in = new XMLDecoder( new BufferedInputStream( new ObjectInputStream(
@@ -32,5 +32,6 @@ public class DataReader {
         List<Country> countries = (List<Country>)in.readObject();
         in.close();
         return countries;
-    }
+
+    }*/
 }

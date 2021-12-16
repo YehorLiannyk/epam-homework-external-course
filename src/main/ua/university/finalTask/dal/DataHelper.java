@@ -1,3 +1,4 @@
+/*
 package main.ua.university.finalTask.dal;
 
 import main.ua.university.finalTask.bll.Country;
@@ -20,9 +21,12 @@ public class DataHelper {
 
     public Country[] getAllCountry() {
         Country[] countries = new Country[]{};
-       /* while () {
+       */
+/* while () {
             reader.readCountryFromFile();
-        }*/
+        }*//*
+
         return countries;
     }
 }
+*/

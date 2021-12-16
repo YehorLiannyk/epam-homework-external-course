@@ -7,14 +7,14 @@ import java.io.*;
 import java.util.List;
 
 public class DataWriter {
-   /* public static void writeCountryToFile(Country country) {
-        *//*try (XMLEncoder xmlEncoder = new XMLEncoder(new BufferedOutputStream(
-                new FileOutputStream(FilePath.pathDir + FilePath.countriesFile, true)))) {
-            xmlEncoder.writeObject(country);
+    public static void writeCountriesToFile(List<Country> countries) throws FileNotFoundException {
+        try (XMLEncoder xmlEncoder = new XMLEncoder(new BufferedOutputStream(
+                new FileOutputStream(FilePath.pathDir + FilePath.countriesFile)))) {
+            xmlEncoder.writeObject(countries);
             xmlEncoder.flush();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }*//*
+        }
+    }
+        /*}
 
         JAXBContext jaxbContext = null;
         try {
@@ -33,15 +33,16 @@ public class DataWriter {
             writeCountryToFile(country);
     }*/
 
-    public static void writeCountryToFile(List<Country> countries) {
-        try(XMLEncoder out = new XMLEncoder(new BufferedOutputStream( new ObjectOutputStream(
-                new FileOutputStream(FilePath.pathDir + "country.xml"))))){
+   /* public static void writeCountryToFile(List<Country> countries) {
+        try (XMLEncoder out = new XMLEncoder(new BufferedOutputStream(new ObjectOutputStream(
+                new FileOutputStream(FilePath.pathDir + "country.xml"))))) {
             out.writeObject(countries);
+            out.flush();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
 }

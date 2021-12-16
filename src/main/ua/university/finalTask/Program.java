@@ -3,22 +3,21 @@ package main.ua.university.finalTask;
 import main.ua.university.finalTask.bll.City;
 import main.ua.university.finalTask.bll.Country;
 import main.ua.university.finalTask.dal.DataReader;
-import main.ua.university.finalTask.dal.DataWriter;
-import main.ua.university.finalTask.pl.Menu;
+import main.ua.university.finalTask.pl.menu.Menu;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Program {
     public static void main(String[] args) {
-        createTestObj();
+        //List<Country> list = createTestObj();
 
         Menu menu = new Menu();
-        menu.callStartMenu();
+        menu.startProgram();
 
     }
 
-    private static void createTestObj() {
+    private static List<Country>  createTestObj() {
        Country ukraine = new Country("Ukraine");
         List<City> citiesUK = new ArrayList<>();
         citiesUK.add(new City(ukraine, "Kyiv", 3_200_000, true));
@@ -35,9 +34,9 @@ public class Program {
         List<Country> countries = new ArrayList<>();
         countries.add(ukraine);
         countries.add(poland);
-        DataWriter.writeCountryToFile(countries);
+        //DataWriter.writeCountriesToFile(countries);
 
         List<Country> test = DataReader.readCountriesFromFile();
-        System.out.println(test.toString());
+        return test;
     }
 }

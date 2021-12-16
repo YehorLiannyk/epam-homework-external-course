@@ -11,16 +11,16 @@ public class Country implements Serializable {
     /*@XmlElement(name = "citiesArray")*/
     private List<City> cities;
     /*@XmlElement(name = "nameOfCountry")*/
-    String nameOfCounty;
+    String countryName;
 
-    public Country(List<City> cities, String nameOfCounty) {
+    public Country(List<City> cities, String countryName) {
         this.cities = cities;
-        this.nameOfCounty = nameOfCounty;
+        this.countryName = countryName;
         id = IDHelper.getFreeID();
     }
 
-    public Country(String nameOfCounty) {
-        this(null, nameOfCounty);
+    public Country(String countryName) {
+        this(null, countryName);
     }
 
     public Country() {
@@ -42,20 +42,35 @@ public class Country implements Serializable {
         return id;
     }
 
-    public String getNameOfCounty() {
-        return nameOfCounty;
+    public String getCountryName() {
+        return countryName;
     }
 
-    public void setNameOfCounty(String nameOfCounty) {
-        this.nameOfCounty = nameOfCounty;
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder(nameOfCounty + " {");
-        sb.append("ID = '").append(id).append('\'');
-        sb.append(", cities = ").append(cities);
-        sb.append('}');
+
+    public String getCountryAndCitiesInfoInFormat() {
+        final StringBuilder sb = new StringBuilder("countryName = '").append(countryName).append("'\n");
+        sb.append('\t').append("ID = '").append(id).append('\'');
+        try {
+            sb.append('\t').append("cities = ").append('\n').append(getCitiesInfoInFormat(cities));
+        } catch (NullPointerException e) {
+            sb.append('\t').append("there is no city yet").append('\n');
+        }
+        return sb.toString();
+    }
+
+    public String getCountryInfoInFormat() {
+        final StringBuilder sb = new StringBuilder("countryName = '").append(countryName).append("'\n");
+        sb.append('\t').append("ID = '").append(id).append('\'');
+        return sb.toString();
+    }
+
+    public String getCitiesInfoInFormat(List<City> cities) {
+        final StringBuilder sb = new StringBuilder();
+        cities.forEach(city -> sb.append(city.getCityInfoInFormat()).append('\n'));
         return sb.toString();
     }
 }

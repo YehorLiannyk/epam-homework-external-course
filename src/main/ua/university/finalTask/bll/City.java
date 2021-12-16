@@ -2,33 +2,25 @@ package main.ua.university.finalTask.bll;
 
 import java.io.Serializable;
 
-/*@XmlRootElement(name = "city")
-@XmlAccessorType(XmlAccessType.FIELD)*/
 public class City implements Serializable {
-    /*@XmlAttribute(name = "id")*/
     private int id;
-    /*@XmlTransient*/
-    //@XmlElement(name = "country")
     private Country country;
-    /*@XmlElement(name = "nameOfCity")*/
-    private String nameOfCity;
-    /*@XmlElement(name = "peopleAmount")*/
-    private int peopleAmount;
-    /*@XmlElement(name = "isCapital")*/
+    private String cityName;
+    private int population;
     private boolean isCapital = false;
 
-    public City(Country country, String nameOfCity, int peopleAmount, boolean isCapital) {
+    public City(Country country, String cityName, int population, boolean isCapital) {
         this.country = country;
-        this.nameOfCity = nameOfCity;
-        this.peopleAmount = peopleAmount;
+        this.cityName = cityName;
+        this.population = population;
         this.isCapital = isCapital;
         id = IDHelper.getFreeID();
     }
 
     public City() {}
 
-    public City(Country country, String nameOfCity, int peopleAmount) {
-        this(country, nameOfCity, peopleAmount, false);
+    public City(Country country, String cityName, int population) {
+        this(country, cityName, population, false);
     }
 
     public Country getCountry() {
@@ -47,20 +39,20 @@ public class City implements Serializable {
         return id;
     }
 
-    public String getNameOfCity() {
-        return nameOfCity;
+    public String getCityName() {
+        return cityName;
     }
 
-    public void setNameOfCity(String nameOfCity) {
-        this.nameOfCity = nameOfCity;
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
-    public int getPeopleAmount() {
-        return peopleAmount;
+    public int getPopulation() {
+        return population;
     }
 
-    public void setPeopleAmount(int peopleAmount) {
-        this.peopleAmount = peopleAmount;
+    public void setPopulation(int population) {
+        this.population = population;
     }
 
     public boolean isCapital() {
@@ -71,16 +63,15 @@ public class City implements Serializable {
         isCapital = capital;
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder(nameOfCity);
+
+    public String getCityInfoInFormat() {
+        final StringBuilder sb = new StringBuilder("\t\t").append("cityName = '").append(cityName);
+        sb.append('\t').append("ID = '").append(id).append('\'');
         if (isCapital)
-            sb.append(" (capital)");
-        sb.append(" {");
-        sb.append("ID = '").append(id).append('\'');
-        sb.append(", country = ").append(country.getNameOfCounty());
-        sb.append(", people amount = ").append(peopleAmount);
-        sb.append('}');
+            sb.append('\t').append("capital of ").append(country.getCountryName());
+        else
+            sb.append('\t').append("country = '").append(country.getCountryName()).append('\'');
+        sb.append('\t').append("peopleAmount = ").append(population);
         return sb.toString();
     }
 }
