@@ -147,9 +147,5 @@ v
 F.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml,e\1\e11341d3ba4ad50769e9b2a775f4ef6e765e0f51
 v
 F.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml,0\1\010dea03000301f90ac79b776560baf825dfcdaf
-A
-EPAM_Homework.iml,7\e\7ecbcbd294f6291ef496dcb47f1831c0ec5298eb
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 \
 ,src/main/ua/university/Lesson3Task/Main.java,1\1\11a70a30794c7f5740d7429ee5bbfe44bd396cce

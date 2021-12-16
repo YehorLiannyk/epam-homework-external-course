@@ -8,20 +8,20 @@
     <artifactId>EPAM_Homework</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-<!--    <repositories>
-        <repository>
-            <id>java.net</id>
-            <url>http://repo1.maven.org/maven2/</url>
-        </repository>
-    </repositories>　-->
+    <!--    <repositories>
+            <repository>
+                <id>java.net</id>
+                <url>http://repo1.maven.org/maven2/</url>
+            </repository>
+        </repositories>　-->
 
     <build>
 
         <sourceDirectory>src</sourceDirectory>
         <resources>
-        <resource>
-            <directory>src//main/.resources</directory>
-        </resource>
+            <resource>
+                <directory>src//main/.resources</directory>
+            </resource>
         </resources>
     </build>
 
@@ -67,8 +67,17 @@
             <artifactId>EPAM_Homework</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>2.14.1</version>
+        </dependency>
     </dependencies>
-
 
 
 </project>

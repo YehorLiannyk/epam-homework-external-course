@@ -1,6 +1,7 @@
 package main.ua.university.finalTask.dal;
 
 import main.ua.university.finalTask.bll.Country;
+import main.ua.university.finalTask.bll.xsdValidation.XSDValidator;
 
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
@@ -11,6 +12,7 @@ import java.util.List;
 
 public class DataReader {
     public static List<Country> readCountriesFromFile() {
+        XSDValidator.XSDValidate();
         List<Country> countries = new ArrayList<>();
         try (XMLDecoder xmlDecoder = new XMLDecoder(new BufferedInputStream(
                 new FileInputStream(FilePath.pathDir + FilePath.countriesFile)))) {
@@ -20,18 +22,4 @@ public class DataReader {
         }
         return countries;
     }
-
-/*    public static List<Country> readCountriesFromFile()  {
-        XMLDecoder in = null;
-        try {
-            in = new XMLDecoder( new BufferedInputStream( new ObjectInputStream(
-                    new FileInputStream(FilePath.pathDir + "country.xml"))));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        List<Country> countries = (List<Country>)in.readObject();
-        in.close();
-        return countries;
-
-    }*/
 }

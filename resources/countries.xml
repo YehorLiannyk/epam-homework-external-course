@@ -319,5 +319,15 @@
     </void>
    </object>
   </void>
+  <void method="add">
+   <object class="main.ua.university.finalTask.bll.Country">
+    <void property="countryName">
+     <string>Japan</string>
+    </void>
+    <void property="id">
+     <int>188045</int>
+    </void>
+   </object>
+  </void>
  </object>
 </java>
