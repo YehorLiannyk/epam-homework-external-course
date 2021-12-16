@@ -11,6 +11,7 @@ public class StringConst {
     public static final String COUNTRY_INFO = "Information about this country";
     public static final String CITY_INFO = "Information about this city";
     public static final String COUNTRY_DELETE_MSG = "Country was successfully deleted";
+    public static final String CITY_DELETE_MSG = "City was successfully deleted";
     public static final String WAIT_IM_SAVING_ALL_INFORMATION = "Wait, I'm saving all information";
     public static final String SUCCESS_SAVING = "Saving was successfully complete";
     public static final String BYE_MSG = "Goodbye!";

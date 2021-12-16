@@ -1,6 +1,7 @@
 package main.ua.university.finalTask.pl.menu;
 
 import main.ua.university.finalTask.bll.City;
+import main.ua.university.finalTask.bll.CityHelper;
 import main.ua.university.finalTask.bll.Country;
 import main.ua.university.finalTask.bll.CountryHelper;
 import main.ua.university.finalTask.dal.DataReader;
@@ -18,7 +19,9 @@ public class Menu {
 
     public Menu() {
         countries = DataReader.readCountriesFromFile();
-        menuHelper = new MenuHelper(this, new CountryHelper());
+        CountryHelper countryHelper = new CountryHelper();
+        CityHelper cityHelper = new CityHelper(countryHelper);
+        menuHelper = new MenuHelper(this, countryHelper, cityHelper);
     }
 
     public void startProgram() {
@@ -282,7 +285,7 @@ public class Menu {
                 case 1: {
                     try {
                         countries = menuHelper.deletingCity(countries, city);
-                        System.out.println(StringConst.COUNTRY_DELETE_MSG);
+                        System.out.println(StringConst.CITY_DELETE_MSG);
                         active = false;
                     } catch (NoSuchElementException e) {
                         System.err.println(StringConst.ERR_CITY_DOES_NOT_HAVE_COUNTRY);
@@ -290,19 +293,19 @@ public class Menu {
                     break;
                 }
                 case 2: {
-                    countries = menuHelper.updateCityInCountry();
+                    countries = menuHelper.getCountryListAfterCityNameChange(countries, city);
                     break;
                 }
                 case 3: {
-                    countries = menuHelper.deletingCityFromCountry(countries, city);
+                    countries = menuHelper.getCountryListAfterCityPopulationChange(countries, city);
                     break;
                 }
                 case 4: {
-                    //menuHelper.printCitiesByCountry(city);
+                    countries = menuHelper.getCountryListAfterCityCapitalStatusChange(countries, city);
                     break;
                 }
                 case 5: {
-
+                    countries = menuHelper.getCountryListAfterCityCountryChange(countries, city);
                     break;
                 }
                 default:

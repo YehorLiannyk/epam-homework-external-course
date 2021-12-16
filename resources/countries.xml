@@ -27,7 +27,7 @@
       <void method="add">
        <object class="main.ua.university.finalTask.bll.City">
         <void property="cityName">
-         <string>Dnipro</string>
+         <string>Dnepr</string>
         </void>
         <void property="country">
          <object idref="Country0"/>
