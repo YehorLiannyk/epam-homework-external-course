@@ -4,8 +4,10 @@
 ##
 [Task 2.](/src/main/ua/university/Task2/)
 ##
-[Task 3.](/src/main/ua/university/Task3/)
+###### Task 3 places in Task 4
+[Task 3.](/src/main/ua/university/Task4/)
 ##
+###### Task 4: add tests for Task 3
 [Task 4.](/src/main/ua/university/Task4/)
 [Task 4 Tests](/src/test/Task4Test/)
 ##
