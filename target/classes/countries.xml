@@ -368,5 +368,38 @@
     </void>
    </object>
   </void>
+  <void method="add">
+   <object class="main.ua.university.finalTask.bll.country.Country" id="Country5">
+    <void property="cities">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object class="main.ua.university.finalTask.bll.city.City">
+        <void property="capital">
+         <boolean>true</boolean>
+        </void>
+        <void property="cityName">
+         <string>Paris</string>
+        </void>
+        <void property="country">
+         <object idref="Country5"/>
+        </void>
+        <void property="id">
+         <int>618974</int>
+        </void>
+        <void property="population">
+         <int>6000000</int>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="countryName">
+     <string>France</string>
+    </void>
+    <void property="id">
+     <int>550477</int>
+    </void>
+   </object>
+  </void>
  </object>
 </java>

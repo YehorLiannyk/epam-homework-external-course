@@ -36,11 +36,7 @@ class MatrixTest {
 
     @Test
     void deductAnotherMatrix() {
-        /*System.out.println(Arrays.deepToString(mainMatrix.getMatrix()));
-        System.out.println(Arrays.deepToString(secondMatrix.getMatrix()));*/
         Assertions.assertTrue(mainMatrix.deductAnotherMatrix(secondMatrix));
-        /* System.out.println(Arrays.deepToString(mainMatrix.getMatrix()));
-        System.out.println(Arrays.deepToString(MatrixDefaults.resultAfterDeduction3x3));*/
         Assertions.assertArrayEquals(MatrixDefaults.resultAfterDeduction3x3, mainMatrix.getMatrix());
     }
 

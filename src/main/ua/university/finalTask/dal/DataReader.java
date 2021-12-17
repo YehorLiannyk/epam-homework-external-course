@@ -1,7 +1,7 @@
 package main.ua.university.finalTask.dal;
 
 import main.ua.university.finalTask.bll.country.Country;
-import main.ua.university.finalTask.bll.xsdValidation.XSDValidator;
+import main.ua.university.finalTask.dal.xsdValidation.XSDValidator;
 
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;

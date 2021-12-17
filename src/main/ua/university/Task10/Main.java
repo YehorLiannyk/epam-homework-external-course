@@ -18,5 +18,4 @@ public class Main {
         }
         return users;
     }
-
 }

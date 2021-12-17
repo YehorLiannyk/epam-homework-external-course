@@ -1,4 +1,4 @@
-package main.ua.university.finalTask.bll.xsdValidation;
+package main.ua.university.finalTask.dal.xsdValidation;
 
 import main.ua.university.finalTask.dal.FilePath;
 import org.xml.sax.SAXException;
@@ -27,7 +27,8 @@ public class XSDValidator {
             validator.setErrorHandler(new CountriesErrorHandler());
             validator.validate(source);
         } catch (SAXException | IOException e) {
-            System.err.println(fileName + " is not correct or valid");
+            e.printStackTrace();
+            /*System.err.println(fileName + " is not correct or valid");*/
         }
     }
 }

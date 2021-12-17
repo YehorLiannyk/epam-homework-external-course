@@ -1,4 +1,4 @@
-package main.ua.university.finalTask.bll.xsdValidation;
+package main.ua.university.finalTask.dal.xsdValidation;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -8,7 +8,7 @@ import org.xml.sax.SAXParseException;
 public class CountriesErrorHandler implements ErrorHandler {
     private static Logger logger = LogManager.getLogger("");
     public void warning(SAXParseException e) {
-        logger.warn(getLineColumnNumber(e) + "-" + e.getMessage());
+        logger.warn(getLineColumnNumber(e) + " - " + e.getMessage());
     }
     public void error(SAXParseException e) {
         logger.error(getLineColumnNumber(e) + " - " + e.getMessage());

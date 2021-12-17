@@ -13,7 +13,7 @@ public class IDHelper {
         return generateNewID(countries);
     }
 
-    private static boolean isThisIDFree(int id, List<Country> countries) {
+    public static boolean isThisIDFree(int id, List<Country> countries) {
         for (var country : countries)
             if (country.getId() == id)
                 return false;
