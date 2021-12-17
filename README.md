@@ -32,3 +32,10 @@
 [FinalTask.](/src/main/ua/university/finalTask/)
 [FinalTask Tests.](/src/test/finalTaskTest/)
 [FinalTask Resources](/resources/)
+##
+##
+#### Sort Matrix Array
+[Task from Lesson3 (isn't hometask)](/src/main/ua/university/Lesson3Task/)
+##
+#### Game "Try to guess number"
+[Task from Lesson7 ](/src/main/ua/university/Lesson7Task/)
