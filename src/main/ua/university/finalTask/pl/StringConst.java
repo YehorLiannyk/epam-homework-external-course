@@ -18,7 +18,7 @@ public class StringConst {
     public static final String ERR_THERE_IS_NO_COUNTRY = "ERROR: Can't find this country";
     public static final String ERR_THERE_IS_NO_CITY = "ERROR: Can't find this city";
     public static final String NO_COUNTRY_WITH_THE_NAME_MSG = "There is no country with that name. Try again";
-    public static final String NO_COUNTRY_WITH_THE_ID_MSG = "There is no country with that id. Try again";
+    public static final String NO_COUNTRY_WITH_THE_ID_MSG = "There is no counІtry with that id. Try again";
     public static final String NO_CITY_WITH_THE_NAME_MSG = "There is no city with that name. Try again";
     public static final String NO_CITY_WITH_THE_ID_MSG = "There is no city with that id. Try again";
     public static final String ERR_CITY_DOES_NOT_HAVE_COUNTRY = "ERROR: City has not have country!";

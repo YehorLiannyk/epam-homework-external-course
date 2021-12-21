@@ -77,7 +77,7 @@ public class MenuHelper {
         return city;
     }
 
-    City findCityByIdAtAll(List<Country> countries) {
+    City getCityByIdAtAll(List<Country> countries) {
         City city = null;
         try {
             int id = getCityId(countries);
@@ -87,6 +87,17 @@ public class MenuHelper {
         }
         return city;
     }
+
+    City findCityByIdAtAll(List<Country> countries, int id) {
+        City city = null;
+        try {
+            city = cityHelper.findNeededCity(countries, id);
+        } catch (NoSuchElementException e) {
+            System.err.println(StringConst.ERR_THERE_IS_NO_CITY);
+        }
+        return city;
+    }
+
 
     City findCityByName(Country country) {
         City city = null;
@@ -145,14 +156,14 @@ public class MenuHelper {
         System.out.println(country.getCountryInfoInFormat());
     }
 
-    void showCityPage(City city) {
-        printCityInfo(city);
-        menu.callCityMenu(city);
+    void showCityPage(List<Country> countries, int id) {
+        printCityInfo(countries, id);
+        menu.callCityMenu(id);
     }
 
-    void printCityInfo(City city) {
+    void printCityInfo(List<Country> countries, int index) {
         System.out.println(StringConst.CITY_INFO);
-        System.out.println(city.getCityInfoInFormat());
+        System.out.println(cityHelper.findNeededCity(countries, index).getCityInfoInFormat());
     }
 
     Country addNewCityToCountry(Country country, List<Country> countries) {
@@ -211,8 +222,8 @@ public class MenuHelper {
         return countryHelper.deleteCountry(countries, country);
     }
 
-    List<Country> deletingCity(List<Country> countries, City city) {
-        return cityHelper.deleteCity(countries, city);
+    List<Country> deletingCity(List<Country> countries, int id) {
+        return cityHelper.deleteCity(countries, findCityByIdAtAll(countries, id));
     }
 
     List<Country> addingNewCityToCountry(List<Country> countries, Country country) {
@@ -251,40 +262,43 @@ public class MenuHelper {
 
     List<Country> getCountryListAfterCountryNameChange(List<Country> countries, Country country) {
         String newName = getNewCountryName();
-        Country countryAfterChangingName = countryHelper.getCountryAfterChangingName(country, newName, getFreeId(countries));
+        Country countryAfterChangingName = countryHelper.getCountryAfterChangingName(country, newName, country.getId());
         return countryHelper.updateCountryInCountryList(countries, country, countryAfterChangingName);
     }
 
-    List<Country> getCountryListAfterCityNameChange(List<Country> countries, City city) {
+    List<Country> getCountryListAfterCityNameChange(List<Country> countries, int id) {
         String newName = getNewCityName();
-        City cityAfterChangingName = cityHelper.getCityAfterChangingName(city, newName, getFreeId(countries));
+        City city = findCityByIdAtAll(countries, id);
+        City cityAfterChangingName = new City(cityHelper.getCityAfterChangingName(city, newName, city.getId()), city.getId());
         return cityHelper.updateCityInCountryList(countries, city, cityAfterChangingName);
     }
 
-    List<Country> getCountryListAfterCityPopulationChange(List<Country> countries, City city) {
+    List<Country> getCountryListAfterCityPopulationChange(List<Country> countries, int id) {
         int population = getNewCityPopulation();
-        City cityAfterChangingPopulation = cityHelper.getCityAfterChangingPopulation(city, population, getFreeId(countries));
+        City city = findCityByIdAtAll(countries, id);
+        City cityAfterChangingPopulation = new City(cityHelper.getCityAfterChangingPopulation(city, population, city.getId()), city.getId());
         return cityHelper.updateCityInCountryList(countries, city, cityAfterChangingPopulation);
     }
 
-    List<Country> getCountryListAfterCityCapitalStatusChange(List<Country> countries, City city) {
+    List<Country> getCountryListAfterCityCapitalStatusChange(List<Country> countries, int id) {
         boolean isCapital = getNewCityCapitalStatus();
-        if (wasTrueAndCityNotCapitalAndCountryHasCapitalAlready(city, isCapital)) {
+        City city = findCityByIdAtAll(countries, id);
+        if (wasTrueAndCityNotCapitalAndCountryHasCapitalAlready(countries, city, isCapital)) {
             System.out.println("There is capital in this country already! You need to change country capital first");
         } else if (!isCapital && !city.isCapital()) {
             System.out.println("This this already is not a capital");
         } else if (isCapital && city.isCapital()) {
             System.out.println("This this already is a capital");
         } else {
-            City newCity = cityHelper.getCityAfterChangingCapitalStatus(city, isCapital, getFreeId(countries));
+            City newCity = cityHelper.getCityAfterChangingCapitalStatus(city, isCapital, city.getId());
             countries = cityHelper.updateCityInCountryList(countries, city, newCity);
         }
         return countries;
     }
 
 
-    private boolean wasTrueAndCityNotCapitalAndCountryHasCapitalAlready(City city, boolean isCapital) {
-        return isCapital && !city.isCapital() && countryHelper.doesCountryHaveCapital(city.getCountry());
+    private boolean wasTrueAndCityNotCapitalAndCountryHasCapitalAlready(List<Country> countries, City city, boolean isCapital) {
+        return isCapital && !city.isCapital() && countryHelper.doesCountryHaveCapital(countryHelper.findNeededCountryByCity(countries, city));
     }
 
     boolean getNewCityCapitalStatus() {

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-class CityHelperTest {
+class іCityHelperTest {
     CountryHelper countryHelper;
     CityHelper cityHelper;
     List<Country> countries;

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class CountryHelper {
 
@@ -80,8 +81,13 @@ public class CountryHelper {
     }
 
     public List<Country> updateCountryInCountryList(List<Country> list, Country oldCountry, Country newCountry) {
-        int index = list.indexOf(oldCountry);
-        list.set(index, newCountry);
+        AtomicInteger index = new AtomicInteger(-1);
+        list.forEach(country -> {
+            if (country.getId() == oldCountry.getId()) {
+                index.set(list.indexOf(country));
+            }
+        });
+        list.set(index.get(), newCountry);
         return list;
     }
 

@@ -28,9 +28,9 @@ public class IDHelper {
 
     private static int generateNewID(List<Country> countries) {
         Random random = new Random();
-        int id = startIDNumber + random.nextInt((endIDNumber - startIDNumber) + 1); // example: 100 + rand(999 - 100 + 1) => (max = 999), (min = 100)
+        int id = startIDNumber + random.nextInt((endIDNumber - startIDNumber) + 1);
         while (!isThisIDFree(id, countries))
-            id = startIDNumber + random.nextInt((endIDNumber - startIDNumber) + 1); // example: 100 + rand(999 - 100 + 1) => (max = 999), (min = 100)
+            id = startIDNumber + random.nextInt((endIDNumber - startIDNumber) + 1);
         return id;
     }
 

@@ -16,12 +16,13 @@ public class CityHelper {
     }
 
     public List<Country> updateCityInCountryList(List<Country> countries, City oldCity, City newCity) {
-        Country countryBeforeDelete = oldCity.getCountry();
-        Country countryAfterDelete = countryBeforeDelete;
+        int countryIndex = countries.indexOf(countryHelper.findNeededCountryByCity(countries, oldCity));
+        Country countryBeforeDelete = countries.get(countryIndex);
+        Country countryAfterDelete = new Country(countryBeforeDelete, countryBeforeDelete.getId());
 
         cityExistingCheckInCountry(countryBeforeDelete, oldCity);
 
-        List<City> cityList = countryBeforeDelete.getCities();
+        List<City> cityList = new ArrayList<>(countryBeforeDelete.getCities());
         int index = cityList.indexOf(oldCity);
         cityList.set(index, newCity);
         countryAfterDelete.setCities(cityList);
@@ -179,11 +180,26 @@ public class CityHelper {
         boolean check = false;
         if (country.getCities() != null)
             for (var cityItem : country.getCities())
-                if (Objects.equals(cityItem, city)) {
+                if (cityEqualCheck(cityItem, city)) {
                     check = true;
                     break;
                 }
         return check;
+    }
+
+    boolean cityEqualCheck(City first, City second) {
+        if(!Objects.equals(first.getCityName(), second.getCityName()))
+            return false;
+        else if (first.isCapital() != second.isCapital())
+            return false;
+        else if(first.getId() != second.getId())
+            return false;
+        else if (first.getCountry().getId() != second.getCountry().getId())
+            return false;
+        else if (first.getPopulation() != second.getPopulation())
+            return false;
+        else
+            return true;
     }
 
     public City getCityAfterChangingName(City city, String newName, int id) {

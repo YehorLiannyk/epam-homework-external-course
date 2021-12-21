@@ -17,6 +17,9 @@ public class Country implements Serializable {
         this.id = id;
     }
 
+    public Country() {
+    }
+
     public Country(String countryName, int id) {
         this(null, countryName, id);
     }
@@ -25,8 +28,6 @@ public class Country implements Serializable {
         this(oldCountry.getCities(), oldCountry.getCountryName(), id);
     }
 
-    public Country() {
-    }
 
     public List<City> getCities() {
         return cities;

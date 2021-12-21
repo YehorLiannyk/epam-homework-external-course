@@ -39,7 +39,11 @@ public class Menu {
     public void startProgram() {
         System.out.println("Hello, let's start!");
         while (true) {
-            callStartMenu();
+            try {
+                callStartMenu();
+            } catch (Exception e) {
+                System.out.println("Something goes wrong, returning to main menu...");
+            }
         }
     }
 
@@ -103,8 +107,8 @@ public class Menu {
                 }
                 case 2: {
                     try {
-                        City city = callCityCriteriaMenu(countries);
-                        menuHelper.showCityPage(city);
+                        int id = callCityCriteriaMenu(countries);
+                        menuHelper.showCityPage(countries, id);
                     } catch (NullPointerException e) {
                     }
                     break;
@@ -231,8 +235,8 @@ public class Menu {
                 }
                 case 2: {
                     try {
-                        City city = callCityCriteriaMenu(countries);
-                        countries = menuHelper.deletingCity(countries, city);
+                        int id = callCityCriteriaMenu(countries);
+                        countries = menuHelper.deletingCity(countries, id);
                         System.out.println(StringConst.CITY_DELETE_MSG);
                     } catch (NullPointerException e) {
                     }
@@ -254,7 +258,7 @@ public class Menu {
         return GettingValuesFromInput.getValueInRange(start, end);
     }
 
-    City callCityCriteriaMenu(List<Country> countries) {
+    int callCityCriteriaMenu(List<Country> countries) {
         boolean active = true;
         City city = null;
         while (active) {
@@ -266,17 +270,17 @@ public class Menu {
                 }
                 case 1: {
                     city = menuHelper.findCityByNameAtAll(countries);
-                    return city;
+                    return city.getId();
                 }
                 case 2: {
-                    city = menuHelper.findCityByIdAtAll(countries);
-                    return city;
+                    city = menuHelper.getCityByIdAtAll(countries);
+                    return city.getId();
                 }
                 default:
                     break;
             }
         }
-        return city;
+        return -1;
     }
 
     int getCityCriteriaMenuActionNumber() {
@@ -289,7 +293,7 @@ public class Menu {
         return GettingValuesFromInput.getValueInRange(start, end);
     }
 
-    void callCityMenu(City city) {
+    void callCityMenu(int id) {
         boolean active = true;
         while (active) {
             int value = getCityMenuActionNumber();
@@ -299,19 +303,19 @@ public class Menu {
                     break;
                 }
                 case 1: {
-                    active = tryCityDelete(city, active);
+                    active = tryCityDelete(id, active);
                     break;
                 }
                 case 2: {
-                    countries = menuHelper.getCountryListAfterCityNameChange(countries, city);
+                    countries = menuHelper.getCountryListAfterCityNameChange(countries, id);
                     break;
                 }
                 case 3: {
-                    countries = menuHelper.getCountryListAfterCityPopulationChange(countries, city);
+                    countries = menuHelper.getCountryListAfterCityPopulationChange(countries, id);
                     break;
                 }
                 case 4: {
-                    countries = menuHelper.getCountryListAfterCityCapitalStatusChange(countries, city);
+                    countries = menuHelper.getCountryListAfterCityCapitalStatusChange(countries, id);
                     break;
                 }
                 default:
@@ -320,9 +324,9 @@ public class Menu {
         }
     }
 
-    private boolean tryCityDelete(City city, boolean active) {
+    private boolean tryCityDelete(int id , boolean active) {
         try {
-            countries = menuHelper.deletingCity(countries, city);
+            countries = menuHelper.deletingCity(countries, id);
             System.out.println(StringConst.CITY_DELETE_MSG);
             active = false;
         } catch (NoSuchElementException e) {
