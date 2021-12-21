@@ -1,0 +1,8 @@
+
+U
+java:S1118":Add a private constructor to hide the implicit public one.(êÛøÆøÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ½‘Æøÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(‡õÓşÿÿÿÿ8»Ë§¡İ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦Ô·ç
+H
+java:S2755"3Disable access to external entities in XML parsing.(Öœ¢C
