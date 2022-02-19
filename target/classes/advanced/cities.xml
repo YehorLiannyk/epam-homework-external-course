@@ -2,7 +2,7 @@
 <java version="16.0.2" class="java.beans.XMLDecoder">
  <object class="java.util.ArrayList">
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.city.City">
+   <object class="main.ua.advanced.practice2.City">
     <void property="capital">
      <boolean>true</boolean>
     </void>
@@ -10,14 +10,7 @@
      <string>Kyiv</string>
     </void>
     <void property="country">
-     <object class="main.ua.university.finalTask.bll.country.Country" id="Country0">
-      <void property="countryName">
-       <string>Ukraine</string>
-      </void>
-      <void property="id">
-       <int>123456</int>
-      </void>
-     </object>
+     <string>Ukraine</string>
     </void>
     <void property="id">
      <int>123543</int>
@@ -28,12 +21,12 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.city.City">
+   <object class="main.ua.advanced.practice2.City">
     <void property="cityName">
      <string>Dnipro</string>
     </void>
     <void property="country">
-     <object idref="Country0"/>
+     <string>Ukraine</string>
     </void>
     <void property="id">
      <int>176543</int>
@@ -44,12 +37,12 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.city.City">
+   <object class="main.ua.advanced.practice2.City">
     <void property="cityName">
      <string>Odesa</string>
     </void>
     <void property="country">
-     <object idref="Country0"/>
+     <string>Ukraine</string>
     </void>
     <void property="id">
      <int>142142</int>
@@ -60,7 +53,7 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.city.City">
+   <object class="main.ua.advanced.practice2.City">
     <void property="capital">
      <boolean>true</boolean>
     </void>
@@ -68,14 +61,7 @@
      <string>Warsaw</string>
     </void>
     <void property="country">
-     <object class="main.ua.university.finalTask.bll.country.Country" id="Country1">
-      <void property="countryName">
-       <string>Poland</string>
-      </void>
-      <void property="id">
-       <int>654321</int>
-      </void>
-     </object>
+     <string>Poland</string>
     </void>
     <void property="id">
      <int>198753</int>
@@ -86,12 +72,12 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.city.City">
+   <object class="main.ua.advanced.practice2.City">
     <void property="cityName">
      <string>Lublin</string>
     </void>
     <void property="country">
-     <object idref="Country1"/>
+     <string>Poland</string>
     </void>
     <void property="id">
      <int>126643</int>
@@ -102,7 +88,7 @@
    </object>
   </void>
   <void method="add">
-   <object class="main.ua.university.finalTask.bll.city.City">
+   <object class="main.ua.advanced.practice2.City">
     <void property="capital">
      <boolean>true</boolean>
     </void>
@@ -110,14 +96,7 @@
      <string>Berlin</string>
     </void>
     <void property="country">
-     <object class="main.ua.university.finalTask.bll.country.Country">
-      <void property="countryName">
-       <string>Germany</string>
-      </void>
-      <void property="id">
-       <int>640021</int>
-      </void>
-     </object>
+     <string>Germany</string>
     </void>
     <void property="id">
      <int>175937</int>

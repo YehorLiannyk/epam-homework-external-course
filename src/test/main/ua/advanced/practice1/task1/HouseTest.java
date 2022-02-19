@@ -1,4 +1,4 @@
-package main.ua.advanced.practice1.task1;
+package test.main.ua.advanced.practice1.task1;
 
 import main.ua.advanced.practice1.task1.house.House;
 import org.junit.jupiter.api.Assertions;
@@ -17,7 +17,7 @@ class HouseTest {
         try {
             Field field = House.class.getDeclaredField("residents");
             Assertions.assertEquals(field.getGenericType().getTypeName(),
-                    "java.util.List<" + houseType + ">",
+                    "java.util.MyList<" + houseType + ">",
                     "You must parametrize the House class");
         } catch (NoSuchFieldException e) {
             Assertions.fail("'House' class should contain 'residents' field");

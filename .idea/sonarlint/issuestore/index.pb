@@ -101,8 +101,6 @@ W
 'src/main/ua/university/Task10/User.java,f\5\f593c122975009d097f8e47d3ecd16db41ed1da0
 X
 (src/main/ua/university/Task9/Matrix.java,c\6\c6c1d0eb694f77a43e3119ef9fd30e0d8d532302
-]
--src/main/ua/university/Task10/UserHelper.java,e\6\e65cfa1c99a24d8694d09dea7ab94a50cbac32f1
 a
 1src/main/ua/university/Task9/MatrixException.java,3\f\3f7fd25f62c1cc08fa3fb7502f01d14482848a59
 ^
@@ -141,14 +139,10 @@ i
 9src/main/ua/university/finalTask/bll/city/CityHelper.java,b\6\b62e7777e88eed8c33c35a5beb6e846f89fea087
 o
 ?src/main/ua/university/finalTask/bll/country/CountryHelper.java,b\d\bd837192c36f6b791982f0efe475520bbd9cc639
-c
-3src/main/ua/university/finalTask/bll/city/City.java,2\f\2f59a5b315cbc99426bca1783f01d058f4e9fe27
 i
 9src/main/ua/university/finalTask/bll/country/Country.java,2\6\264c6cc4e046e64041fafce8d43a75c25b862ee0
 d
 4src/main/ua/university/finalTask/pl/StringConst.java,e\d\edfdcd6a15cf80eb69061da90415caec37755f0c
-A
-EPAM_Homework.iml,7\e\7ecbcbd294f6291ef496dcb47f1831c0ec5298eb
 i
 9src/test/universityTest/Task5Test/ArrayRectangleTest.java,3\c\3cd5afad7e13ee736e1538228aaca425e18c0425
 l
@@ -177,8 +171,6 @@ e
 5src/test/universityTest/Task9Test/MatrixDefaults.java,b\3\b3fd41559fc26fe40b539a787cb06b39041b0e93
 a
 1src/test/universityTest/Task9Test/MatrixTest.java,5\6\5635159402458714a744571958d71ad1e0c85e30
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 d
@@ -193,8 +185,6 @@ f
 6src/test/universityTest/Task10Test/UserHelperTest.java,1\f\1f9a6a9cbb4c3757eb910fb9cbe76d9df87222da
 _
 /src/main/ua/advanced/practice1/task2/Array.java,1\b\1b528a37813a3cfeac4fb037775a2ce313444872
-h
-8src/test/main/ua/advanced/practice1/task1/HouseTest.java,b\7\b705666b11903c8161dad89835d4d6308b0f9935
 e
 5src/main/ua/advanced/practice1/task1/house/House.java,6\d\6d5b241244f90c06042e19f3a803e531d3a8e296
 n

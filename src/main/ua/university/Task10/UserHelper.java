@@ -106,7 +106,7 @@ public class UserHelper {
 
     static void printListOfUsersWithLowestSalary(List<User> users) {
         users = getListOfUsersWithLowestSalary(users);
-        System.out.println("List of top " + AMOUNT_OF_USERS_IN_LIST + " the poorest men: ");
+        System.out.println("MyList of top " + AMOUNT_OF_USERS_IN_LIST + " the poorest men: ");
         printUsers(users);
     }
 

@@ -13,8 +13,10 @@ public interface Container extends Iterable<Object> {
     // Returns a string representation of this container.
     String toString();
 
+
     // Returns an iterator over elements.
     // Iterator must implement the remove method.
     Iterator<Object> iterator();
 
+    Object[] reformatInObjectArray();
 }
