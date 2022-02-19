@@ -24,26 +24,14 @@ public class Demo {
         MyList cityList = getMyListFromListCity(gotCities);
         Queue cityQueue = getQueueFromListCity(gotCities);
         Stack cityStack = getStackFromListCity(gotCities);
-
+        //
+        JSONWriter.writeCitiesToFile(cityList, "cities_list");
+        JSONWriter.writeCitiesToFile(cityQueue, "cities_queue");
+        JSONWriter.writeCitiesToFile(cityStack, "cities_stack");
+        //
         myListFunctional(cityList);
         queueFunctional(cityQueue);
         stackFunctional(cityStack);
-        /*System.out.println("List");
-        for (var city : cityList) {
-            System.out.println(((City) city).getCityInfoInFormat());
-        }
-
-        System.out.println("Queue");
-        for (var city : cityQueue) {
-            System.out.println(((City) city).getCityInfoInFormat());
-        }
-
-        System.out.println("Stack");
-        for (var city : cityStack) {
-            System.out.println(((City) city).getCityInfoInFormat());
-        }*/
-
-        JSONWriter.writeCitiesToFile(cityStack);
 
     }
 

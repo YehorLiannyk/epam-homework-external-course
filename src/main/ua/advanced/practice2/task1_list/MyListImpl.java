@@ -1,10 +1,12 @@
 package main.ua.advanced.practice2.task1_list;
 
-import java.io.Serializable;
+import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class MyListImpl<E> implements MyList, Serializable {
+public class MyListImpl<E> implements MyList {
     Node<E> first;
     Node<E> last;
     int size = 0;
@@ -198,10 +200,13 @@ public class MyListImpl<E> implements MyList, Serializable {
         return sb.toString();
     }
 
-
+    //@JsonSerialize
+    @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
     static class Node<E> {
         E element;
+        @JsonIgnore
         Node<E> next;
+        @JsonIgnore
         Node<E> prev;
 
         public Node(E element, Node<E> next, Node<E> prev) {
