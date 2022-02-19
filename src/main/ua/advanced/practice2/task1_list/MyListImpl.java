@@ -140,9 +140,10 @@ public class MyListImpl<E> implements MyList, Serializable {
     public Object search(Object element) {
         Node<E> node = first;
         for (int i = 0; i < size; i++) {
-            if (node.element.equals(element)) {
+            if (node.element.equals(element))
                 return node;
-            }
+            else
+                node = node.next;
         }
         return null;
     }
