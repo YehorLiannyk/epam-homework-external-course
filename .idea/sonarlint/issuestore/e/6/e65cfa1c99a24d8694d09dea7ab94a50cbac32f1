@@ -1,0 +1,24 @@
+
+e
+java:S3008"ORename this field "URLs" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç·ìŞ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(¥ëíí
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+U
+java:S4719)":Replace Charset.forName() call with StandardCharsets.UTF_8(îåÃ·ÿÿÿÿÿ
+b
+java:S2677*"LUse or store the value returned from "readLine" instead of throwing it away.(™¸¡
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(¡‚Îªüÿÿÿÿ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(³Ä ¡úÿÿÿÿ
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(ê×¼©
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ú·ÒÙ
+T	java:S106®"9Replace this use of System.out or System.err by a logger.(ò¸³ïüÿÿÿÿ
+O	java:S106´"9Replace this use of System.out or System.err by a logger.(¬á‚‹
+T	java:S106º"9Replace this use of System.out or System.err by a logger.(ÿ°ëäüÿÿÿÿ
+g	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Ã„ş
+s	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó’¢²ıÿÿÿÿ8°ÒöˆÛ/
+n	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢×«¼8›ÌøˆÛ/
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™û\
