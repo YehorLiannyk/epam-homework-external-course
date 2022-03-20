@@ -1,4 +1,6 @@
-package main.ua.advanced.practice3.task2;
+package main.ua.advanced.practice3.task2_cappedMap;
+
+import org.apache.xmlbeans.impl.piccolo.util.DuplicateKeyException;
 
 import java.util.*;
 
@@ -36,7 +38,7 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
 
             @Override
             public int size() {
-                return size();
+                return size;
             }
         };
     }
@@ -65,7 +67,7 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
 
     @Override
     public Set<Map.Entry<Integer, String>> entrySet() {
-        return new AbstractSet<Map.Entry<Integer, String>>() {
+        return new AbstractSet<>() {
             @Override
             public Iterator<Map.Entry<Integer, String>> iterator() {
                 return iteratorMap();
@@ -73,7 +75,7 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
 
             @Override
             public int size() {
-                return size();
+                return size;
             }
         };
     }
@@ -81,7 +83,7 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
     private Iterator<Map.Entry<Integer, String>> iteratorMap() {
         return new Iterator<>() {
             private int id = 0;
-            private Map.Entry next = (Map.Entry<Integer, String>) map[id];
+            private Map.Entry<Integer, String> next = map[id];
 
             @Override
             public boolean hasNext() {
@@ -91,9 +93,9 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
             @Override
             public Map.Entry<Integer, String> next() {
                 if (hasNext()) {
-                    final Map.Entry result = next;
-                    next = id < size ? (Map.Entry<Integer, String>) map[++id] : null;
-                    return (Map.Entry<Integer, String>) result;
+                    final Map.Entry<Integer, String> result = next;
+                    next = id < size ? map[++id] : null;
+                    return result;
                 }
                 throw new NoSuchElementException();
             }
@@ -117,6 +119,12 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
     public String put(Integer key, String value) {
         if (value.length() > capacity)
             throw new IllegalArgumentException();
+        if (containsKey(key))
+            try {
+                throw new DuplicateKeyException();
+            } catch (DuplicateKeyException e) {
+                e.printStackTrace();
+            }
 
         Entry entry = new Entry(key, value);
         String oldValue = containsKey(key) ? findValueByKey(key) : null;
@@ -126,6 +134,7 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
             expandArray();
 
         map[size++] = entry;
+        currentCapacity += entry.getLength();
         return oldValue;
     }
 
@@ -181,6 +190,7 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
         currentCapacity -= map[idForRemove].getLength();
         map[idForRemove] = null;
         size--;
+        map = getArrayWithNullAtEnd(map);
         return oldValue;
     }
 
@@ -194,7 +204,7 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
 
     private String findValueByKey(int key) {
         for (var entry : map) {
-            if (entry != null)
+            if (entry != null )
                 if (entry.getKey() == key)
                     return entry.getValue();
         }
@@ -214,7 +224,6 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
     public void putAll(Map<? extends Integer, ? extends String> sourceMap) {
         sourceMap.forEach(this::put);
     }
-
 
     @Override
     public void clear() {
@@ -263,7 +272,6 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
         return findValueByKey(key) != null;
     }
 
-
     @Override
     public boolean containsValue(Object value) {
         if (value.getClass() != String.class)
@@ -277,6 +285,20 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < size; i++) {
+            if (i + 1 == size)
+                sb.append(map[i].toString());
+            else
+                sb.append(map[i].toString()).append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
     }
 
     private static class Entry implements Map.Entry<Integer, String> {
@@ -312,6 +334,11 @@ public class IntStringCappedMap implements CappedMap<Integer, String> {
 
         public int getLength() {
             return length;
+        }
+
+        @Override
+        public String toString() {
+            return "{" + key + " -> " + '\"' + value + '\"' + "}";
         }
     }
 

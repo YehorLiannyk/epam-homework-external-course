@@ -1,0 +1,27 @@
+
+s	java:S116
+"YRename this field "MIN_STACK_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬×·šÿÿÿÿÿ
+<
+java:S1170
+"!Make this final field static too.(¬×·šÿÿÿÿÿ
+S	java:S106t"9Replace this use of System.out or System.err by a logger.(¸Û©šÿÿÿÿÿ
+N	java:S106u"9Replace this use of System.out or System.err by a logger.(Æð³¿
+N	java:S106v"9Replace this use of System.out or System.err by a logger.(ìµÐ¾
+M	java:S106|"9Replace this use of System.out or System.err by a logger.(Î²¡v
+S	java:S106~"9Replace this use of System.out or System.err by a logger.(Ž˜ÜÞýÿÿÿÿ
+O	java:S106‚"9Replace this use of System.out or System.err by a logger.(Üû‡
+N	java:S106…"9Replace this use of System.out or System.err by a logger.(‘´©I
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(³ï¥ 
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(áÉ¢ð
+O	java:S106"9Replace this use of System.out or System.err by a logger.(÷Ú¡Ã
+O	java:S106Ž"9Replace this use of System.out or System.err by a logger.(ÕÍÚŠ
+T	java:S106”"9Replace this use of System.out or System.err by a logger.(äÜ‡µûÿÿÿÿ
+N	java:S106•"9Replace this use of System.out or System.err by a logger.(×ÔÜ=
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(ò”ê—ûÿÿÿÿ
+N	java:S106—"9Replace this use of System.out or System.err by a logger.(¸‘8
+T	java:S106˜"9Replace this use of System.out or System.err by a logger.(šˆœ¯øÿÿÿÿ
+T	java:S106™"9Replace this use of System.out or System.err by a logger.(ŒÎ¾ˆûÿÿÿÿ
+T	java:S106›"9Replace this use of System.out or System.err by a logger.(§¶†ûÿÿÿÿ
+T	java:S106œ"9Replace this use of System.out or System.err by a logger.(ŒÏôøÿÿÿÿ
+N	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(¿Šä
+O	java:S106¬"9Replace this use of System.out or System.err by a logger.(É¦˜ó

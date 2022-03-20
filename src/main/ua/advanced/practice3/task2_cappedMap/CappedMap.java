@@ -1,4 +1,4 @@
-package main.ua.advanced.practice3.task2;
+package main.ua.advanced.practice3.task2_cappedMap;
 
 import java.util.AbstractSet;
 import java.util.Map;

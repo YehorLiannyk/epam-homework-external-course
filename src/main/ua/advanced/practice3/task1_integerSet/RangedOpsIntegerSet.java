@@ -1,4 +1,4 @@
-package main.ua.advanced.practice3.task1;
+package main.ua.advanced.practice3.task1_integerSet;
 
 import java.util.*;
 

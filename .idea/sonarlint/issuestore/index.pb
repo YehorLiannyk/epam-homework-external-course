@@ -239,8 +239,6 @@ u
 Esrc/main/ua/advanced/practice2/readerAndWriter/XMLWriterCityList.java,1\a\1af8bf85c0eb8ab059ad5ce66ab6ca149d19eaf7
 h
 8src/test/main/ua/advanced/practice1/task1/HouseTest.java,b\7\b705666b11903c8161dad89835d4d6308b0f9935
-]
--src/main/ua/advanced/practice2/Container.java,e\1\e1e2dcb21692c0eb3eb4ab5987c0e95dc73a3a7f
 A
 EPAM_Homework.iml,7\e\7ecbcbd294f6291ef496dcb47f1831c0ec5298eb
 r
@@ -255,11 +253,9 @@ l
 <src/main/ua/advanced/practice2/readerAndWriter/Defaults.java,c\a\ca199f49f75f7c1c28c7e03ef1c5abf87179a552
 e
 5src/main/ua/advanced/practice2/task2_queue/Queue.java,c\a\ca1cb452ae1140556da69eb3dfa8d571448d0ee7
-c
-3src/main/ua/advanced/practice1/task2/ArrayImpl.java,d\7\d73d7686210342ba6ca61b68df374df8d5a720ac
 e
 5src/main/ua/advanced/practice2/task1_list/MyList.java,c\2\c2818c7f63a76053fc5394f25e38540fa4d155e6
 i
 9src/main/ua/advanced/practice2/task2_queue/QueueImpl.java,3\8\38dd0fe3c718d496309d2d9751494cad5685c781
-X
-(src/main/ua/advanced/practice2/Demo.java,b\f\bf47fae8f3a136f7c087a76f77ca8963eee68136
+i
+9src/main/ua/advanced/practice2/task3_stack/StackImpl.java,4\4\442c5d6293313760726ad9ebc41ce10a9b3fd7de
