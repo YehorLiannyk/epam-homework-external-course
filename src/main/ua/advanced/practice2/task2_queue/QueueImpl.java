@@ -39,7 +39,7 @@ public class QueueImpl implements Queue {
     @Override
     public void enqueue(Object element) {
         if (size == queue.length)
-            expandQueue();
+        expandQueue();
         if (size == 0)
             head = element;
         queue[size++] = element;

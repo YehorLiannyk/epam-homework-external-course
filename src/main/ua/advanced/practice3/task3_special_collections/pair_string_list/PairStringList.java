@@ -87,28 +87,6 @@ public class PairStringList implements IPairStringList {
         return array;
     }
 
-
-    /*private String[] getArrayAfterRemoveByIndexes(String[] list, int startIndex, int endIndex) {
-        String[] array = new String[list.length];
-        System.arraycopy(list, 0, array, 0, startIndex);
-        System.arraycopy(list, startIndex, array, startIndex, endIndex - startIndex);
-        return array;
-    }*/
-
-   /* private int getFirstIndexMatchValueInPair(String value) {
-        int firstIndex = -1;
-        int amountOfMatch = 0;
-        for (int i = 0; i < pairList.length; i++) {
-            if (pairList[i].equals(value)) {
-                amountOfMatch++;
-                if (amountOfMatch == AMOUNT_OF_ELEMENTS_IN_PAIR)
-                    firstIndex = i - AMOUNT_OF_ELEMENTS_IN_PAIR;
-            } else
-                amountOfMatch = 0;
-        }
-        return firstIndex;
-    }*/
-
     private int[] getIndexesMatchValueInPair(String value) {
         int amountOfMatch = 0;
         int[] matchIndexes = new int[AMOUNT_OF_ELEMENTS_IN_PAIR];

@@ -1,0 +1,8 @@
+
+N	java:S106ã"9Replace this use of System.out or System.err by a logger.(ë¢­X
+R	java:S125ä"<This block of commented-out lines of code should be removed.(´Ò‚ú
+F
+java:S1066Ð"/Merge this if statement with the enclosing one.(ùÃÜâ
+K
+java:S1066Ù"/Merge this if statement with the enclosing one.(—‰·¼úÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢ØŽ¯ýÿÿÿÿ

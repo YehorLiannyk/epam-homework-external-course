@@ -4,7 +4,6 @@ import java.util.*;
 
 public class RangedOpsIntegerSet implements IntegerSet<Integer> {
     private Integer[] set = new Integer[10];
-    //Node<Integer> first;
     private int size = 0;
 
     private void expandArray() {

@@ -2,7 +2,7 @@ package main.ua.advanced.practice3.task3_special_collections.pair_string_list;
 
 import java.util.Iterator;
 
-public interface IPairStringList extends Iterable<String>{
+public interface IPairStringList extends Iterable<String> {
 
     void add (String value);
 
