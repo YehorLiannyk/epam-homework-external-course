@@ -1,0 +1,31 @@
+
+s	java:S116
+"YRename this field "MIN_QUEUE_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÄýìøÿÿÿÿ
+<
+java:S1170
+"!Make this final field static too.(ÓÄýìøÿÿÿÿ
+S	java:S106s"9Replace this use of System.out or System.err by a logger.(¸Û©šÿÿÿÿÿ
+N	java:S106t"9Replace this use of System.out or System.err by a logger.(Ä¿Ñ
+N	java:S106u"9Replace this use of System.out or System.err by a logger.(ìµÐ¾
+S	java:S106{"9Replace this use of System.out or System.err by a logger.(›¥‡ºøÿÿÿÿ
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(¢ùûüÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ÂÓÖŒ
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(°èØÈûÿÿÿÿ
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(³ï¥ 
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(áÉ¢ð
+O	java:S106"9Replace this use of System.out or System.err by a logger.(÷Ú¡Ã
+O	java:S106Ž"9Replace this use of System.out or System.err by a logger.(ÕÍÚŠ
+T	java:S106”"9Replace this use of System.out or System.err by a logger.(äÜ‡µûÿÿÿÿ
+N	java:S106•"9Replace this use of System.out or System.err by a logger.(×ÔÜ=
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(ò”ê—ûÿÿÿÿ
+N	java:S106—"9Replace this use of System.out or System.err by a logger.(¸‘8
+T	java:S106˜"9Replace this use of System.out or System.err by a logger.(šˆœ¯øÿÿÿÿ
+[	java:S106™"9Replace this use of System.out or System.err by a logger.(ŒÎ¾ˆûÿÿÿÿ8µ‡§æð/
+[	java:S106›"9Replace this use of System.out or System.err by a logger.(§¶†ûÿÿÿÿ8·‡§æð/
+[	java:S106œ"9Replace this use of System.out or System.err by a logger.(ŒÏôøÿÿÿÿ8žÀ«æð/
+U	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(¿Šä8­ø«æð/
+[	java:S106¬"9Replace this use of System.out or System.err by a logger.(ÚŽÒþÿÿÿÿ8¦½¬æð/
+i
+java:S3973)"GUse indentation to denote the code conditionally executed by this "if".(¼™ùÌÿÿÿÿÿ8³Ëµ‘û/
+¤
+java:S2681+"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(ºòºÚ8¶Ëµ‘û/
