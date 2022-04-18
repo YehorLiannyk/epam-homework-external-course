@@ -2,15 +2,11 @@ package main.ua.advanced.practice4.task2;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 public class Part2 {
     public static void main(String[] args) throws IOException {
-        //в мене так і не вийшло реалізувати імітування натискання Enter через нащадка InputStream, хоча й розширив клас
-        // і імплементував метод int read(), бо далі в Scanner отримував NullPointerException адже, на жаль, так і не
-        // знайшов способу запису в InputStream пустого рядка, як потребує завдання.
-        // Тому працює через ручне натискання клавіші.
-
-        //нескінчений цикл, що виводить повідомлення про початок, запускає спам і припиняє його після натискання Enter
+        //нескінчений цикл, що виводить повідомлення про початок, запускає спам і припиняє його після імітації натискання Enter
         // а далі виводить повідомлення про кінець. І все починається спочатку
         while (true) {
             startMsg();
@@ -18,7 +14,7 @@ public class Part2 {
             final InputStream CACHED_VALUE_OF_SYSTEM_IN = System.in;
             final InputStream MY_OWN_INPUT_STREAM = new MyInputStream();
 
-            System.setIn(CACHED_VALUE_OF_SYSTEM_IN); //MY_OWN_INPUT_STREAM has to be here
+            System.setIn(MY_OWN_INPUT_STREAM); //MY_OWN_INPUT_STREAM has to be here
 
 
             Thread t = new Thread() { public void run() { Spam.main(null); } };
@@ -55,12 +51,19 @@ public class Part2 {
 }
 
 class MyInputStream extends java.io.InputStream {
+    boolean isFirstEntry = true;
+    int enter = "\n".getBytes(StandardCharsets.UTF_8)[0];
     @Override
     public int read() throws IOException {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        if (isFirstEntry) {
+            isFirstEntry = false;
+            try {
+                Thread.sleep(2000);
+                return 10;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return enter;
         }
         return -1;
     }
