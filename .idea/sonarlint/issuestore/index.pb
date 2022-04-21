@@ -297,3 +297,9 @@ isrc/main/ua/advanced/practice3/task3_special_collections/absolute_value_int_set
 ]src/main/ua/advanced/practice3/task3_special_collections/pair_string_list/PairStringList.java,2\c\2cc399d3824b6555545542b145592475e24e171b
 ^
 .src/main/ua/university/Task9/MatrixHelper.java,2\4\2481ba816af399326fef3fa62ef12b81ce27ee73
+_
+/src/main/ua/advanced/practice4/task1/Part1.java,3\3\33163e82d717e2517f78da967512ac7b50d90321
+_
+/src/main/ua/advanced/practice4/task3/Part3.java,c\e\ce4a9b43a581b54c1a51aa30408510fbe4cec3d8
+^
+.src/main/ua/advanced/practice4/task2/Spam.java,b\0\b0fcfd86dbe8a2b24714dd6aa0958936f8ff7368

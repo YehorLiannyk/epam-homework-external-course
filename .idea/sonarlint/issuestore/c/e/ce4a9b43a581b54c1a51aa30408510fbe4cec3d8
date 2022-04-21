@@ -1,0 +1,22 @@
+
+t
+java:S4144G"WUpdate this method so that its implementation is not identical to "compare" on line 59.(Ğú´ä8òëÙÄƒ0
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(İùÄüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡¿ûÏûÿÿÿÿ
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+U	java:S106="9Replace this use of System.out or System.err by a logger.(³şü8ÍÍÁÄƒ0
+{
+java:S2142A"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8î’ÉÄƒ0
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(³şü
+{
+java:S2142M"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ÎÍÁÄƒ0
+`
+java:S2276L"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(á˜ ¶8ûÑÛÄƒ0
+D
+java:S3398G"'Move this method into "MySyncRunnable".(Ğú´ä8†ÓÜÄƒ0
+@
+java:S3398;"#Move this method into "MyRunnable".(Íì—„8†ÓÜÄƒ0
+d
+java:S11923"NDefine a constant instead of duplicating this literal "firstCounter(" 3 times.(ŸŞ£Ñ

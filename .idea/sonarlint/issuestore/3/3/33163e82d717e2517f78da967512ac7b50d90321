@@ -1,0 +1,11 @@
+
+g
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ÙÌôˆ
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¥œ¾—ùÿÿÿÿ
+t
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Žé½ÿûÿÿÿÿ
+{
+java:S21420"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ñ·…¹ƒ0

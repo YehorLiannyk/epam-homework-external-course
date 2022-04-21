@@ -1,0 +1,9 @@
+
+M	java:S106>"9Replace this use of System.out or System.err by a logger.(‚š‰1
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(Ì ØÕ
+G
+java:S1068",Remove this unused "messages" private field.(ÞÝÁžÿÿÿÿÿ
+C
+java:S1068"-Remove this unused "intervals" private field.(‘§®Ú
+;
+java:S1068;"%Remove this unused "i" private field.(±•ÆŽ
