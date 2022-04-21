@@ -17,7 +17,7 @@ public class Auction {
     private static final AtomicInteger currentPrice = new AtomicInteger();
     private static final AtomicBoolean firstEntry = new AtomicBoolean(true);
 
-    private AtomicReference<Member> lastMember = new AtomicReference<>(/*new Member("FirstEntryMember")*/);
+    private AtomicReference<Member> lastMember = new AtomicReference<>();
     private Member[] members;
     private Lot[] lots;
 
@@ -68,7 +68,6 @@ public class Auction {
 
     private void actionAfterWin(Lot currentLot) {
         if (isAnybodyBuyLot()) {
-            System.out.println("== was bought by " + whoBoughtLot.get().getName());
             afterLotBuying(currentLot, whoBoughtLot.get());
         } else {
             notifyThatLotWasNotBought(currentLot);
@@ -94,7 +93,7 @@ public class Auction {
             throw new NoSuchElementException();
         int memberIndex = getMemberIndex(member);
         int lotIndex = getLotIndex(lot);
-        if (buyingLotByMember(member, memberIndex, lotIndex)) {
+        if (buyingLotByMember(memberIndex, lotIndex)) {
             printCongratsAfterLotBuying(members[memberIndex], lot);
         }
     }
@@ -104,28 +103,28 @@ public class Auction {
                 + " with buying " + lot.getNameLot() + " for " + lot.getPrice());
     }
 
-    private boolean buyingLotByMember(Member member, int memberIndex, int lotIndex) {
-        if (doesHaveEnoughMoney(member)) {
+    private boolean buyingLotByMember(int memberIndex, int lotIndex) {
+        if (doesHaveEnoughMoney(memberIndex)) {
             lots[lotIndex].setPrice(currentPrice.get());
             members[memberIndex].addBoughtLot(lots[lotIndex]);
             members[memberIndex].decreaseMoney(currentPrice.get());
             lots[lotIndex] = null;
             return true;
         } else {
-            banIfHaveNoEnoughMoney(member);
-            System.out.println(member.getName() + " was banned by having no enough money during "
-                    + member.getAuctionBanLeft() + " sessions.");
+            banIfHaveNoEnoughMoney(memberIndex);
+            System.out.println(members[memberIndex].getName() + " was banned by having no enough money during "
+                    + members[memberIndex].getAuctionBanLeft() + " sessions.");
             return false;
         }
     }
 
-    private boolean doesHaveEnoughMoney(Member member) {
-        return member.getMoney() - currentPrice.get() >= 0;
+    private boolean doesHaveEnoughMoney(int memberIndex) {
+        return members[memberIndex].getMoney() - currentPrice.get() >= 0;
     }
 
-    private void banIfHaveNoEnoughMoney(Member member) {
-        if (doesHaveEnoughMoney(member)) {
-            members[getMemberIndex(member)].banMember();
+    private void banIfHaveNoEnoughMoney(int memberIndex) {
+        if (!doesHaveEnoughMoney(memberIndex)) {
+            members[memberIndex].banMember();
         }
     }
 
@@ -147,8 +146,10 @@ public class Auction {
 
     private void createAndStartMemberThreads(ThreadGroup threadGroup) {
         for (int j = 0; j < MEMBER_AMOUNT; j++) {
-            if (members[j].getAuctionBanLeft() == 0) {
+            if (members[j].getAuctionBanLeft().get() == 0) {
                 new Thread(threadGroup, members[j]).start();
+            } else {
+                members[j].decreaseAuctionBan();
             }
         }
     }
@@ -176,7 +177,7 @@ public class Auction {
 
     private void printMemberMoney(Member[] members) {
         for (Member member : members) {
-            if (member.getAuctionBanLeft() == 0)
+            if (member.getAuctionBanLeft().get() == 0)
                 System.out.println(member.getName() + " has " + member.getMoney() + " coins");
         }
     }
@@ -191,14 +192,14 @@ public class Auction {
     private int getNoBanMemberAmount(Member[] members) {
         int amount = members.length;
         for (Member member : members) {
-            if (member.getAuctionBanLeft() > 0)
+            if (member.getAuctionBanLeft().get() > 0)
                 amount--;
         }
         return amount;
     }
 
     private Lot[] getFilledLotArray(int amountOfLots) {
-        if (amountOfLots != LOT_NAMES.length || LOT_NAMES.length != LOT_START_PRICE.length)
+        if (amountOfLots > LOT_NAMES.length || LOT_NAMES.length != LOT_START_PRICE.length)
             throw new IllegalArgumentException();
 
         Lot[] lotArr = new Lot[amountOfLots];
@@ -209,7 +210,7 @@ public class Auction {
     }
 
     private Member[] getFilledMemberArray(int amountOfMembers) {
-        if (amountOfMembers != MEMBER_NAMES.length)
+        if (amountOfMembers > MEMBER_NAMES.length)
             throw new IllegalArgumentException();
 
         Member[] memberArr = new Member[amountOfMembers];
@@ -219,20 +220,11 @@ public class Auction {
         return memberArr;
     }
 
-    /*public AtomicInteger getCurrentPrice() {
-        return currentPrice;
-    }
-
-    public void setCurrentPrice(AtomicInteger currentPrice) {
-        this.currentPrice = currentPrice;
-    }*/
-
     class Member implements Runnable {
         private final String name;
         private final List<Lot> boughtLots = new ArrayList<>();
-        AtomicInteger counter = new AtomicInteger(3); // max number of skipping
         private int money;
-        private int auctionBanLeft = 0;
+        private AtomicInteger auctionBanLeft = new AtomicInteger(0);
 
         public Member(String name) {
             this.name = name;
@@ -253,30 +245,34 @@ public class Auction {
         public void run() {
             while (haveAbilityToContinue(this) && Thread.activeCount() > 1) {
                 try {
-                    while (firstEntry.get() || !lastMember.get().equals(this)) {
-                        TAKE_STEP.acquire();
-                        lastMember = new AtomicReference<>(this);
-                        System.out.println("== " + this.name + " entry // lastMember " + lastMember.get().getName());
-                        firstEntry.set(false);
-                        int stepAmount = takeStep();
-                        if (stepAmount > 0) {
-                            currentPrice.addAndGet(stepAmount);
-                            System.out.print(name + " raises the rate by " + stepAmount + ". ");
-                            System.out.println("New price = " + currentPrice);
-                            System.out.println("== " + this.name + " left  // lastMember " + lastMember.get().getName());
-                            whoBoughtLot.set(this);
-                            TAKE_STEP.release();
-                        } else {
-                            System.out.println("== " + this.name + " left  // lastMember " + lastMember.get().getName());
-                            TAKE_STEP.release();
-                            break;
-                        }
-                    }
+                    inRunFunc();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-            System.out.println("== " + this.name + " left out loop // lastMember " + lastMember.get().getName());
+        }
+
+        private void inRunFunc() throws InterruptedException {
+            while (firstEntry.get() || !lastMember.get().equals(this)) {
+                TAKE_STEP.acquire();
+                lastMember = new AtomicReference<>(this);
+                firstEntry.set(false);
+                int stepAmount = takeStep();
+                if (stepAmount > 0) {
+                    ifStepAmountNotEqualZero(stepAmount);
+                    TAKE_STEP.release();
+                } else {
+                    TAKE_STEP.release();
+                    break;
+                }
+            }
+        }
+
+        private void ifStepAmountNotEqualZero(int stepAmount) {
+            currentPrice.addAndGet(stepAmount);
+            System.out.print(name + " raises the rate by " + stepAmount + ". ");
+            System.out.println("New price = " + currentPrice);
+            whoBoughtLot.set(this);
         }
 
         private boolean haveAbilityToContinue(Member member) {
@@ -314,11 +310,15 @@ public class Auction {
         }
 
         public void banMember() {
-            auctionBanLeft += 3;
+            auctionBanLeft.addAndGet(BANNED_SESSIONS);
         }
 
         public void decreaseAuctionBan() {
-            auctionBanLeft = auctionBanLeft > 0 ? --auctionBanLeft : 0;
+            if (auctionBanLeft.get() > 0) {
+                auctionBanLeft = new AtomicInteger(auctionBanLeft.decrementAndGet());
+            } else {
+                auctionBanLeft = new AtomicInteger(0);
+            }
         }
 
         public String getName() {
@@ -337,7 +337,7 @@ public class Auction {
             this.money -= money;
         }
 
-        public int getAuctionBanLeft() {
+        public AtomicInteger getAuctionBanLeft() {
             return auctionBanLeft;
         }
     }

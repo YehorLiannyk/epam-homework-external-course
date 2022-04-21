@@ -1,8 +1,8 @@
 package main.ua.advanced.practice5.task9_auction;
 
 public interface AuctionDefaults {
-    int MEMBER_AMOUNT = 3;
-    String[] MEMBER_NAMES = {"Max", "Taras", "Svyatoslav"};
+    int MEMBER_AMOUNT = 5;
+    String[] MEMBER_NAMES = {"Max", "Taras", "Svyatoslav", "Vasyl", "Yehor", "Yaroslav"};
 
     int LOT_AMOUNT = 5;
     String[] LOT_NAMES = {
@@ -18,5 +18,7 @@ public interface AuctionDefaults {
     //probability of having no wish to take step
     double PROBABILITY_SKIP_THE_STEP_INDEX = 0.9;
     //probability of taking step have no enough money (cheating)
-    double PROBABILITY_CHEATING_INDEX = 0.6;
+    double PROBABILITY_CHEATING_INDEX = 0;
+
+    int BANNED_SESSIONS = 3;
 }
