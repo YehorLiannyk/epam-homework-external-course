@@ -303,3 +303,7 @@ _
 /src/main/ua/advanced/practice4/task3/Part3.java,c\e\ce4a9b43a581b54c1a51aa30408510fbe4cec3d8
 ^
 .src/main/ua/advanced/practice4/task2/Spam.java,b\0\b0fcfd86dbe8a2b24714dd6aa0958936f8ff7368
+_
+/src/main/ua/advanced/practice4/task2/Part2.java,e\3\e3d6c2b032244a1c683375fadba555dfd061ea9e
+e
+5src/main/ua/advanced/practice5/task9_auction/Lot.java,9\4\94e97c7f8255b4c78b743a575751708ab8f0eb18
