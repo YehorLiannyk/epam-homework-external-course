@@ -7,6 +7,7 @@ public interface AirportDefaults {
     City Lviv = new City("Lviv", 470);
     City Simferopol = new City("Simferopol", 670);
     City mainCity = new City("Kyiv", 0);
+
     City[] cities = new City[]{Chernihiv, Dnipro, Kharkiv, Lviv, Simferopol};
 
 
