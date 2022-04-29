@@ -177,8 +177,6 @@ d
 0src/test/universityTest/Task7Test/Task7Test.java,1\b\1b8f5b9b2c13d1d9e50a6436a9555993e33e01a7
 f
 6src/test/universityTest/Task10Test/UserHelperTest.java,1\f\1f9a6a9cbb4c3757eb910fb9cbe76d9df87222da
-_
-/src/main/ua/advanced/practice1/task2/Array.java,1\b\1b528a37813a3cfeac4fb037775a2ce313444872
 e
 5src/main/ua/advanced/practice1/task1/house/House.java,6\d\6d5b241244f90c06042e19f3a803e531d3a8e296
 n
@@ -191,8 +189,6 @@ d
 4src/main/ua/university/finalTask/dal/DataWriter.java,7\0\703a8ac40c824f3dd64b239bae1f9fdf701ca910
 l
 <src/test/main/ua/advanced/practice1/task2/ArrayImplTest.java,d\5\d54613800c22d43df0b5fc277f8bd8419dad077e
-c
-3src/main/ua/advanced/practice1/task2/Container.java,1\b\1b1e07e3dcdacaeba40a678cf9f06df8148f0a2c
 l
 <src/test/universityTest/finalTaskTest/CountryHelperTest.java,2\3\23f57beffbdbb9b18ba7b530f2bdcb6a77651e46
 c
@@ -247,12 +243,8 @@ l
 <src/main/ua/advanced/practice2/readerAndWriter/Defaults.java,c\a\ca199f49f75f7c1c28c7e03ef1c5abf87179a552
 e
 5src/main/ua/advanced/practice2/task2_queue/Queue.java,c\a\ca1cb452ae1140556da69eb3dfa8d571448d0ee7
-e
-5src/main/ua/advanced/practice2/task1_list/MyList.java,c\2\c2818c7f63a76053fc5394f25e38540fa4d155e6
 i
 9src/main/ua/advanced/practice2/task3_stack/StackImpl.java,4\4\442c5d6293313760726ad9ebc41ce10a9b3fd7de
-i
-9src/main/ua/advanced/practice2/task1_list/MyListImpl.java,6\e\6edbbc24939c15208ec7265b86d51e79968ddb50
 m
 =src/main/ua/advanced/practice3/task2_cappedMap/CappedMap.java,e\5\e50605d00ff7684d02eb20d45a8e947e2d28b893
 
@@ -269,8 +261,6 @@ o
 ?src/main/ua/advanced/practice3/task1_integerSet/IntegerSet.java,3\e\3e1646274e84d5610f7850044b5ab700a073a661
 i
 9src/main/ua/advanced/practice2/task2_queue/QueueImpl.java,3\8\38dd0fe3c718d496309d2d9751494cad5685c781
-x
-Hsrc/main/ua/advanced/practice3/task1_integerSet/RangedOpsIntegerSet.java,a\c\ac4e2b96af4ba7260c6d4e62104b2c5c75686a71
 ˜
 hsrc/main/ua/advanced/practice3/task3_special_collections/absolute_value_int_set/AbsoluteValueIntSet.java,b\8\b8ce4fbb280729eba07b3be7989a28e5a8ad8f0a
 †
@@ -287,8 +277,6 @@ Y
 Wsrc/main/ua/advanced/practice3/task3_special_collections/median_queue/IMedianQueue.java,a\6\a6e085cc58d606ccb4d4cd4c99a3091067af8d21
 –
 fsrc/test/main/ua/advanced/practice3/task3_special_collections/pair_string_list/PairStringListTest.java,3\8\3894195fdd96d31cce8e1c07e9f84998dfd76d5a
-c
-3src/main/ua/advanced/practice1/task2/ArrayImpl.java,d\7\d73d7686210342ba6ca61b68df374df8d5a720ac
 ™
 isrc/main/ua/advanced/practice3/task3_special_collections/absolute_value_int_set/IAbsoluteValueIntSet.java,e\7\e7187bf37b1deff2fcd1bd00e6e9dca605a2d4fe
 Ž
@@ -305,3 +293,15 @@ _
 .src/main/ua/advanced/practice4/task2/Spam.java,b\0\b0fcfd86dbe8a2b24714dd6aa0958936f8ff7368
 _
 /src/main/ua/advanced/practice4/task2/Part2.java,e\3\e3d6c2b032244a1c683375fadba555dfd061ea9e
+i
+9src/main/ua/advanced/practice5/task9_auction/Auction.java,8\5\85ce1a4fa8e7241797f442c08d9c53fcef96f02b
+k
+;src/main/ua/advanced/practice5/task11_airport/Aircraft.java,5\c\5c804c7d2a3b6dd7f1005138b39c9090cc7b10c7
+j
+:src/main/ua/advanced/practice5/task11_airport/Airport.java,0\b\0bea700237a8532068cc441c71467a15711daa48
+g
+7src/main/ua/advanced/practice5/task11_airport/City.java,1\e\1e8b512948052b798fa852d9da422e5af661ea07
+e
+5src/main/ua/advanced/practice5/task9_auction/Lot.java,9\4\94e97c7f8255b4c78b743a575751708ab8f0eb18
+r
+Bsrc/main/ua/advanced/practice5/task11_airport/AirportDefaults.java,4\f\4f22e391fb100cc40aa53d8425af8f717a2dc368
