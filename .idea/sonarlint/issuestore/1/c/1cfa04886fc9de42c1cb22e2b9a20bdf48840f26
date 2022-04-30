@@ -1,0 +1,10 @@
+
+D
+java:S2140")Use "java.util.Random.nextInt()" instead.(ŒÿÓüşÿÿÿÿ
+?
+java:S2140 ")Use "java.util.Random.nextInt()" instead.(ˆŠ”ç
+?
+java:S2140$")Use "java.util.Random.nextInt()" instead.(ìı¬
+V
+java:S2184 "@Cast one of the operands of this integer division to a "double".(ˆŠ”ç
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Îòê

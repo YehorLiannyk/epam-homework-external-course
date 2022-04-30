@@ -1,0 +1,36 @@
+
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(¯äĞá
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(³ôèõıÿÿÿÿ
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(€œÛæ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(–ñÊµ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(¸õßª
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(ÿÀ¥—şÿÿÿÿ
+M	java:S106f"9Replace this use of System.out or System.err by a logger.(º¯ÁF
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(Ç«ğŸ
+u
+java:S2142¡"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+O	java:S106©"9Replace this use of System.out or System.err by a logger.(¨çÎ§
+O	java:S106ª"9Replace this use of System.out or System.err by a logger.(ôúòß
+T	java:S106«"9Replace this use of System.out or System.err by a logger.(í†»·úÿÿÿÿ
+O	java:S106¬"9Replace this use of System.out or System.err by a logger.(á´â¿
+O	java:S106µ"9Replace this use of System.out or System.err by a logger.(‹¬­®
+O	java:S106»"9Replace this use of System.out or System.err by a logger.(òËÔ¨
+T	java:S106½"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+@
+java:S2140ç")Use "java.util.Random.nextInt()" instead.(„ˆäï
+u
+java:S2142ù"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+T	java:S106‘"9Replace this use of System.out or System.err by a logger.(±Á»„üÿÿÿÿ
+O	java:S106’"9Replace this use of System.out or System.err by a logger.(ò±Ìï
+T	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(‡¼Ã½ùÿÿÿÿ
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(¬’œ°ıÿÿÿÿ
+@
+java:S2140­")Use "java.util.Random.nextInt()" instead.(Ô˜ËÕ
+?
+java:S2140µ")Use "java.util.Random.nextInt()" instead.(¥ƒ•B
+_
+java:S3014)"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(õïÓ¼
+e
+java:S3014“"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(‡©éıûÿÿÿÿ
+`
+java:S3014"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(Š˜ÿà
