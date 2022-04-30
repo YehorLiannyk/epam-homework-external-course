@@ -1,10 +1,12 @@
 package main.ua.advanced.practice6.startegy.cards.DealingStrategies;
 
 import main.ua.advanced.practice6.startegy.cards.Card;
+import main.ua.advanced.practice6.startegy.cards.CardDealingStrategies;
 import main.ua.advanced.practice6.startegy.cards.CardDealingStrategy;
 import main.ua.advanced.practice6.startegy.cards.Deck;
 
 import java.util.*;
+import java.util.logging.Level;
 
 public class TexasHoldemCardDealingStrategy implements CardDealingStrategy {
     private final int CARDS_AMOUNT_FOR_PLAYER = 2;
@@ -15,6 +17,7 @@ public class TexasHoldemCardDealingStrategy implements CardDealingStrategy {
     public Map<String, List<Card>> dealStacks(Deck deck, int players) {
         stack = new TreeMap<>();
         generateStackMap(deck, players);
+        CardDealingStrategies.logger.log(Level.INFO,"Stack now: " + stack);
         return stack;
     }
 

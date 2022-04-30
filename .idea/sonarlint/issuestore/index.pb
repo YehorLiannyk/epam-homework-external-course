@@ -339,8 +339,6 @@ e
 5src/main/ua/advanced/practice6/factory/plot/Plot.java,d\2\d2382c7050c4dead3b2be162bb4f6956dc0b51ed
 l
 <src/main/ua/advanced/practice6/factory/plot/PlotFactory.java,a\6\a6b994b27a1107750f2c2fa81e8e9c236de64532
-n
->src/main/ua/advanced/practice6/factory/plot/PlotFactories.java,7\6\768696c6355185bf6f2f420de2e7ee60c0fe70f2
 h
 8src/main/ua/advanced/practice6/decorator/Decorators.java,2\b\2b530dbcba20ba851c400a0cfdff6f12431d514d
 f

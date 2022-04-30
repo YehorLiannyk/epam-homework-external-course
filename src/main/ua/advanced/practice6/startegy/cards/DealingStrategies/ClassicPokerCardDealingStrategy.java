@@ -1,6 +1,7 @@
 package main.ua.advanced.practice6.startegy.cards.DealingStrategies;
 
 import main.ua.advanced.practice6.startegy.cards.Card;
+import main.ua.advanced.practice6.startegy.cards.CardDealingStrategies;
 import main.ua.advanced.practice6.startegy.cards.CardDealingStrategy;
 import main.ua.advanced.practice6.startegy.cards.Deck;
 
@@ -8,6 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.logging.Level;
 
 public class ClassicPokerCardDealingStrategy implements CardDealingStrategy {
     private final int CARDS_AMOUNT_FOR_PLAYER = 5;
@@ -17,6 +19,7 @@ public class ClassicPokerCardDealingStrategy implements CardDealingStrategy {
     public Map<String, List<Card>> dealStacks(Deck deck, int players) {
         stack = new TreeMap<>();
         generateStackMap(deck, players);
+        CardDealingStrategies.logger.log(Level.INFO,"Stack now: " + stack);
         return stack;
     }
 

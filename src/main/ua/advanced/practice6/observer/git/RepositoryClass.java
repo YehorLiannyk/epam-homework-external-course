@@ -1,6 +1,7 @@
 package main.ua.advanced.practice6.observer.git;
 
 import java.util.*;
+import java.util.logging.Level;
 
 public class RepositoryClass implements Repository {
     private final List<WebHook> subscribers = new ArrayList<>();
@@ -14,8 +15,10 @@ public class RepositoryClass implements Repository {
     @Override
     public Commit commit(String branch, String author, String[] changes) {
         Commit commit = new Commit(author, changes);
+        GitRepoObservers.logger.log(Level.INFO, "Formed commit: " + commit);
         if (isThereWebHook(Event.Type.COMMIT, branch)) {
             addCommitEvent(branch, commit);
+            ;
         }
         return commit;
     }
@@ -60,6 +63,8 @@ public class RepositoryClass implements Repository {
             boolean anotherCommit = isAnotherCommit(commits, webHook);
             if (anotherCommit)
                 eventHandler(type, targetBranch, commits);
+            else
+                GitRepoObservers.logger.log(Level.WARNING, "Didn't merge: there were the same commits: " + commits);
         }
     }
 
@@ -80,7 +85,9 @@ public class RepositoryClass implements Repository {
     private void eventHandler(Event.Type type, String branch, List<Commit> commits) {
         for (var item : subscribers) {
             if (item.branch().equals(branch) && item.type().equals(type)) {
-                item.onEvent(new Event(type, branch, commits));
+                final Event event = new Event(type, branch, commits);
+                item.onEvent(event);
+                GitRepoObservers.logger.log(Level.INFO, "Add event " + event + " to " + item);
             }
         }
     }
