@@ -1,12 +1,12 @@
-квіт. 29, 2022 2:40:31 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
+квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
 INFO: SubList before removing not even: [q, w, e, r, t, y, u, i, o, p]
-квіт. 29, 2022 2:40:31 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
+квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
 INFO: SubList after removing not even: [q, e, t, u, o]
-квіт. 29, 2022 2:40:32 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
+квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
 INFO: SubList before removing not even: [a, b, c, d, e]
-квіт. 29, 2022 2:40:32 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
+квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
 INFO: SubList after removing not even: [a, c, e]
-квіт. 29, 2022 2:40:32 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
+квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
 INFO: SubList before removing not even: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-квіт. 29, 2022 2:40:32 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
+квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.decorator.EvenIndexDecoratorSubList <init>
 INFO: SubList after removing not even: [1, 3, 5, 7, 9]

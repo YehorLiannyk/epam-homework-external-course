@@ -329,16 +329,8 @@ c
 3src/main/ua/advanced/practice1/task2/Container.java,1\b\1b1e07e3dcdacaeba40a678cf9f06df8148f0a2c
 x
 Hsrc/main/ua/advanced/practice3/task1_integerSet/RangedOpsIntegerSet.java,a\c\ac4e2b96af4ba7260c6d4e62104b2c5c75686a71
-g
-7src/main/ua/advanced/practice6/startegy/cards/Card.java,a\e\aef32ea292eee042df0be5bdea2a482777b89909
-x
-Hsrc/main/ua/advanced/practice6/startegy/cards/CardDealingStrategies.java,2\a\2a7f486426a7ab60a8237e832626b882916dbad0
-v
-Fsrc/main/ua/advanced/practice6/startegy/cards/CardDealingStrategy.java,4\6\46717aeb55119b2b44a1ba10ac1208af65a26341
 j
 :src/main/ua/advanced/practice6/factory/plot/Character.java,5\7\577c617949ba0abd0b897b52debeb7b64e420f4a
-g
-7src/main/ua/advanced/practice6/startegy/cards/Deck.java,7\f\7f03c0fb57b1105c7129fcbcde30d9e60775548d
 k
 ;src/main/ua/advanced/practice6/factory/plot/EpicCrisis.java,6\0\60e2aaff1f30c48db35c9f55b1ae32f5e77d1b29
 Y
@@ -353,8 +345,6 @@ h
 8src/main/ua/advanced/practice6/decorator/Decorators.java,2\b\2b530dbcba20ba851c400a0cfdff6f12431d514d
 f
 6src/main/ua/advanced/practice6/observer/git/Event.java,4\7\47ea18a7825749b6b5a21755a5b154f7ed095c19
-Å
-Qsrc/test/main/ua/advanced/practice6/startegy/cards/CardDealingStrategiesTest.java,b\4\b4483ce38a918057db97ce1a739def9fc6a71cf7
 q
 Asrc/test/main/ua/advanced/practice6/decorator/DecoratorsTest.java,d\1\d1022e8a0f9da85fd89e5c4c8dfc213f0c463754
 o
