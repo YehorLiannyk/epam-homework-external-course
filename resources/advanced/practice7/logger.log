@@ -1,0 +1,336 @@
+2022-05-05 20:43:20 INFO  MovieLibrary:42 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 20:43:20 INFO  MovieLibrary:69 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 20:43:20 INFO  MovieLibrary:69 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 20:43:20 INFO  MovieLibrary:69 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 20:44:26 INFO  MovieLibrary:32 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 20:44:26 INFO  MovieLibrary:59 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 20:44:26 INFO  MovieLibrary:59 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 20:44:26 INFO  MovieLibrary:59 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:11:59 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 21:11:59 INFO  MovieLibrary:57 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:11:59 INFO  MovieLibrary:57 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:11:59 INFO  MovieLibrary:57 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:11:59 ERROR MovieLibrary:105 - [com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.getActorListOfMovie(DBDataManager.java:98), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:38)]
+2022-05-05 21:11:59 INFO  MovieLibrary:39 - Actors of movie Фільм Богдана Ступки below: 
+2022-05-05 21:13:37 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 21:13:37 INFO  MovieLibrary:57 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:13:37 INFO  MovieLibrary:57 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:13:37 INFO  MovieLibrary:57 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:13:37 ERROR MovieLibrary:105 - Column 'id' not found.
+2022-05-05 21:13:37 ERROR MovieLibrary:106 - [com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.getActorListOfMovie(DBDataManager.java:98), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:38)]
+2022-05-05 21:13:37 INFO  MovieLibrary:39 - Actors of movie Фільм Богдана Ступки below: 
+2022-05-05 21:14:32 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 21:14:32 INFO  MovieLibrary:57 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:14:32 INFO  MovieLibrary:57 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:14:32 INFO  MovieLibrary:57 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:14:33 INFO  MovieLibrary:39 - Actors of movie Фільм Богдана Ступки below: 
+2022-05-05 21:14:33 INFO  MovieLibrary:57 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 21:14:33 INFO  MovieLibrary:57 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 21:14:33 INFO  MovieLibrary:57 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 21:14:33 INFO  MovieLibrary:57 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 21:17:45 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 21:17:45 INFO  MovieLibrary:58 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:17:45 INFO  MovieLibrary:58 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:17:45 INFO  MovieLibrary:58 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 21:17:45 INFO  MovieLibrary:39 - 
+2022-05-05 21:17:45 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 21:17:45 INFO  MovieLibrary:58 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 21:17:45 INFO  MovieLibrary:58 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 21:17:45 INFO  MovieLibrary:58 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 21:17:45 INFO  MovieLibrary:58 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:24:49 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:24:49 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:24:49 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:24:49 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:24:49 INFO  MovieLibrary:35 - 
+2022-05-05 22:24:49 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:24:49 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:24:49 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:24:49 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:24:49 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:24:49 INFO  MovieLibrary:42 - 
+2022-05-05 22:24:49 ERROR MovieLibrary:131 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:124), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:24:49 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:24:49 INFO  MovieLibrary:49 - 
+2022-05-05 22:26:32 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:26:32 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:26:32 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:26:32 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:26:32 INFO  MovieLibrary:35 - 
+2022-05-05 22:26:32 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:26:32 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:26:32 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:26:32 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:26:32 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:26:32 INFO  MovieLibrary:42 - 
+2022-05-05 22:26:32 ERROR MovieLibrary:117 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:125), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:115), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:26:32 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:26:32 INFO  MovieLibrary:49 - 
+2022-05-05 22:28:50 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:28:50 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:28:50 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:28:50 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:28:50 INFO  MovieLibrary:35 - 
+2022-05-05 22:28:50 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:28:50 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:28:50 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:28:50 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:28:50 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:28:50 INFO  MovieLibrary:42 - 
+2022-05-05 22:28:50 ERROR MovieLibrary:117 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:125), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:115), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:28:50 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:28:50 INFO  MovieLibrary:49 - 
+2022-05-05 22:29:05 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:29:05 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:29:05 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:29:05 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:29:05 INFO  MovieLibrary:35 - 
+2022-05-05 22:29:05 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:29:05 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:29:05 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:29:05 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:29:05 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:29:05 INFO  MovieLibrary:42 - 
+2022-05-05 22:29:05 ERROR MovieLibrary:117 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:125), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:115), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:29:05 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:29:05 INFO  MovieLibrary:49 - 
+2022-05-05 22:29:20 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:29:20 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:29:20 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:29:20 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:29:20 INFO  MovieLibrary:35 - 
+2022-05-05 22:29:20 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:29:20 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:29:20 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:29:20 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:29:20 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:29:20 INFO  MovieLibrary:42 - 
+2022-05-05 22:29:20 ERROR MovieLibrary:117 - Unknown column 'M_A.id' in 'on clause'[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916), com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:114), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:29:20 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:29:20 INFO  MovieLibrary:49 - 
+2022-05-05 22:30:15 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:30:15 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:30:15 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:30:15 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:30:15 INFO  MovieLibrary:35 - 
+2022-05-05 22:30:15 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:30:15 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:30:15 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:30:15 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:30:15 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:30:15 INFO  MovieLibrary:42 - 
+2022-05-05 22:30:15 ERROR MovieLibrary:117 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:125), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:115), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:30:15 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:30:15 INFO  MovieLibrary:49 - 
+2022-05-05 22:31:29 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:31:29 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:31:29 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:31:29 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:31:29 INFO  MovieLibrary:35 - 
+2022-05-05 22:31:29 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:31:29 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:31:29 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:31:29 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:31:29 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:31:29 INFO  MovieLibrary:42 - 
+2022-05-05 22:31:29 ERROR MovieLibrary:114 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:122), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:112), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:31:29 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:31:29 INFO  MovieLibrary:49 - 
+2022-05-05 22:33:20 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:33:20 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:33:20 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:33:20 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:33:20 INFO  MovieLibrary:35 - 
+2022-05-05 22:33:20 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:33:20 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:33:20 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:33:20 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:33:20 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:33:20 INFO  MovieLibrary:42 - 
+2022-05-05 22:33:20 ERROR MovieLibrary:119 - Parameter index out of range (1 > number of parameters, which is 0).[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.ClientPreparedStatement.checkBounds(ClientPreparedStatement.java:1345), com.mysql.cj.jdbc.ClientPreparedStatement.getCoreParameterIndex(ClientPreparedStatement.java:1358), com.mysql.cj.jdbc.ClientPreparedStatement.setInt(ClientPreparedStatement.java:1536), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:115), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:33:20 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:33:20 INFO  MovieLibrary:49 - 
+2022-05-05 22:33:30 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:33:30 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:33:30 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:33:30 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:33:30 INFO  MovieLibrary:35 - 
+2022-05-05 22:33:30 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:33:30 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:33:30 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:33:30 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:33:30 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:33:30 INFO  MovieLibrary:42 - 
+2022-05-05 22:33:30 ERROR MovieLibrary:119 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:127), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:117), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:33:30 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:33:30 INFO  MovieLibrary:49 - 
+2022-05-05 22:34:12 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:34:12 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:34:12 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:34:12 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:34:13 INFO  MovieLibrary:35 - 
+2022-05-05 22:35:01 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:35:01 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:35:01 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:35:01 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:35:01 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:35:01 INFO  MovieLibrary:42 - 
+2022-05-05 22:35:02 ERROR MovieLibrary:114 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:122), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:112), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:35:02 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:35:04 INFO  MovieLibrary:49 - 
+2022-05-05 22:35:30 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:35:30 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:35:30 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:35:30 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:35:30 INFO  MovieLibrary:35 - 
+2022-05-05 22:35:31 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:35:31 INFO  MovieLibrary:63 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:35:31 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:35:31 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:35:31 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:35:31 INFO  MovieLibrary:42 - 
+2022-05-05 22:36:09 ERROR MovieLibrary:114 - Column 'actor_id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:122), main.ua.advanced.practice7.DBDataManager.getActorsByMovieAmount(DBDataManager.java:112), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:46)]
+2022-05-05 22:36:09 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:36:09 INFO  MovieLibrary:49 - 
+2022-05-05 22:36:11 INFO  MovieLibrary:33 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:36:11 INFO  MovieLibrary:35 - 
+2022-05-05 22:36:11 ERROR MovieLibrary:96 - Column 'id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.fillActorList(DBDataManager.java:122), main.ua.advanced.practice7.DBDataManager.getActorListOfMovie(DBDataManager.java:94), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:39)]
+2022-05-05 22:36:11 INFO  MovieLibrary:40 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:36:11 INFO  MovieLibrary:42 - 
+2022-05-05 22:36:11 INFO  MovieLibrary:47 - Actors whose movie amount >= 2 below:
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-05 22:36:11 INFO  MovieLibrary:63 - Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-05 22:36:11 INFO  MovieLibrary:49 - 
+2022-05-05 22:43:50 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:43:50 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:43:50 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:43:50 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:43:50 INFO  MovieLibrary:32 - 
+2022-05-05 22:43:50 ERROR MovieLibrary:96 - Column 'id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.getActorFromResultSet(DBDataManager.java:126), main.ua.advanced.practice7.DBDataManager.getActorListOfMovie(DBDataManager.java:93), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:36)]
+2022-05-05 22:43:50 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:43:50 INFO  MovieLibrary:39 - 
+2022-05-05 22:43:50 INFO  MovieLibrary:44 - Actors whose movie amount >= 2 below:
+2022-05-05 22:43:50 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-05 22:43:50 INFO  MovieLibrary:64 - movieAmount 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:43:50 INFO  MovieLibrary:46 - 
+2022-05-05 22:45:44 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:45:44 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:45:44 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:45:44 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:45:44 INFO  MovieLibrary:32 - 
+2022-05-05 22:45:44 ERROR MovieLibrary:96 - Column 'id' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851), main.ua.advanced.practice7.DBDataManager.getActorFromResultSet(DBDataManager.java:126), main.ua.advanced.practice7.DBDataManager.getActorListOfMovie(DBDataManager.java:93), main.ua.advanced.practice7.MovieLibrary.main(MovieLibrary.java:36)]
+2022-05-05 22:45:44 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:45:44 INFO  MovieLibrary:39 - 
+2022-05-05 22:46:20 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:46:20 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:46:20 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:46:20 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:46:20 INFO  MovieLibrary:32 - 
+2022-05-05 22:46:20 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:46:20 INFO  MovieLibrary:60 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:46:20 INFO  MovieLibrary:60 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:46:20 INFO  MovieLibrary:60 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:46:20 INFO  MovieLibrary:60 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:46:20 INFO  MovieLibrary:39 - 
+2022-05-05 22:46:20 INFO  MovieLibrary:44 - Actors whose movie amount >= 2 below:
+2022-05-05 22:46:20 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-05 22:46:20 INFO  MovieLibrary:64 - movieAmount 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:46:20 INFO  MovieLibrary:46 - 
+2022-05-05 22:47:10 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:47:10 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:47:10 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:47:10 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:47:10 INFO  MovieLibrary:32 - 
+2022-05-05 22:47:10 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:47:10 INFO  MovieLibrary:60 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:47:10 INFO  MovieLibrary:60 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:47:10 INFO  MovieLibrary:60 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:47:10 INFO  MovieLibrary:60 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:47:10 INFO  MovieLibrary:39 - 
+2022-05-05 22:47:10 INFO  MovieLibrary:44 - Actors whose movie amount >= 2 below:
+2022-05-05 22:47:10 INFO  MovieLibrary:64 - movieAmount 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:47:10 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-05 22:47:10 INFO  MovieLibrary:46 - 
+2022-05-05 22:47:25 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:47:25 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:47:25 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:47:25 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:47:25 INFO  MovieLibrary:32 - 
+2022-05-05 22:47:25 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:47:25 INFO  MovieLibrary:60 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:47:25 INFO  MovieLibrary:60 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:47:25 INFO  MovieLibrary:60 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:47:25 INFO  MovieLibrary:60 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:47:25 INFO  MovieLibrary:39 - 
+2022-05-05 22:47:25 INFO  MovieLibrary:44 - Actors whose movie amount >= 2 below:
+2022-05-05 22:47:25 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-05 22:47:25 INFO  MovieLibrary:64 - movieAmount 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:47:25 INFO  MovieLibrary:46 - 
+2022-05-05 22:48:44 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:48:44 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:48:44 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:48:44 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:48:44 INFO  MovieLibrary:32 - 
+2022-05-05 22:48:44 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:48:44 INFO  MovieLibrary:60 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:48:44 INFO  MovieLibrary:60 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:48:44 INFO  MovieLibrary:60 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:48:44 INFO  MovieLibrary:60 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:48:44 INFO  MovieLibrary:39 - 
+2022-05-05 22:48:44 INFO  MovieLibrary:44 - Actors whose movie amount >= 2 below:
+2022-05-05 22:48:44 INFO  MovieLibrary:64 - movieAmount Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, 3
+2022-05-05 22:48:44 INFO  MovieLibrary:64 - movieAmount Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, 2
+2022-05-05 22:48:44 INFO  MovieLibrary:64 - movieAmount Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, 3
+2022-05-05 22:48:44 INFO  MovieLibrary:64 - movieAmount Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, 2
+2022-05-05 22:48:44 INFO  MovieLibrary:64 - movieAmount Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, 2
+2022-05-05 22:48:44 INFO  MovieLibrary:64 - movieAmount Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, 2
+2022-05-05 22:48:44 INFO  MovieLibrary:64 - movieAmount Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, 2
+2022-05-05 22:48:44 INFO  MovieLibrary:46 - 
+2022-05-05 22:49:06 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:49:06 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:49:06 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:49:06 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:49:06 INFO  MovieLibrary:32 - 
+2022-05-05 22:49:06 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:49:06 INFO  MovieLibrary:60 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:49:06 INFO  MovieLibrary:60 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:49:06 INFO  MovieLibrary:60 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:49:06 INFO  MovieLibrary:60 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:49:06 INFO  MovieLibrary:39 - 
+2022-05-05 22:49:06 INFO  MovieLibrary:44 - Actors whose movie amount >= 2 below:
+2022-05-05 22:49:06 INFO  MovieLibrary:64 - movieAmount 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:49:06 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:49:06 INFO  MovieLibrary:64 - movieAmount 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:49:06 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-05 22:49:06 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-05 22:49:06 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-05 22:49:06 INFO  MovieLibrary:64 - movieAmount 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-05 22:49:06 INFO  MovieLibrary:46 - 
+2022-05-05 22:49:16 INFO  MovieLibrary:30 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-05 22:49:16 INFO  MovieLibrary:60 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:49:16 INFO  MovieLibrary:60 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:49:16 INFO  MovieLibrary:60 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=2021-01-01}, actors=[]}
+2022-05-05 22:49:16 INFO  MovieLibrary:32 - 
+2022-05-05 22:49:16 INFO  MovieLibrary:37 - Actors of movie 'Фільм Богдана Ступки' below: 
+2022-05-05 22:49:16 INFO  MovieLibrary:60 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-05 22:49:16 INFO  MovieLibrary:60 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:49:16 INFO  MovieLibrary:60 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:49:16 INFO  MovieLibrary:60 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:49:16 INFO  MovieLibrary:39 - 
+2022-05-05 22:49:16 INFO  MovieLibrary:44 - Actors whose movie amount >= 2 below:
+2022-05-05 22:49:16 INFO  MovieLibrary:64 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-05 22:49:16 INFO  MovieLibrary:64 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-05 22:49:16 INFO  MovieLibrary:64 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-05 22:49:16 INFO  MovieLibrary:64 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-05 22:49:16 INFO  MovieLibrary:64 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-05 22:49:16 INFO  MovieLibrary:64 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-05 22:49:16 INFO  MovieLibrary:64 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-05 22:49:16 INFO  MovieLibrary:46 - 

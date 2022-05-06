@@ -1,78 +1,78 @@
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added README.txt]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Removed README.txt]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added README.md, Added project description]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@7c417213
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@37e547da
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added functional requirements]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@7c417213
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@37e547da
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Silverhand, [Added cyberanarchy manifest]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@7c417213
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@6ab7a896
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass merge
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@37e547da
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@5db45159
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass merge
 WARNING: Didn't merge: there were the same commits: [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added README.txt]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Removed README.txt]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added README.md, Added project description]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@78047b92
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@a4102b8
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added functional requirements]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@78047b92
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@a4102b8
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Silverhand, [Added cyberanarchy manifest]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@78047b92
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@8909f18
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@a4102b8
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@11dc3715
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added README.txt]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Removed README.txt]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added README.md, Added project description]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@79ca92b9
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@69930714
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added functional requirements]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@79ca92b9
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@69930714
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Silverhand, [Added cyberanarchy manifest]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@79ca92b9
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@1460a8c0
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@69930714
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@7a52f2a2
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[CrashOverrider, [Added full implementation]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, master, [Commit[CrashOverrider, [Added full implementation]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@4f638935
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[MERGE, dev-readme, [Commit[CrashOverrider, [Added full implementation]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@4387b79e
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass merge
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, master, [Commit[CrashOverrider, [Added full implementation]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@78047b92
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[MERGE, dev-readme, [Commit[CrashOverrider, [Added full implementation]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@8909f18
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass merge
 WARNING: Didn't merge: there were the same commits: [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added README.md, Added project description]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@6e75aa0d
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added README.md, Added project description]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@79ca92b9
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Mnemonic, [Added functional requirements]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@6e75aa0d
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Mnemonic, [Added functional requirements]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@79ca92b9
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass commit
 INFO: Formed commit: Commit[Johnny Silverhand, [Added cyberanarchy manifest]]
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@6e75aa0d
-квіт. 30, 2022 11:14:03 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
-INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@7fc229ab
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[COMMIT, dev-readme, [Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@79ca92b9
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.observer.git.RepositoryClass eventHandler
+INFO: Add event Event[MERGE, master, [Commit[Johnny Mnemonic, [Added README.md, Added project description]], Commit[Johnny Mnemonic, [Added functional requirements]], Commit[Johnny Silverhand, [Added cyberanarchy manifest]]]] to main.ua.advanced.practice6.observer.git.WebHookClass@1460a8c0

@@ -67,16 +67,12 @@ i
 9src/main/ua/university/Lesson7Task/Number/NumberView.java,1\d\1d89f39835b895c3f071c96c7a0aa3997675e9b9
 c
 3src/main/ua/university/Lesson7Task/Number/User.java,e\3\e364a99fd28b760e0616dbb3275c588de7d09567
-8
-text.csv,2\4\2490e10ed703adfb7d2331734c573f89f2176988
 `
 0src/main/ua/university/Task8/DataDuplicates.java,f\c\fca4ca6651e26d258ab641d33afe917e677c8c65
 _
 /src/main/ua/university/Task8/DataFrequency.java,a\1\a1c07e36a3a4e88ab9c532a3ed509b015fbb0572
 \
 ,src/main/ua/university/Task8/DataLength.java,5\2\520cff1ba959bb8f822de5abae4968eb290ed036
-W
-'src/main/ua/university/Task5/Task5.java,7\5\7543135063e4e4344c375c32f1e0371a0f13552b
 k
 ;.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml,2\4\246a1fc19c7c34b5e71b114bd688bc3ea0f64a74
 v
@@ -165,8 +161,6 @@ e
 5src/test/universityTest/Task9Test/MatrixDefaults.java,b\3\b3fd41559fc26fe40b539a787cb06b39041b0e93
 a
 1src/test/universityTest/Task9Test/MatrixTest.java,5\6\5635159402458714a744571958d71ad1e0c85e30
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 d
 4src/test/universityTest/Task5Test/RectangleTest.java,b\7\b78249c1c4ac8448ac8db77e182e88eead4462e4
 `
@@ -219,8 +213,6 @@ w
 G.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml,e\4\e481ed10fa33b823699dd26c0c17a5474c255dbc
 X
 (src/main/ua/advanced/practice2/City.java,7\6\76e9c6bc0e70e538c23b24457033d72e40be30d5
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ]
 -src/main/ua/university/Task10/UserHelper.java,e\6\e65cfa1c99a24d8694d09dea7ab94a50cbac32f1
 m
@@ -229,8 +221,6 @@ u
 Esrc/main/ua/advanced/practice2/readerAndWriter/XMLWriterCityList.java,1\a\1af8bf85c0eb8ab059ad5ce66ab6ca149d19eaf7
 h
 8src/test/main/ua/advanced/practice1/task1/HouseTest.java,b\7\b705666b11903c8161dad89835d4d6308b0f9935
-A
-EPAM_Homework.iml,7\e\7ecbcbd294f6291ef496dcb47f1831c0ec5298eb
 r
 Bsrc/test/main/ua/advanced/practice2/task1_list/MyListImplTest.java,5\1\5194be9a8d51f1de8b26385f1a2db64ed412c10c
 r
@@ -285,8 +275,6 @@ isrc/main/ua/advanced/practice3/task3_special_collections/absolute_value_int_set
 ]src/main/ua/advanced/practice3/task3_special_collections/pair_string_list/PairStringList.java,2\c\2cc399d3824b6555545542b145592475e24e171b
 ^
 .src/main/ua/university/Task9/MatrixHelper.java,2\4\2481ba816af399326fef3fa62ef12b81ce27ee73
-_
-/src/main/ua/advanced/practice4/task1/Part1.java,3\3\33163e82d717e2517f78da967512ac7b50d90321
 _
 /src/main/ua/advanced/practice4/task3/Part3.java,c\e\ce4a9b43a581b54c1a51aa30408510fbe4cec3d8
 ^
@@ -349,3 +337,13 @@ o
 ?src/test/main/ua/advanced/practice6/iterator/IteratorsTest.java,4\2\428e4c497ac608e9d403cf4517b83b1e94ba5e0d
 w
 Gsrc/test/main/ua/advanced/practice6/factory/plot/PlotFactoriesTest.java,1\f\1f358987659c240f586131dfee406a01b4a488df
+f
+6src/main/ua/advanced/practice6/iterator/Iterators.java,a\f\af64913929025cf34aa1c056f3031bed6af0a33c
+_
+/src/main/ua/advanced/practice4/task1/Part1.java,3\3\33163e82d717e2517f78da967512ac7b50d90321
+W
+'src/main/ua/university/Task5/Task5.java,7\5\7543135063e4e4344c375c32f1e0371a0f13552b
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+8
+text.csv,2\4\2490e10ed703adfb7d2331734c573f89f2176988

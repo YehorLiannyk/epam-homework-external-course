@@ -7,7 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/lib" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -74,5 +73,7 @@
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.29" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.19.4" level="project" />
   </component>
 </module>

@@ -1,36 +1,36 @@
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory <init>
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory <init>
 INFO: Hero: Ariel, beloved: Eric, villain: Ursula
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory <init>
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory <init>
 INFO: Hero: Belle, beloved: Beast, villain: Gaston
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory <init>
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory <init>
 INFO: Hero: Simba, beloved: Nala, villain: Scar
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory plot
 INFO: Ariel is great. Ariel and Eric love each other. Ursula interferes with their happiness but loses in the end.
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory plot
 INFO: Belle is great. Belle and Beast love each other. Gaston interferes with their happiness but loses in the end.
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.classicDisneyPlotFactory.ClassicPlotFactory plot
 INFO: Simba is great. Simba and Nala love each other. Scar interferes with their happiness but loses in the end.
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory <init>
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory <init>
 INFO: Hero: Mulan, epicCrisis: Hun invasion, funnyFriend: little dragon Mushu
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory <init>
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory <init>
 INFO: Hero: Anna, epicCrisis: her sister Elsa is overwhelmed by her magical powers, funnyFriend: snowman Olaf
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory <init>
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory <init>
 INFO: Hero: Moana, epicCrisis: a blight strikes the island, funnyFriend: shape-shifting demigod Maui
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory plot
 INFO: Mulan feels a bit awkward and uncomfortable. But personal issues fades, when a big trouble comes - Hun invasion. Mulan stands up against it, but with no success at first.But putting self together and help of friends, including spectacular funny little dragon Mushu restore the spirit and Mulan overcomes the crisis and gains gratitude and respect
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory plot
 INFO: Anna feels a bit awkward and uncomfortable. But personal issues fades, when a big trouble comes - her sister Elsa is overwhelmed by her magical powers. Anna stands up against it, but with no success at first.But putting self together and help of friends, including spectacular funny snowman Olaf restore the spirit and Anna overcomes the crisis and gains gratitude and respect
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.contemporaryDisneyPlotFactory.ContemporaryPlotFactory plot
 INFO: Moana feels a bit awkward and uncomfortable. But personal issues fades, when a big trouble comes - a blight strikes the island. Moana stands up against it, but with no success at first.But putting self together and help of friends, including spectacular funny shape-shifting demigod Maui restore the spirit and Moana overcomes the crisis and gains gratitude and respect
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory <init>
-INFO: Heroes: [main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$273/0x0000000800ca5140@43ee72e6], epicCrisis: Ten Rings is about to access Stark Industries technologies and that, villain: Obadiah Stane
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory <init>
-INFO: Heroes: [main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$276/0x0000000800ca57b8@38c5cc4c, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$277/0x0000000800ca59e0@37918c79, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$278/0x0000000800ca5c08@78e94dcf, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$279/0x0000000800ca5e30@233fe9b6, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$280/0x0000000800ca6058@358ee631, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$281/0x0000000800ca6280@ec756bd], epicCrisis: Chitauri Invasion, villain: Loki
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory <init>
-INFO: Heroes: [main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$284/0x0000000800ca68f8@3901d134, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$285/0x0000000800ca6b20@14d3bc22, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$286/0x0000000800ca6d48@12d4bf7e, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$287/0x0000000800ca6f70@4c1d9d4b, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$288/0x0000000800ca7198@7b227d8d], epicCrisis: Kree Invasion, villain: Ronan the Accuser
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory <init>
+INFO: Heroes: [main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$273/0x0000000800ca19e0@3d121db3], epicCrisis: Ten Rings is about to access Stark Industries technologies and that, villain: Obadiah Stane
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory <init>
+INFO: Heroes: [main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$276/0x0000000800ca2058@45018215, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$277/0x0000000800ca2280@65d6b83b, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$278/0x0000000800ca24a8@d706f19, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$279/0x0000000800ca26d0@30b7c004, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$280/0x0000000800ca28f8@79efed2d, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$281/0x0000000800ca2b20@2928854b], epicCrisis: Chitauri Invasion, villain: Loki
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory <init>
+INFO: Heroes: [main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$284/0x0000000800ca3198@15b204a1, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$285/0x0000000800ca33c0@77167fb7, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$286/0x0000000800ca35e8@1fe20588, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$287/0x0000000800ca3810@6ce139a4, main.ua.advanced.practice6.factory.plot.PlotFactoriesTest$$Lambda$288/0x0000000800ca3a38@6973bf95], epicCrisis: Kree Invasion, villain: Ronan the Accuser
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory plot
 INFO: Ten Rings is about to access Stark Industries technologies and that threatens the world. But brave Iron Man on guard. So, no way that intrigues of Obadiah Stane overcome the willpower of inflexible heroes
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory plot
 INFO: Chitauri Invasion threatens the world. But brave Iron Man, brave Captain America, brave Hulk, brave Thor, brave Black Widow, brave HawkEye on guard. So, no way that intrigues of Loki overcome the willpower of inflexible heroes
-квіт. 30, 2022 5:00:25 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory plot
+квіт. 30, 2022 11:24:10 ПП main.ua.advanced.practice6.factory.plot.marvelPlotFactory.MarvelPlotFactory plot
 INFO: Kree Invasion threatens the world. But brave Star-Lord, brave Gamora, brave Drax, brave Groot, brave Rocket on guard. So, no way that intrigues of Ronan the Accuser overcome the willpower of inflexible heroes
