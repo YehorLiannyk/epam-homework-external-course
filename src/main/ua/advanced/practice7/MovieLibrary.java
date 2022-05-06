@@ -25,6 +25,12 @@ public class MovieLibrary {
         DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.DEFAULT);
         DBDataManager dbDataManager = new DBDataManager(connection);
 
+        //show all movies
+        List<Movie> movies = dbDataManager.getAllMovies();
+        logger.info("All movies at beginning: ");
+        library.printMovieList(movies);
+        logger.info("");
+
         // first task
         Calendar minDate = new GregorianCalendar();
         minDate.set(2021, Calendar.JANUARY, 1);
@@ -55,8 +61,12 @@ public class MovieLibrary {
         logger.info("");
 
         //fifth task
-
-
+        final int MAX_YEAR = 10;
+        logger.info("Deleting movies older than " + MAX_YEAR);
+        dbDataManager.deleteMoviesOlderThan(MAX_YEAR);
+        logger.info("Movie list now: ");
+        List<Movie> movieList = dbDataManager.getAllMovies();
+        library.printMovieList(movieList);
     }
 
     private <V> void printMovieList(List<V> vList) {

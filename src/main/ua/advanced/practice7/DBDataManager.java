@@ -136,13 +136,55 @@ public class DBDataManager {
             while (rs.next()) {
                 actorMap.put(
                         getActorFromResultSet(rs),
-                        rs.getInt("movie_amount")
+                        rs.getInt("movie_count")
                 );
             }
         } catch (SQLException e) {
             MovieLibrary.logger.error(e.getMessage() + Arrays.toString(e.getStackTrace()));
         }
         return actorMap;
+    }
+
+    public boolean deleteMoviesOlderThan(final int maxYear) {
+        boolean isDeleted = false;
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.YEAR, -maxYear);
+        Date maxDate = new Date(calendar.getTimeInMillis());
+        List<Integer> movieIdForDelete = getIdMovieOlderThan(maxDate);
+        final String query =
+                "DELETE  M.*, MA.*, MD.* " +
+                        "FROM movies AS M " +
+                        "LEFT JOIN movie_actors AS MA " +
+                        "ON MA.movie_id = M.id " +
+                        "JOIN movie_directors AS MD " +
+                        "ON MD.movie_id = M.id " +
+                        "WHERE M.id = ?";
+        try (PreparedStatement statement = connection.prepareStatement(query)) {
+            for (var id : movieIdForDelete) {
+                statement.setInt(1, id);
+                statement.addBatch();
+            }
+            statement.executeBatch();
+            isDeleted = true;
+        } catch (SQLException e) {
+            MovieLibrary.logger.error(e.getMessage() + Arrays.toString(e.getStackTrace()));
+        }
+        return isDeleted;
+    }
+
+    public List<Integer> getIdMovieOlderThan(final Date maxDate) {
+        List<Integer> ids = new LinkedList<>();
+        final String query = "SELECT id FROM movies WHERE date_production <= ?";
+        try (PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setDate(1, maxDate);
+            ResultSet rs = statement.executeQuery();
+            while (rs.next()) {
+                ids.add(rs.getInt("id"));
+            }
+        } catch (SQLException e) {
+            MovieLibrary.logger.error(e.getMessage() + Arrays.toString(e.getStackTrace()));
+        }
+        return ids;
     }
 
     private Actor getActorFromResultSet(ResultSet rs) throws SQLException {
