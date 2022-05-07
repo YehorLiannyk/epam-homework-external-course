@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -67,6 +68,12 @@ public class MovieLibrary {
         logger.info("Movie list now: ");
         List<Movie> movieList = dbDataManager.getAllMovies();
         library.printMovieList(movieList);
+
+        try {
+            if (connection != null && !connection.isClosed()) connection.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private <V> void printMovieList(List<V> vList) {

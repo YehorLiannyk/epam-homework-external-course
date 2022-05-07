@@ -343,7 +343,9 @@ _
 /src/main/ua/advanced/practice4/task1/Part1.java,3\3\33163e82d717e2517f78da967512ac7b50d90321
 W
 'src/main/ua/university/Task5/Task5.java,7\5\7543135063e4e4344c375c32f1e0371a0f13552b
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 8
 text.csv,2\4\2490e10ed703adfb7d2331734c573f89f2176988
+A
+EPAM_Homework.iml,7\e\7ecbcbd294f6291ef496dcb47f1831c0ec5298eb
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
