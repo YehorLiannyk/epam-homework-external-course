@@ -1,25 +1,23 @@
 package main.ua.advanced.practice8.dao;
 
-import main.ua.advanced.practice7.MovieLibrary;
 import main.ua.advanced.practice8.BaseDAO;
-import main.ua.advanced.practice8.DAO;
 import main.ua.advanced.practice8.DBDataException;
+import main.ua.advanced.practice8.IMovieDAO;
 import main.ua.advanced.practice8.LoggerConfig;
 import main.ua.advanced.practice8.entities.Actor;
 import main.ua.advanced.practice8.entities.Movie;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 
 
-public class MovieDAO extends BaseDAO implements DAO<Movie> {
+public class MovieDAO extends BaseDAO implements IMovieDAO {
     private static final Logger logger = LoggerConfig.getLogger(MovieDAO.class.getSimpleName());
 
-    private static final String READ_ALL = "SELECT * FROM movies AS M LEFT JOIN movie_directors ON movie_id = M.id JOIN actors ON M.id = director_id";
+    private static final String READ_ALL = "SELECT * FROM movies AS M JOIN movie_directors ON movie_id = M.id JOIN actors AS A ON A.id = director_id";
     private static final String READ_ID = "SELECT * FROM movies AS M LEFT JOIN movie_directors ON movie_id = M.id JOIN actors AS A ON A.id = director_id WHERE M.id = ?";
     private static final String INSERT_MOVIES = "INSERT INTO movies VALUES (id, ?, ?, ?)";
     private static final String INSERT_MOVIE_DIRECTOR = "INSERT INTO movie_directors VALUES (id, ?, ?, ?)";
@@ -28,6 +26,8 @@ public class MovieDAO extends BaseDAO implements DAO<Movie> {
     private static final String DELETE_MOVIE_DIRECTOR = "DELETE FROM movie_director WHERE movie_id = ?";
     //
     private static final String READ_OLDER_THAN_DATE = "SELECT * FROM movies AS M JOIN movie_directors ON M.id = movie_id JOIN actors AS A ON director_id = A.id WHERE M.date_production > ?";
+    private static final String READ_ID_OLDER_MOVIES = "SELECT id FROM movies WHERE date_production <= ?";
+    private static final String DELETE_BY_ID = "DELETE  M.*, MA.*, MD.* FROM movies AS M JOIN movie_actors AS MA ON MA.movie_id = M.id JOIN movie_directors AS MD ON MD.movie_id = M.id WHERE M.id = ?";
 
     @Override
     public boolean create(Movie element) {
@@ -149,17 +149,53 @@ public class MovieDAO extends BaseDAO implements DAO<Movie> {
             statement.setDate(1, date);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                Movie movie = createMovie(date, resultSet);
+                final Movie movie = getMovieFromResSet(resultSet);
                 movies.add(movie);
             }
         } catch (SQLException e) {
-            MovieLibrary.logger.error(e.getMessage() + Arrays.toString(e.getStackTrace()));
+            logger.error(LoggerConfig.exceptionMsg(e));
         }
         return movies;
     }
 
-    private Movie createMovie(Date date, ResultSet resultSet) {
+    private Movie getMovieFromResSet(ResultSet rs) throws SQLException {
+        final Actor director = new ActorDAO().getDirectorFromResSet(rs);
+        return new Movie(
+                rs.getInt("id"), rs.getString("title"),
+                rs.getString("country"), rs.getDate("date_production"), director);
     }
 
+    public boolean deleteMoviesOlderThan(final int maxYear) {
+        boolean isDeleted = false;
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.YEAR, -maxYear);
+        Date maxDate = new Date(calendar.getTimeInMillis());
+        List<Integer> movieIdForDelete = getIdMovieOlderThan(maxDate);
+        try (PreparedStatement statement = getConnection().prepareStatement(DELETE_BY_ID)) {
+            for (var id : movieIdForDelete) {
+                statement.setInt(1, id);
+                statement.addBatch();
+            }
+            statement.executeBatch();
+            isDeleted = true;
+        } catch (SQLException e) {
+            logger.error(LoggerConfig.exceptionMsg(e));
+        }
+        return isDeleted;
+    }
+
+    private List<Integer> getIdMovieOlderThan(final Date maxDate) {
+        List<Integer> ids = new LinkedList<>();
+        try (PreparedStatement statement = getConnection().prepareStatement(READ_ID_OLDER_MOVIES)) {
+            statement.setDate(1, maxDate);
+            ResultSet rs = statement.executeQuery();
+            while (rs.next()) {
+                ids.add(rs.getInt("id"));
+            }
+        } catch (SQLException e) {
+            logger.error(LoggerConfig.exceptionMsg(e));
+        }
+        return ids;
+    }
 
 }

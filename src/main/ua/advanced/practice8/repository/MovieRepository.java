@@ -1,6 +1,5 @@
 package main.ua.advanced.practice8.repository;
 
-import main.ua.advanced.practice8.DAO;
 import main.ua.advanced.practice8.Repository;
 import main.ua.advanced.practice8.dao.MovieDAO;
 import main.ua.advanced.practice8.entities.Movie;
@@ -39,8 +38,7 @@ public class MovieRepository implements Repository<Movie> {
         return delete(element);
     }
 
-    @Override
-    public DAO<Movie> getDAO() {
+    public MovieDAO getDAO() {
         return movieDAO;
     }
 }

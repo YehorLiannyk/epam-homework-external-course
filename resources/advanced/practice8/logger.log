@@ -1,3 +1,171 @@
 2022-05-07 23:11:27 ERROR MovieDAO:89 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON id = director_id?' at line 1[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1201), org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:329), org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:329), main.ua.advanced.practice8.dao.MovieDAO.readAll(MovieDAO.java:82), main.ua.advanced.practice8.repository.MovieRepository.readAll(MovieRepository.java:29), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:16)]
 2022-05-07 23:12:16 ERROR MovieDAO:89 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON id = director_id' at line 1[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1201), org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:329), org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:329), main.ua.advanced.practice8.dao.MovieDAO.readAll(MovieDAO.java:82), main.ua.advanced.practice8.repository.MovieRepository.readAll(MovieRepository.java:29), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:16)]
 2022-05-07 23:12:47 ERROR MovieDAO:89 - Column 'id' in on clause is ambiguous[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1201), org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:329), org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:329), main.ua.advanced.practice8.dao.MovieDAO.readAll(MovieDAO.java:82), main.ua.advanced.practice8.repository.MovieRepository.readAll(MovieRepository.java:29), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:16)]
+2022-05-08 00:35:36 INFO  Movie:37 - All movies at beginning: 
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Остап Ступка Богданович', birthdate=1967-09-02}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Остап Ступка Богданович', birthdate=1967-09-02}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Володимир Вікторович Горянський', birthdate=1959-02-24}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Володимир Вікторович Горянський', birthdate=1959-02-24}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, actors=[]}
+2022-05-08 00:35:36 INFO  Movie:39 - 
+2022-05-08 00:35:36 ERROR MovieDAO:156 - Column 'production_date' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getDate(ResultSetImpl.java:798), org.apache.commons.dbcp2.DelegatingResultSet.getDate(DelegatingResultSet.java:498), org.apache.commons.dbcp2.DelegatingResultSet.getDate(DelegatingResultSet.java:498), main.ua.advanced.practice8.dao.MovieDAO.getMovieFromResSet(MovieDAO.java:165), main.ua.advanced.practice8.dao.MovieDAO.getMovieListFromProductionDate(MovieDAO.java:152), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:44)]
+2022-05-08 00:35:36 INFO  Movie:45 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 00:35:36 INFO  Movie:47 - 
+2022-05-08 00:35:37 INFO  Movie:52 - Actors of movie 'Фільм Ірми Вітовської' below: 
+2022-05-08 00:35:37 INFO  Movie:80 - Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 00:35:37 INFO  Movie:80 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 00:35:37 INFO  Movie:80 - Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 00:35:37 INFO  Movie:80 - Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 00:35:37 INFO  Movie:54 - 
+2022-05-08 00:35:37 ERROR ActorDAO:153 - Table 'movie_library_2.movie_actor' doesn't exist[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916), com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), main.ua.advanced.practice8.dao.ActorDAO.getActorsMapByMovieAmount(ActorDAO.java:148), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:58)]
+2022-05-08 00:35:37 INFO  Movie:59 - Actors whose movie amount >= 2 below:
+2022-05-08 00:35:37 INFO  Movie:61 - 
+2022-05-08 00:35:37 ERROR ActorDAO:168 - Unknown column 'M_D.movie_id' in 'field list'[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916), com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), main.ua.advanced.practice8.dao.ActorDAO.getDirectorMapByMovieAmount(ActorDAO.java:163), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:65)]
+2022-05-08 00:35:37 INFO  Movie:66 - Actors who was a director >= 1 times below:
+2022-05-08 00:35:37 INFO  Movie:68 - 
+2022-05-08 00:35:37 INFO  Movie:72 - Deleting movies older than 10
+2022-05-08 00:35:37 INFO  Movie:74 - Movie list now: 
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Остап Ступка Богданович', birthdate=1967-09-02}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Остап Ступка Богданович', birthdate=1967-09-02}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Володимир Вікторович Горянський', birthdate=1959-02-24}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Володимир Вікторович Горянський', birthdate=1959-02-24}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, actors=[]}
+2022-05-08 00:35:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:37 - All movies at beginning: 
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:39 - 
+2022-05-08 00:40:06 ERROR MovieDAO:156 - Column 'production_date' not found.[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89), com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63), com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584), com.mysql.cj.jdbc.result.ResultSetImpl.getDate(ResultSetImpl.java:798), org.apache.commons.dbcp2.DelegatingResultSet.getDate(DelegatingResultSet.java:498), org.apache.commons.dbcp2.DelegatingResultSet.getDate(DelegatingResultSet.java:498), main.ua.advanced.practice8.dao.MovieDAO.getMovieFromResSet(MovieDAO.java:165), main.ua.advanced.practice8.dao.MovieDAO.getMovieListFromProductionDate(MovieDAO.java:152), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:44)]
+2022-05-08 00:40:06 INFO  Movie:45 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 00:40:06 INFO  Movie:47 - 
+2022-05-08 00:40:06 INFO  Movie:52 - Actors of movie 'TEST' below: 
+2022-05-08 00:40:06 INFO  Movie:80 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 00:40:06 INFO  Movie:80 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 00:40:06 INFO  Movie:80 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 00:40:06 INFO  Movie:80 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 00:40:06 INFO  Movie:54 - 
+2022-05-08 00:40:06 ERROR ActorDAO:153 - Table 'movie_library_2.movie_actor' doesn't exist[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916), com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), main.ua.advanced.practice8.dao.ActorDAO.getActorsMapByMovieAmount(ActorDAO.java:148), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:58)]
+2022-05-08 00:40:06 INFO  Movie:59 - Actors whose movie amount >= 2 below:
+2022-05-08 00:40:06 INFO  Movie:61 - 
+2022-05-08 00:40:06 ERROR ActorDAO:168 - Unknown column 'M_D.movie_id' in 'field list'[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916), com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), main.ua.advanced.practice8.dao.ActorDAO.getDirectorMapByMovieAmount(ActorDAO.java:163), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:65)]
+2022-05-08 00:40:06 INFO  Movie:66 - Actors who was a director >= 1 times below:
+2022-05-08 00:40:06 INFO  Movie:68 - 
+2022-05-08 00:40:06 INFO  Movie:72 - Deleting movies older than 10
+2022-05-08 00:40:06 INFO  Movie:74 - Movie list now: 
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:40:06 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:37 - All movies at beginning: 
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:39 - 
+2022-05-08 00:42:57 INFO  Movie:45 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:42:57 INFO  Movie:47 - 
+2022-05-08 00:42:57 INFO  Movie:52 - Actors of movie 'TEST' below: 
+2022-05-08 00:42:57 INFO  Movie:80 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 00:42:57 INFO  Movie:80 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 00:42:57 INFO  Movie:80 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 00:42:57 INFO  Movie:80 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 00:42:57 INFO  Movie:54 - 
+2022-05-08 00:42:58 ERROR ActorDAO:153 - Unknown column 'M_A.movie_id' in 'field list'[com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120), com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122), com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916), com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:122), main.ua.advanced.practice8.dao.ActorDAO.getActorsMapByMovieAmount(ActorDAO.java:148), main.ua.advanced.practice8.MovieLibrary.main(MovieLibrary.java:58)]
+2022-05-08 00:42:58 INFO  Movie:59 - Actors whose movie amount >= 2 below:
+2022-05-08 00:42:58 INFO  Movie:61 - 
+2022-05-08 00:42:58 INFO  Movie:66 - Actors who was a director >= 1 times below:
+2022-05-08 00:42:58 INFO  Movie:84 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 00:42:58 INFO  Movie:84 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 00:42:58 INFO  Movie:84 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 00:42:58 INFO  Movie:84 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 00:42:58 INFO  Movie:84 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 00:42:58 INFO  Movie:68 - 
+2022-05-08 00:42:58 INFO  Movie:72 - Deleting movies older than 10
+2022-05-08 00:42:58 INFO  Movie:74 - Movie list now: 
+2022-05-08 00:42:58 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:42:58 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:42:58 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:42:58 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:42:58 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:37 - All movies at beginning: 
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:39 - 
+2022-05-08 00:43:26 INFO  Movie:45 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:47 - 
+2022-05-08 00:43:26 INFO  Movie:52 - Actors of movie 'TEST' below: 
+2022-05-08 00:43:26 INFO  Movie:80 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 00:43:26 INFO  Movie:80 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 00:43:26 INFO  Movie:80 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 00:43:26 INFO  Movie:80 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 00:43:26 INFO  Movie:54 - 
+2022-05-08 00:43:26 INFO  Movie:59 - Actors whose movie amount >= 2 below:
+2022-05-08 00:43:26 INFO  Movie:84 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 00:43:26 INFO  Movie:84 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 00:43:26 INFO  Movie:84 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 00:43:26 INFO  Movie:84 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 00:43:26 INFO  Movie:84 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 00:43:26 INFO  Movie:84 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 00:43:26 INFO  Movie:84 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 00:43:26 INFO  Movie:61 - 
+2022-05-08 00:43:26 INFO  Movie:66 - Actors who was a director >= 1 times below:
+2022-05-08 00:43:26 INFO  Movie:84 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 00:43:26 INFO  Movie:84 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 00:43:26 INFO  Movie:84 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 00:43:26 INFO  Movie:84 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 00:43:26 INFO  Movie:84 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 00:43:26 INFO  Movie:68 - 
+2022-05-08 00:43:26 INFO  Movie:72 - Deleting movies older than 10
+2022-05-08 00:43:26 INFO  Movie:74 - Movie list now: 
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}

@@ -8,5 +8,4 @@ public interface Repository<T> {
     List<T> readAll();
     boolean update(T element);
     boolean delete(T element);
-    DAO<T> getDAO();
 }

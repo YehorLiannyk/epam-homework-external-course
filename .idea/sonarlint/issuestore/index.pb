@@ -363,9 +363,5 @@ A
 ,src/main/ua/advanced/practice8/DBEntity.java,8\2\8245052dc68c5547102f206f449e04e887899bc7
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-^
-.src/main/ua/advanced/practice8/Repository.java,e\9\e940a4d92fac732aba11fd654dff09e6da414b41
 b
 2src/main/ua/advanced/practice8/entities/Actor.java,9\0\90fcee89d11324d93b2ab91420961851abd198ff
-W
-'src/main/ua/advanced/practice8/DAO.java,4\2\42cc8ae86241ec2c3f0a50ad07d9950ad545c1e8

@@ -1,6 +1,5 @@
 package main.ua.advanced.practice8.repository;
 
-import main.ua.advanced.practice8.DAO;
 import main.ua.advanced.practice8.Repository;
 import main.ua.advanced.practice8.dao.ActorDAO;
 import main.ua.advanced.practice8.entities.Actor;
@@ -39,8 +38,7 @@ public class ActorRepository implements Repository<Actor> {
         return actorDAO.delete(element);
     }
 
-    @Override
-    public DAO<Actor> getDAO() {
+    public ActorDAO getDAO() {
         return actorDAO;
     }
 }

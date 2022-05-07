@@ -3,13 +3,13 @@ package main.ua.advanced.practice8;
 import main.ua.advanced.practice8.connection.ConnectionPool;
 import main.ua.advanced.practice8.dao.ActorDAO;
 import main.ua.advanced.practice8.dao.MovieDAO;
+import main.ua.advanced.practice8.entities.Actor;
 import main.ua.advanced.practice8.entities.Movie;
 import main.ua.advanced.practice8.repository.ActorRepository;
 import main.ua.advanced.practice8.repository.MovieRepository;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -17,9 +17,9 @@ import java.util.List;
 import java.util.Map;
 
 public class MovieLibrary {
+    private static final Logger logger = LoggerConfig.getLogger(Movie.class.getSimpleName());
     public static void main(String[] args) {
         Connection connection = ConnectionPool.getConnection();
-        Logger logger = LoggerConfig.getLogger(Movie.class.getSimpleName());
 
         MovieDAO movieDAO = new MovieDAO();
         movieDAO.setConnection(connection);
@@ -41,45 +41,39 @@ public class MovieLibrary {
         // first task / Знайти всі фільми, що вийшли на екран у поточному та минулому році
         Calendar minDate = new GregorianCalendar();
         minDate.set(2021, Calendar.JANUARY, 1);
-        final List<Movie> movieFromDate = dbDataManager.getMovieListFromProductionDate(minDate);
+        final List<Movie> movieFromDate = movieRepos.getDAO().getMovieListFromProductionDate(minDate);
         logger.info("There are movies produced from " + dateFormat.format(minDate.getTime()) + " below:");
         library.printMovieList(movieFromDate);
         logger.info("");
 
         //second task / Вивести інформацію про акторів, які знімалися у заданому фільмі.
-        Movie firstMovie = dbDataManager.getAllMovies().get(0); // use for example first movie
-        List<Actor> movieActors = dbDataManager.getActorListOfMovie(firstMovie);
-        logger.info("Actors of movie '" + firstMovie.getName() + "' below: ");
+        Movie firstMovie = movieRepos.readAll().get(0); // use for example first movie
+        List<Actor> movieActors = actorRepos.getDAO().getActorListOfMovie(firstMovie);
+        logger.info("Actors of movie '" + firstMovie.getTitle() + "' below: ");
         library.printMovieList(movieActors);
         logger.info("");
 
-        //third task
+        //third task / Вивести інформацію про акторів, які знімалися як мінімум у N фільмах.
         final int MOVIE_AMOUNT = 2;
-        Map<Actor, Integer> movieAmountActorsMap = dbDataManager.getActorsMapByMovieAmount(MOVIE_AMOUNT);
+        Map<Actor, Integer> movieAmountActorsMap = actorRepos.getDAO().getActorsMapByMovieAmount(MOVIE_AMOUNT);
         logger.info("Actors whose movie amount >= " + MOVIE_AMOUNT + " below:");
         library.printMovieMapWithKeyName(movieAmountActorsMap, "movieAmount");
         logger.info("");
 
-        //fourth task
+        //fourth task / Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
         final int DIRECTOR_MOVIE_AMOUNT = 1; // at least one movie
-        Map<Actor, Integer> movieAmountDirectorsMap = dbDataManager.getDirectorMapByMovieAmount(DIRECTOR_MOVIE_AMOUNT);
+        Map<Actor, Integer> movieAmountDirectorMap = actorRepos.getDAO().getDirectorMapByMovieAmount(DIRECTOR_MOVIE_AMOUNT);
         logger.info("Actors who was a director >= " + DIRECTOR_MOVIE_AMOUNT + " times below:");
-        library.printMovieMapWithKeyName(movieAmountDirectorsMap, "movie director");
+        library.printMovieMapWithKeyName(movieAmountDirectorMap, "movie director");
         logger.info("");
 
-        //fifth task
+        //fifth task / Видалити всі фільми, дата виходу яких була більш за задане число років тому.
         final int MAX_YEAR = 10;
         logger.info("Deleting movies older than " + MAX_YEAR);
-        dbDataManager.deleteMoviesOlderThan(MAX_YEAR);
+        //movieRepos.getDAO().deleteMoviesOlderThan(MAX_YEAR);
         logger.info("Movie list now: ");
-        List<Movie> movieList = dbDataManager.getAllMovies();
+        List<Movie> movieList = movieRepos.readAll();
         library.printMovieList(movieList);
-
-        try {
-            if (!connection.isClosed()) DBConnectionCreator.closeConnection(connection);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     private <V> void printMovieList(List<V> vList) {
