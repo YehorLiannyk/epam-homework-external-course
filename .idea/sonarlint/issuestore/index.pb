@@ -345,3 +345,27 @@ W
 'src/main/ua/university/Task5/Task5.java,7\5\7543135063e4e4344c375c32f1e0371a0f13552b
 8
 text.csv,2\4\2490e10ed703adfb7d2331734c573f89f2176988
+\
+,src/main/ua/advanced/practice7/DBEntity.java,4\f\4fcc83ba667b5837937e476137eb0a7add8d191b
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+g
+7src/main/ua/advanced/practice7/DBConnectionCreator.java,4\8\486f8192e24c498c3d52b54031ad2e84290a3d96
+q
+A.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_9_0.xml,7\1\71c515c17861fb7c5b16f47f2a9427ac111f5149
+n
+>.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml,9\4\9401f28c99ab0c8e702acfdbb81680d31c998241
+r
+B.idea/libraries/Maven__org_apache_commons_commons_pool2_2_10_0.xml,c\3\c329934df11f6fc8a82db2d64db80aa6210e2fff
+A
+EPAM_Homework.iml,7\e\7ecbcbd294f6291ef496dcb47f1831c0ec5298eb
+\
+,src/main/ua/advanced/practice8/DBEntity.java,8\2\8245052dc68c5547102f206f449e04e887899bc7
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+^
+.src/main/ua/advanced/practice8/Repository.java,e\9\e940a4d92fac732aba11fd654dff09e6da414b41
+b
+2src/main/ua/advanced/practice8/entities/Actor.java,9\0\90fcee89d11324d93b2ab91420961851abd198ff
+W
+'src/main/ua/advanced/practice8/DAO.java,4\2\42cc8ae86241ec2c3f0a50ad07d9950ad545c1e8

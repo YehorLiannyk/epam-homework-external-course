@@ -29,7 +29,7 @@ public class ConnectionPool {
         ds.setPassword(properties.getProperty("password"));
         ds.setMinIdle(Integer.parseInt(properties.getProperty("minIdle")));
         ds.setMaxIdle(Integer.parseInt(properties.getProperty("maxIdle")));
-        ds.setMaxOpenPreparedStatements((Integer) properties.get("maxOpenPreparedStatements"));
+        ds.setMaxOpenPreparedStatements(Integer.parseInt((String) properties.get("maxOpenPreparedStatements")));
     }
 
     private ConnectionPool() {

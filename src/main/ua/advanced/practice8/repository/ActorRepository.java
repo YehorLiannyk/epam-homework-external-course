@@ -5,16 +5,13 @@ import main.ua.advanced.practice8.Repository;
 import main.ua.advanced.practice8.dao.ActorDAO;
 import main.ua.advanced.practice8.entities.Actor;
 
-import java.sql.Connection;
 import java.util.List;
 
 public class ActorRepository implements Repository<Actor> {
-    private Connection connection;
     private ActorDAO actorDAO;
 
-    public ActorRepository(Connection connection) {
-        this.connection = connection;
-        actorDAO = new ActorDAO(connection);
+    public ActorRepository(ActorDAO actorDAO) {
+        this.actorDAO = actorDAO;
     }
 
     @Override

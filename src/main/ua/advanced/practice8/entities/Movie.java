@@ -9,22 +9,22 @@ import java.util.List;
 
 public class Movie implements DBEntity {
     private final int id;
-    private String name;
+    private String title;
     private String country;
     private Date productionDate;
     private Actor director;
     private List<Actor> actors = new LinkedList<>();
 
-    public Movie(int id, String name, String country, Date productionDate, Actor director) {
+    public Movie(int id, String title, String country, Date productionDate, Actor director) {
         this.id = id;
-        this.name = name;
+        this.title = title;
         this.country = country;
         this.productionDate = productionDate;
         this.director = director;
     }
 
-    public Movie(String name, String country, Date productionDate, Actor director) {
-        this(-1, name, country, productionDate, director);
+    public Movie(String title, String country, Date productionDate, Actor director) {
+        this(-1, title, country, productionDate, director);
     }
 
     @Override
@@ -32,12 +32,12 @@ public class Movie implements DBEntity {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getCountry() {
@@ -76,7 +76,7 @@ public class Movie implements DBEntity {
     public String toString() {
         return "Movie{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + title + '\'' +
                 ", country='" + country + '\'' +
                 ", productionDate=" + productionDate +
                 ", director=" + director +

@@ -5,16 +5,13 @@ import main.ua.advanced.practice8.Repository;
 import main.ua.advanced.practice8.dao.MovieDAO;
 import main.ua.advanced.practice8.entities.Movie;
 
-import java.sql.Connection;
 import java.util.List;
 
 public class MovieRepository implements Repository<Movie> {
-    private Connection connection;
     private MovieDAO movieDAO;
 
-    public MovieRepository(Connection connection) {
-        this.connection = connection;
-        movieDAO = new MovieDAO(connection);
+    public MovieRepository(MovieDAO movieDAO) {
+        this.movieDAO = movieDAO;
     }
 
     @Override
