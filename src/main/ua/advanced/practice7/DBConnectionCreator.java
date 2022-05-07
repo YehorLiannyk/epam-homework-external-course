@@ -14,16 +14,18 @@ public class DBConnectionCreator {
 
     static {
         try {
-            properties.load(new FileReader("resources/advanced/practice7/database.properties"));
+            properties.load(new FileReader("resources/advanced/database.properties"));
             String driverName = (String) properties.get("db.driver");
             Class.forName(driverName);
         } catch (IOException | ClassNotFoundException e) {
             MovieLibrary.logger.error(Arrays.toString(e.getStackTrace()));
         }
-        DATABASE_URL = (String) properties.get("db.url");
+        final String dbName = "movie_library";
+        DATABASE_URL = "jdbc:mysql://localhost:3306/" + dbName;
     }
 
-    private DBConnectionCreator() {}
+    private DBConnectionCreator() {
+    }
 
     public static Connection createConnection() {
         try {
@@ -34,7 +36,7 @@ public class DBConnectionCreator {
         return null;
     }
 
-    public void closeConnection(Connection connection) {
+    public static void closeConnection(Connection connection) {
         try {
             connection.close();
         } catch (SQLException e) {

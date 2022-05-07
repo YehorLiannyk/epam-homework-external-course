@@ -8,16 +8,13 @@ import org.apache.log4j.PropertyConfigurator;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.DateFormat;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MovieLibrary {
     public static final Logger logger = Logger.getLogger(MovieLibrary.class.getSimpleName());
 
     static {
-        PropertyConfigurator.configure("resources/advanced/log4j.properties");
+        PropertyConfigurator.configure("resources/advanced/practice7/log4j.properties");
     }
 
     public static void main(String[] args) {
@@ -70,7 +67,7 @@ public class MovieLibrary {
         library.printMovieList(movieList);
 
         try {
-            if (connection != null && !connection.isClosed()) connection.close();
+            if (!connection.isClosed()) DBConnectionCreator.closeConnection(connection);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
