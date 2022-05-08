@@ -6,9 +6,11 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.text.DateFormat;
-import java.util.*;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.Map;
 
 public class MovieLibrary {
     public static final Logger logger = Logger.getLogger(MovieLibrary.class.getSimpleName());
@@ -66,11 +68,7 @@ public class MovieLibrary {
         List<Movie> movieList = dbDataManager.getAllMovies();
         library.printMovieList(movieList);
 
-        try {
-            if (!connection.isClosed()) DBConnectionCreator.closeConnection(connection);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        DBConnectionCreator.closeConnection(connection);
     }
 
     private <V> void printMovieList(List<V> vList) {
