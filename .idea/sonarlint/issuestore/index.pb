@@ -349,8 +349,6 @@ W
 ,src/main/ua/advanced/practice7/DBEntity.java,4\f\4fcc83ba667b5837937e476137eb0a7add8d191b
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-g
-7src/main/ua/advanced/practice7/DBConnectionCreator.java,4\8\486f8192e24c498c3d52b54031ad2e84290a3d96
 q
 A.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_9_0.xml,7\1\71c515c17861fb7c5b16f47f2a9427ac111f5149
 n
