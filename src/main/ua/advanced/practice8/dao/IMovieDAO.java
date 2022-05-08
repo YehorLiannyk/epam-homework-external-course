@@ -1,4 +1,4 @@
-package main.ua.advanced.practice8;
+package main.ua.advanced.practice8.dao;
 
 import main.ua.advanced.practice8.entities.Movie;
 

@@ -1,17 +1,12 @@
 package main.ua.advanced.practice8.dao;
 
-import main.ua.advanced.practice8.BaseDAO;
 import main.ua.advanced.practice8.DBDataException;
-import main.ua.advanced.practice8.IActorDAO;
 import main.ua.advanced.practice8.LoggerConfig;
 import main.ua.advanced.practice8.entities.Actor;
 import main.ua.advanced.practice8.entities.Movie;
 import org.apache.log4j.Logger;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;

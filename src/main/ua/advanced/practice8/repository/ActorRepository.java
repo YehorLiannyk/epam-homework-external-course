@@ -1,6 +1,5 @@
 package main.ua.advanced.practice8.repository;
 
-import main.ua.advanced.practice8.Repository;
 import main.ua.advanced.practice8.dao.ActorDAO;
 import main.ua.advanced.practice8.entities.Actor;
 

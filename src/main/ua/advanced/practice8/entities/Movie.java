@@ -1,8 +1,6 @@
 package main.ua.advanced.practice8.entities;
 
 
-import main.ua.advanced.practice8.DBEntity;
-
 import java.sql.Date;
 import java.util.LinkedList;
 import java.util.List;

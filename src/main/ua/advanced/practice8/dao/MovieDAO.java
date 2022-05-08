@@ -1,8 +1,6 @@
 package main.ua.advanced.practice8.dao;
 
-import main.ua.advanced.practice8.BaseDAO;
 import main.ua.advanced.practice8.DBDataException;
-import main.ua.advanced.practice8.IMovieDAO;
 import main.ua.advanced.practice8.LoggerConfig;
 import main.ua.advanced.practice8.entities.Actor;
 import main.ua.advanced.practice8.entities.Movie;
@@ -16,7 +14,6 @@ import java.util.List;
 
 public class MovieDAO extends BaseDAO implements IMovieDAO {
     private static final Logger logger = LoggerConfig.getLogger(MovieDAO.class.getSimpleName());
-
     private static final String READ_ALL = "SELECT * FROM movies AS M JOIN movie_directors ON movie_id = M.id JOIN actors AS A ON A.id = director_id";
     private static final String READ_ID = "SELECT * FROM movies AS M LEFT JOIN movie_directors ON movie_id = M.id JOIN actors AS A ON A.id = director_id WHERE M.id = ?";
     private static final String INSERT_MOVIES = "INSERT INTO movies VALUES (id, ?, ?, ?)";
@@ -68,8 +65,9 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
             ResultSet rs = statement.executeQuery();
             int objectsAmount = 0;
             while (rs.next()) {
-                final Actor director = new ActorDAO().getDirectorFromResSet(rs);
+                final Actor director = createActorDAO().getDirectorFromResSet(rs);
                 movie = getMovieFromResSet(rs, director);
+                addActorListToMovie(movie);
                 objectsAmount++;
             }
             if (objectsAmount > 1) throw new DBDataException();
@@ -79,14 +77,19 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
         return movie;
     }
 
+    private void addActorListToMovie(Movie movie) {
+        movie.setActors(createActorDAO().getActorListOfMovie(movie));
+    }
+
     @Override
     public List<Movie> readAll() {
         List<Movie> movies = new LinkedList<>();
         try (Statement statement = getConnection().createStatement()) {
             ResultSet rs = statement.executeQuery(READ_ALL);
             while (rs.next()) {
-                final Actor director = new ActorDAO().getDirectorFromResSet(rs);
+                final Actor director = createActorDAO().getDirectorFromResSet(rs);
                 final Movie movie = getMovieFromResSet(rs, director);
+                addActorListToMovie(movie);
                 movies.add(movie);
             }
         } catch (SQLException e) {
@@ -159,7 +162,7 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
     }
 
     private Movie getMovieFromResSet(ResultSet rs) throws SQLException {
-        final Actor director = new ActorDAO().getDirectorFromResSet(rs);
+        final Actor director = createActorDAO().getDirectorFromResSet(rs);
         return new Movie(
                 rs.getInt("id"), rs.getString("title"),
                 rs.getString("country"), rs.getDate("date_production"), director);
@@ -196,6 +199,12 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
             logger.error(LoggerConfig.exceptionMsg(e));
         }
         return ids;
+    }
+
+    private ActorDAO createActorDAO() {
+        final ActorDAO actorDAO = new ActorDAO();
+        actorDAO.setConnection(getConnection());
+        return actorDAO;
     }
 
 }

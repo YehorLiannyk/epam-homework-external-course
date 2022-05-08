@@ -169,3 +169,587 @@
 2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
 2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
 2022-05-08 00:43:26 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:37 - All movies at beginning: 
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:39 - 
+2022-05-08 11:14:37 INFO  Movie:45 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:47 - 
+2022-05-08 11:14:37 INFO  Movie:52 - Actors of movie 'TEST' below: 
+2022-05-08 11:14:37 INFO  Movie:80 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 11:14:37 INFO  Movie:80 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 11:14:37 INFO  Movie:80 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 11:14:37 INFO  Movie:80 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 11:14:37 INFO  Movie:54 - 
+2022-05-08 11:14:37 INFO  Movie:59 - Actors whose movie amount >= 2 below:
+2022-05-08 11:14:37 INFO  Movie:84 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 11:14:37 INFO  Movie:84 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 11:14:37 INFO  Movie:84 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 11:14:37 INFO  Movie:84 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 11:14:37 INFO  Movie:84 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 11:14:37 INFO  Movie:84 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 11:14:37 INFO  Movie:84 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 11:14:37 INFO  Movie:61 - 
+2022-05-08 11:14:37 INFO  Movie:66 - Actors who was a director >= 1 times below:
+2022-05-08 11:14:37 INFO  Movie:84 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 11:14:37 INFO  Movie:84 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 11:14:37 INFO  Movie:84 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 11:14:37 INFO  Movie:84 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 11:14:37 INFO  Movie:84 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 11:14:37 INFO  Movie:68 - 
+2022-05-08 11:14:37 INFO  Movie:72 - Deleting movies older than 10
+2022-05-08 11:14:37 INFO  Movie:74 - Movie list now: 
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 11:14:37 INFO  Movie:80 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:21 - All movies at beginning: 
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:23 - 
+2022-05-08 11:59:50 INFO  Movie:31 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:74 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 11:59:50 INFO  Movie:33 - 
+2022-05-08 11:59:50 INFO  Movie:40 - Actors of movie 'TEST' below: 
+2022-05-08 11:59:50 INFO  Movie:74 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 11:59:50 INFO  Movie:74 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 11:59:50 INFO  Movie:74 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 11:59:50 INFO  Movie:74 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 11:59:50 INFO  Movie:42 - 
+2022-05-08 11:59:50 INFO  Movie:49 - Actors whose movie amount >= 2 below:
+2022-05-08 11:59:50 INFO  Movie:78 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 11:59:50 INFO  Movie:78 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 11:59:50 INFO  Movie:78 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 11:59:50 INFO  Movie:78 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 11:59:50 INFO  Movie:78 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 11:59:50 INFO  Movie:78 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 11:59:50 INFO  Movie:78 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 11:59:50 INFO  Movie:51 - 
+2022-05-08 11:59:50 INFO  Movie:58 - Actors who was a director >= 1 times below:
+2022-05-08 11:59:50 INFO  Movie:78 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 11:59:50 INFO  Movie:78 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 11:59:50 INFO  Movie:78 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 11:59:50 INFO  Movie:78 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 11:59:50 INFO  Movie:78 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 11:59:50 INFO  Movie:60 - 
+2022-05-08 12:14:12 INFO  Movie:21 - All movies at beginning: 
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:23 - 
+2022-05-08 12:14:12 INFO  Movie:32 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:75 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 12:14:12 INFO  Movie:34 - 
+2022-05-08 12:14:12 INFO  Movie:41 - Actors of movie 'TEST' below: 
+2022-05-08 12:14:12 INFO  Movie:75 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 12:14:12 INFO  Movie:75 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 12:14:12 INFO  Movie:75 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 12:14:12 INFO  Movie:75 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:14:12 INFO  Movie:43 - 
+2022-05-08 12:14:12 INFO  Movie:50 - Actors whose movie amount >= 2 below:
+2022-05-08 12:14:12 INFO  Movie:79 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 12:14:12 INFO  Movie:79 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 12:14:12 INFO  Movie:79 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:14:12 INFO  Movie:79 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:14:12 INFO  Movie:79 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 12:14:12 INFO  Movie:79 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 12:14:12 INFO  Movie:79 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 12:14:12 INFO  Movie:52 - 
+2022-05-08 12:14:12 INFO  Movie:59 - Actors who was a director >= 1 times below:
+2022-05-08 12:14:12 INFO  Movie:79 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 12:14:12 INFO  Movie:79 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 12:14:12 INFO  Movie:79 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:14:12 INFO  Movie:79 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 12:14:12 INFO  Movie:79 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 12:14:12 INFO  Movie:61 - 
+2022-05-08 12:18:49 INFO  Movie:21 - All movies at beginning: 
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 12:18:49 INFO  Movie:23 - 
+2022-05-08 12:18:49 INFO  Movie:32 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 12:18:49 INFO  Movie:75 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 12:18:49 INFO  Movie:34 - 
+2022-05-08 12:18:49 INFO  Movie:41 - Actors of movie 'TEST' below: 
+2022-05-08 12:18:49 INFO  Movie:75 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 12:18:49 INFO  Movie:75 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 12:18:49 INFO  Movie:75 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 12:18:49 INFO  Movie:75 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:18:49 INFO  Movie:43 - 
+2022-05-08 12:18:49 INFO  Movie:50 - Actors whose movie amount >= 2 below:
+2022-05-08 12:18:49 INFO  Movie:79 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 12:18:49 INFO  Movie:79 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 12:18:49 INFO  Movie:79 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:18:49 INFO  Movie:79 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:18:49 INFO  Movie:79 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 12:18:49 INFO  Movie:79 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 12:18:49 INFO  Movie:79 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 12:18:49 INFO  Movie:52 - 
+2022-05-08 12:18:49 INFO  Movie:59 - Actors who was a director >= 1 times below:
+2022-05-08 12:18:49 INFO  Movie:79 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 12:18:49 INFO  Movie:79 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 12:18:49 INFO  Movie:79 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:18:49 INFO  Movie:79 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 12:18:49 INFO  Movie:79 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 12:18:49 INFO  Movie:61 - 
+2022-05-08 12:19:12 INFO  Movie:21 - All movies at beginning: 
+2022-05-08 12:19:12 INFO  Movie:75 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 12:19:12 INFO  Movie:75 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 12:19:12 INFO  Movie:75 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 12:19:12 INFO  Movie:75 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 12:19:12 INFO  Movie:75 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 12:19:12 INFO  Movie:23 - 
+2022-05-08 12:22:23 INFO  Movie:21 - All movies at beginning: 
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 12:22:23 INFO  Movie:23 - 
+2022-05-08 12:22:23 INFO  Movie:32 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 12:22:23 INFO  Movie:75 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 12:22:23 INFO  Movie:34 - 
+2022-05-08 12:22:23 INFO  Movie:41 - Actors of movie 'TEST' below: 
+2022-05-08 12:22:23 INFO  Movie:75 - Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 12:22:23 INFO  Movie:75 - Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 12:22:23 INFO  Movie:75 - Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 12:22:23 INFO  Movie:75 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:22:23 INFO  Movie:43 - 
+2022-05-08 12:22:23 INFO  Movie:50 - Actors whose movie amount >= 2 below:
+2022-05-08 12:22:23 INFO  Movie:79 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 12:22:23 INFO  Movie:79 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 12:22:23 INFO  Movie:79 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:22:23 INFO  Movie:79 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:22:23 INFO  Movie:79 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 12:22:23 INFO  Movie:79 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 12:22:23 INFO  Movie:79 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 12:22:23 INFO  Movie:52 - 
+2022-05-08 12:22:23 INFO  Movie:59 - Actors who was a director >= 1 times below:
+2022-05-08 12:22:23 INFO  Movie:79 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 12:22:23 INFO  Movie:79 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 12:22:23 INFO  Movie:79 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:22:23 INFO  Movie:79 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 12:22:23 INFO  Movie:79 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 12:22:23 INFO  Movie:61 - 
+2022-05-08 12:48:23 INFO  Movie:18 - All movies at beginning: 
+2022-05-08 12:48:23 INFO  Movie:83 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 12:48:23 INFO  Movie:83 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 12:48:23 INFO  Movie:83 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 12:48:23 INFO  Movie:83 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 12:48:23 INFO  Movie:83 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 12:48:23 INFO  Movie:20 - 
+2022-05-08 12:48:23 INFO  Menu:25 - Choose the option: 
+2022-05-08 12:48:23 INFO  Menu:26 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 12:48:23 INFO  Menu:27 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 12:48:23 INFO  Menu:28 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 12:48:23 INFO  Menu:29 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 12:48:23 INFO  Menu:30 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 12:48:23 INFO  Menu:31 - 0 - exit
+2022-05-08 12:48:23 INFO  Menu:31 - Input value
+2022-05-08 12:48:32 INFO  Movie:18 - All movies at beginning: 
+2022-05-08 12:48:32 INFO  Movie:83 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 12:48:32 INFO  Movie:83 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 12:48:32 INFO  Movie:83 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 12:48:32 INFO  Movie:83 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 12:48:32 INFO  Movie:83 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 12:48:32 INFO  Movie:20 - 
+2022-05-08 12:48:32 INFO  Menu:25 - Choose the option: 
+2022-05-08 12:48:32 INFO  Menu:26 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 12:48:32 INFO  Menu:27 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 12:48:32 INFO  Menu:28 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 12:48:32 INFO  Menu:29 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 12:48:32 INFO  Menu:30 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 12:48:32 INFO  Menu:31 - 0 - exit
+2022-05-08 12:48:32 INFO  Menu:31 - Input value
+2022-05-08 12:48:35 INFO  Movie:29 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 12:48:35 INFO  Movie:83 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 12:48:35 INFO  Movie:83 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 12:48:35 INFO  Movie:83 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 12:48:35 INFO  Movie:31 - 
+2022-05-08 12:48:35 INFO  Menu:31 - Input value
+2022-05-08 12:48:49 INFO  Movie:31 - Input movie id to see info about its actors: 
+2022-05-08 12:48:59 WARN  Movie:47 - Wrong id!
+2022-05-08 12:48:59 INFO  Movie:31 - Input movie id to see info about its actors: 
+2022-05-08 12:49:01 INFO  Movie:38 - Actors of movie 'Фільм Ахтеиа Сеїтаблаєва' below: 
+2022-05-08 12:49:01 INFO  Movie:83 - Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:49:01 INFO  Movie:83 - Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:49:01 INFO  Movie:83 - Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 12:49:01 INFO  Movie:40 - 
+2022-05-08 12:49:01 INFO  Menu:31 - Input value
+2022-05-08 12:54:56 INFO  Movie:18 - All movies at beginning: 
+2022-05-08 12:54:56 INFO  Movie:83 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 12:54:56 INFO  Movie:83 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 12:54:56 INFO  Movie:83 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 12:54:56 INFO  Movie:83 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 12:54:56 INFO  Movie:83 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 12:54:56 INFO  Movie:20 - 
+2022-05-08 12:54:56 INFO  Menu:53 - ====================
+2022-05-08 12:54:56 INFO  Menu:29 - Choose the option: 
+2022-05-08 12:54:56 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 12:54:56 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 12:54:56 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 12:54:56 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 12:54:56 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 12:54:56 INFO  Menu:35 - 0 - exit
+2022-05-08 12:54:56 INFO  Menu:53 - ====================
+2022-05-08 12:54:56 INFO  Menu:31 - Input value
+2022-05-08 12:55:18 INFO  Movie:18 - All movies at beginning: 
+2022-05-08 12:55:19 INFO  Movie:83 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 12:55:19 INFO  Movie:83 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 12:55:19 INFO  Movie:83 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 12:55:19 INFO  Movie:83 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 12:55:19 INFO  Movie:83 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 12:55:19 INFO  Movie:20 - 
+2022-05-08 12:55:19 INFO  Menu:53 - ====================
+2022-05-08 12:55:19 INFO  Menu:29 - Choose the option: 
+2022-05-08 12:55:19 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 12:55:19 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 12:55:19 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 12:55:19 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 12:55:19 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 12:55:19 INFO  Menu:35 - 0 - exit
+2022-05-08 12:55:19 INFO  Menu:53 - ====================
+2022-05-08 12:55:19 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 12:55:21 WARN  Menu:33 - Use only digits
+2022-05-08 12:55:21 INFO  Menu:34 - Input value of menu option: 
+2022-05-08 12:55:25 INFO  Movie:29 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 12:55:25 INFO  Movie:83 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 12:55:25 INFO  Movie:83 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 12:55:25 INFO  Movie:83 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 12:55:25 INFO  Movie:31 - 
+2022-05-08 12:55:25 INFO  Menu:53 - ====================
+2022-05-08 12:55:25 INFO  Menu:29 - Choose the option: 
+2022-05-08 12:55:25 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 12:55:25 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 12:55:25 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 12:55:25 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 12:55:25 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 12:55:25 INFO  Menu:35 - 0 - exit
+2022-05-08 12:55:25 INFO  Menu:53 - ====================
+2022-05-08 12:55:25 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 12:55:30 INFO  Movie:58 - Actors whose movie amount >= 2 below:
+2022-05-08 12:55:30 INFO  Movie:87 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 12:55:30 INFO  Movie:87 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 12:55:30 INFO  Movie:87 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 12:55:30 INFO  Movie:87 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 12:55:30 INFO  Movie:87 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 12:55:30 INFO  Movie:87 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 12:55:30 INFO  Movie:87 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 12:55:30 INFO  Movie:60 - 
+2022-05-08 12:55:30 INFO  Menu:53 - ====================
+2022-05-08 12:55:30 INFO  Menu:29 - Choose the option: 
+2022-05-08 12:55:30 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 12:55:30 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 12:55:30 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 12:55:30 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 12:55:30 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 12:55:30 INFO  Menu:35 - 0 - exit
+2022-05-08 12:55:30 INFO  Menu:53 - ====================
+2022-05-08 12:55:30 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:03:09 INFO  Movie:20 - All movies now: 
+2022-05-08 13:03:09 INFO  Movie:94 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:03:09 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:03:09 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:03:09 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:03:09 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:03:09 INFO  Movie:22 - 
+2022-05-08 13:03:09 INFO  Menu:55 - ====================
+2022-05-08 13:03:09 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:03:09 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:03:09 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:03:09 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:03:09 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:03:09 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:03:09 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:03:09 INFO  Menu:36 - 0 - exit
+2022-05-08 13:03:09 INFO  Menu:55 - ====================
+2022-05-08 13:03:09 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:03:17 INFO  Movie:20 - All movies now: 
+2022-05-08 13:03:17 INFO  Movie:94 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:03:17 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:03:17 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:03:17 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:03:17 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:03:17 INFO  Movie:22 - 
+2022-05-08 13:03:17 INFO  Menu:55 - ========================================
+2022-05-08 13:03:17 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:03:17 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:03:17 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:03:17 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:03:17 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:03:17 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:03:17 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:03:17 INFO  Menu:36 - 0 - exit
+2022-05-08 13:03:17 INFO  Menu:55 - ========================================
+2022-05-08 13:03:17 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:03:21 INFO  Movie:20 - All movies now: 
+2022-05-08 13:03:21 INFO  Movie:94 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:03:21 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:03:21 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:03:21 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:03:21 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:03:21 INFO  Movie:22 - 
+2022-05-08 13:03:21 INFO  Menu:55 - ========================================
+2022-05-08 13:03:21 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:03:21 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:03:21 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:03:21 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:03:21 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:03:21 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:03:21 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:03:21 INFO  Menu:36 - 0 - exit
+2022-05-08 13:03:21 INFO  Menu:55 - ========================================
+2022-05-08 13:03:21 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:03:28 INFO  Movie:31 - There are movies produced from 1 січ. 2021 р. below:
+2022-05-08 13:03:28 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[]}
+2022-05-08 13:03:28 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[]}
+2022-05-08 13:03:28 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[]}
+2022-05-08 13:03:28 INFO  Movie:33 - 
+2022-05-08 13:03:28 INFO  Menu:55 - ========================================
+2022-05-08 13:03:28 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:03:28 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:03:28 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:03:28 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:03:28 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:03:28 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:03:28 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:03:28 INFO  Menu:36 - 0 - exit
+2022-05-08 13:03:28 INFO  Menu:55 - ========================================
+2022-05-08 13:03:28 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:03:36 INFO  Movie:31 - Input movie amount: 
+2022-05-08 13:03:38 INFO  Movie:61 - Actors whose movie amount >= 2 below:
+2022-05-08 13:03:38 INFO  Movie:98 - movieAmount = 3, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}
+2022-05-08 13:03:38 INFO  Movie:98 - movieAmount = 2, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}
+2022-05-08 13:03:38 INFO  Movie:98 - movieAmount = 3, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}
+2022-05-08 13:03:38 INFO  Movie:98 - movieAmount = 2, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 13:03:38 INFO  Movie:98 - movieAmount = 2, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 13:03:38 INFO  Movie:98 - movieAmount = 2, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}
+2022-05-08 13:03:38 INFO  Movie:98 - movieAmount = 2, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}
+2022-05-08 13:03:38 INFO  Movie:66 - 
+2022-05-08 13:03:38 INFO  Menu:55 - ========================================
+2022-05-08 13:03:38 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:03:38 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:03:38 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:03:38 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:03:38 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:03:38 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:03:38 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:03:38 INFO  Menu:36 - 0 - exit
+2022-05-08 13:03:38 INFO  Menu:55 - ========================================
+2022-05-08 13:03:38 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:03:44 INFO  Movie:74 - Actors who was a director >= 1 times below:
+2022-05-08 13:03:44 INFO  Movie:98 - movie director = 1, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}
+2022-05-08 13:03:44 INFO  Movie:98 - movie director = 1, Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}
+2022-05-08 13:03:44 INFO  Movie:98 - movie director = 1, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}
+2022-05-08 13:03:44 INFO  Movie:98 - movie director = 1, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}
+2022-05-08 13:03:44 INFO  Movie:98 - movie director = 1, Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}
+2022-05-08 13:03:44 INFO  Movie:79 - 
+2022-05-08 13:03:44 INFO  Menu:55 - ========================================
+2022-05-08 13:03:44 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:03:44 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:03:44 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:03:44 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:03:44 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:03:44 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:03:44 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:03:44 INFO  Menu:36 - 0 - exit
+2022-05-08 13:03:44 INFO  Menu:55 - ========================================
+2022-05-08 13:03:44 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:03:51 INFO  Movie:31 - Input max year value: 
+2022-05-08 13:03:54 INFO  Movie:85 - Deleting movies older than 20
+2022-05-08 13:03:54 INFO  Movie:87 - Some movies were deleted
+2022-05-08 13:03:54 INFO  Movie:90 - 
+2022-05-08 13:03:54 INFO  Menu:55 - ========================================
+2022-05-08 13:03:54 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:03:54 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:03:54 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:03:54 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:03:54 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:03:54 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:03:54 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:03:54 INFO  Menu:36 - 0 - exit
+2022-05-08 13:03:54 INFO  Menu:55 - ========================================
+2022-05-08 13:03:54 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:04:03 INFO  Movie:20 - All movies now: 
+2022-05-08 13:04:03 INFO  Movie:94 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:04:03 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:04:03 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:04:03 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:04:03 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:04:03 INFO  Movie:22 - 
+2022-05-08 13:04:03 INFO  Menu:55 - ========================================
+2022-05-08 13:04:03 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:04:03 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:04:03 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:04:03 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:04:03 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:04:03 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:04:03 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:04:03 INFO  Menu:36 - 0 - exit
+2022-05-08 13:04:03 INFO  Menu:55 - ========================================
+2022-05-08 13:04:03 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:04:15 INFO  Movie:31 - Input max year value: 
+2022-05-08 13:04:19 INFO  Movie:85 - Deleting movies older than 30
+2022-05-08 13:04:19 INFO  Movie:87 - Some movies were deleted
+2022-05-08 13:04:19 INFO  Movie:90 - 
+2022-05-08 13:04:19 INFO  Menu:55 - ========================================
+2022-05-08 13:04:19 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:04:19 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:04:19 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:04:19 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:04:19 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:04:19 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:04:19 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:04:19 INFO  Menu:36 - 0 - exit
+2022-05-08 13:04:19 INFO  Menu:55 - ========================================
+2022-05-08 13:04:19 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:04:21 INFO  Movie:20 - All movies now: 
+2022-05-08 13:04:21 INFO  Movie:94 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:04:21 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:04:21 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:04:21 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:04:21 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:04:21 INFO  Movie:22 - 
+2022-05-08 13:04:21 INFO  Menu:55 - ========================================
+2022-05-08 13:04:21 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:04:21 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:04:21 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:04:21 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:04:21 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:04:21 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:04:21 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:04:21 INFO  Menu:36 - 0 - exit
+2022-05-08 13:04:21 INFO  Menu:55 - ========================================
+2022-05-08 13:04:21 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:04:46 INFO  Movie:20 - All movies now: 
+2022-05-08 13:04:46 INFO  Movie:94 - Movie{id=3, name='TEST', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:04:46 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:04:46 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:04:46 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:04:46 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:04:46 INFO  Movie:22 - 
+2022-05-08 13:04:46 INFO  Menu:55 - ========================================
+2022-05-08 13:04:46 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:04:46 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:04:46 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:04:46 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:04:46 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:04:46 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:04:46 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:04:46 INFO  Menu:36 - 0 - exit
+2022-05-08 13:04:46 INFO  Menu:55 - ========================================
+2022-05-08 13:04:46 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:04:55 INFO  Movie:31 - Input max year value: 
+2022-05-08 13:04:58 INFO  Movie:85 - Deleting movies older than 40
+2022-05-08 13:04:58 INFO  Movie:87 - Some movies were deleted
+2022-05-08 13:04:58 INFO  Movie:90 - 
+2022-05-08 13:04:58 INFO  Menu:55 - ========================================
+2022-05-08 13:04:58 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:04:58 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:04:58 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:04:58 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:04:58 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:04:58 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:04:58 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:04:58 INFO  Menu:36 - 0 - exit
+2022-05-08 13:04:58 INFO  Menu:55 - ========================================
+2022-05-08 13:04:58 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:05:05 INFO  Movie:31 - Input max year value: 
+2022-05-08 13:05:07 INFO  Movie:85 - Deleting movies older than 10
+2022-05-08 13:05:07 INFO  Movie:87 - Some movies were deleted
+2022-05-08 13:05:07 INFO  Movie:90 - 
+2022-05-08 13:05:07 INFO  Menu:55 - ========================================
+2022-05-08 13:05:07 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:05:07 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:05:07 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:05:07 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:05:07 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:05:07 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:05:07 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:05:07 INFO  Menu:36 - 0 - exit
+2022-05-08 13:05:07 INFO  Menu:55 - ========================================
+2022-05-08 13:05:07 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:05:08 INFO  Movie:20 - All movies now: 
+2022-05-08 13:05:08 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:05:08 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:05:08 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:05:08 INFO  Movie:22 - 
+2022-05-08 13:05:08 INFO  Menu:55 - ========================================
+2022-05-08 13:05:08 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:05:08 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:05:08 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:05:08 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:05:08 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:05:08 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:05:08 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:05:08 INFO  Menu:36 - 0 - exit
+2022-05-08 13:05:08 INFO  Menu:55 - ========================================
+2022-05-08 13:05:08 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:07:50 INFO  Movie:20 - All movies now: 
+2022-05-08 13:07:50 INFO  Movie:94 - Movie{id=3, name='Фільм Богдана Ступки', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:07:50 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:07:50 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:07:50 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:07:50 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:07:50 INFO  Movie:22 - 
+2022-05-08 13:07:50 INFO  Menu:55 - ========================================
+2022-05-08 13:07:50 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:07:50 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:07:50 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:07:50 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:07:50 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:07:50 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:07:50 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:07:50 INFO  Menu:36 - 0 - exit
+2022-05-08 13:07:50 INFO  Menu:55 - ========================================
+2022-05-08 13:07:50 INFO  Menu:31 - Input value of menu option: 
+2022-05-08 13:11:46 ERROR ConnectionPool:28 - Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial[java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:702), java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305), java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342), java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409), main.ua.advanced.practice8.connection.ConnectionPool.<clinit>(ConnectionPool.java:25), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:11:46 ERROR ConnectionPool:46 - Cannot create JDBC driver of class '' for connect URL 'null'[org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75), org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459), org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525), org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731), main.ua.advanced.practice8.connection.ConnectionPool.getConnection(ConnectionPool.java:44), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:24:17 ERROR ConnectionPool:30 - Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial[java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:702), java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305), java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342), java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409), main.ua.advanced.practice8.connection.ConnectionPool.<clinit>(ConnectionPool.java:26), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:24:17 ERROR ConnectionPool:48 - Cannot create JDBC driver of class '' for connect URL 'null'[org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75), org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459), org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525), org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731), main.ua.advanced.practice8.connection.ConnectionPool.getConnection(ConnectionPool.java:46), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:25:40 ERROR ConnectionPool:29 - Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial[java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:702), java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305), java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342), java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409), main.ua.advanced.practice8.connection.ConnectionPool.<clinit>(ConnectionPool.java:26), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:25:40 ERROR ConnectionPool:47 - Cannot create JDBC driver of class '' for connect URL 'null'[org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75), org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459), org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525), org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731), main.ua.advanced.practice8.connection.ConnectionPool.getConnection(ConnectionPool.java:45), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:30:19 ERROR ConnectionPool:28 - Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial[java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:702), java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305), java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342), java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409), main.ua.advanced.practice8.connection.ConnectionPool.<clinit>(ConnectionPool.java:26), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:30:19 ERROR ConnectionPool:46 - Cannot create JDBC driver of class '' for connect URL 'null'[org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75), org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459), org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525), org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731), main.ua.advanced.practice8.connection.ConnectionPool.getConnection(ConnectionPool.java:44), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:31:06 ERROR ConnectionPool:28 - Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial[java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:702), java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305), java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342), java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409), main.ua.advanced.practice8.connection.ConnectionPool.<clinit>(ConnectionPool.java:26), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:31:06 ERROR ConnectionPool:46 - Cannot create JDBC driver of class '' for connect URL 'null'[org.apache.commons.dbcp2.DriverFactory.createDriver(DriverFactory.java:75), org.apache.commons.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:459), org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:525), org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:731), main.ua.advanced.practice8.connection.ConnectionPool.getConnection(ConnectionPool.java:44), main.ua.advanced.practice8.Main.main(Main.java:15)]
+2022-05-08 13:34:59 INFO  Movie:20 - All movies now: 
+2022-05-08 13:34:59 INFO  Movie:94 - Movie{id=3, name='Фільм Богдана Ступки', country='UA', productionDate=2003-05-14, director=Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, actors=[Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}]}
+2022-05-08 13:34:59 INFO  Movie:94 - Movie{id=4, name='Фільм Ірми Вітовської', country='UA', productionDate=2022-05-01, director=Actor{id=4, name='Вітовська-Ванца Ірма Григорівна', birthdate=1974-12-30}, actors=[Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}]}
+2022-05-08 13:34:59 INFO  Movie:94 - Movie{id=5, name='Фільм Ольги Сумської', country='UA', productionDate=2021-05-09, director=Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, actors=[Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=19, name='Вертинський Олексій Сергійович', birthdate=1956-01-02}, Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}]}
+2022-05-08 13:34:59 INFO  Movie:94 - Movie{id=6, name='Фільм Ахтеиа Сеїтаблаєва', country='UA', productionDate=2022-01-18, director=Actor{id=18, name='Ахтем Шевкетович Сеїтаблаєв', birthdate=1972-12-11}, actors=[Actor{id=15, name='Руслана Ігорівна Писанка', birthdate=1965-11-17}, Actor{id=11, name='Ольга В'ячеславівна Сумська', birthdate=1966-08-22}, Actor{id=9, name='Станіслав Володимирович Боклан', birthdate=1960-01-12}]}
+2022-05-08 13:34:59 INFO  Movie:94 - Movie{id=7, name='Фільм Ади Роговцевої', country='UA', productionDate=2007-05-09, director=Actor{id=13, name='Ада Миколаївна Роговцева', birthdate=1937-07-16}, actors=[Actor{id=8, name='Остап Ступка Богданович', birthdate=1967-09-02}, Actor{id=3, name='Ступка Богдан Сильвестрович', birthdate=1941-08-27}, Actor{id=14, name='Андрієнко Віктор Миколайович', birthdate=1959-09-19}, Actor{id=17, name='Володимир Вікторович Горянський', birthdate=1959-02-24}]}
+2022-05-08 13:34:59 INFO  Movie:22 - 
+2022-05-08 13:34:59 INFO  Menu:55 - ========================================
+2022-05-08 13:34:59 INFO  Menu:29 - Choose the option: 
+2022-05-08 13:34:59 INFO  Menu:30 - 1 - Знайти всі фільми, що вийшли на екран у поточному та минулому році
+2022-05-08 13:34:59 INFO  Menu:31 - 2 - Вивести інформацію про акторів, які знімалися у заданому фільмі.
+2022-05-08 13:34:59 INFO  Menu:32 - 3 - Вивести інформацію про акторів, які знімалися як мінімум у N фільмах
+2022-05-08 13:34:59 INFO  Menu:33 - 4 - Вивести інформацію про акторів, які були режисерами хоча б одного з фільмів
+2022-05-08 13:34:59 INFO  Menu:34 - 5 - Видалити всі фільми, дата виходу яких була більш за задане число років тому.
+2022-05-08 13:34:59 INFO  Menu:35 - 6 - show all movies
+2022-05-08 13:34:59 INFO  Menu:36 - 0 - exit
+2022-05-08 13:34:59 INFO  Menu:55 - ========================================
+2022-05-08 13:34:59 INFO  Menu:31 - Input value of menu option: 
