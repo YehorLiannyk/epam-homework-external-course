@@ -67,7 +67,6 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
             while (rs.next()) {
                 final Actor director = createActorDAO().getDirectorFromResSet(rs);
                 movie = getMovieFromResSet(rs, director);
-                addActorListToMovie(movie);
                 objectsAmount++;
             }
             if (objectsAmount > 1) throw new DBDataException();
@@ -89,7 +88,6 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
             while (rs.next()) {
                 final Actor director = createActorDAO().getDirectorFromResSet(rs);
                 final Movie movie = getMovieFromResSet(rs, director);
-                addActorListToMovie(movie);
                 movies.add(movie);
             }
         } catch (SQLException e) {
@@ -99,13 +97,16 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
     }
 
     Movie getMovieFromResSet(ResultSet rs, Actor director) throws SQLException {
-        return new Movie(
-                rs.getInt("id"),
-                rs.getString("title"),
-                rs.getString("country"),
-                rs.getDate("date_production"),
-                director
-        );
+        Movie movie = new Movie(
+                rs.getInt("id"), rs.getString("title"),
+                rs.getString("country"), rs.getDate("date_production"), director);
+        addActorListToMovie(movie);
+        return movie;
+    }
+
+    private Movie getMovieFromResSet(ResultSet rs) throws SQLException {
+        final Actor director = createActorDAO().getDirectorFromResSet(rs);
+        return getMovieFromResSet(rs, director);
     }
 
     @Override
@@ -159,13 +160,6 @@ public class MovieDAO extends BaseDAO implements IMovieDAO {
             logger.error(LoggerConfig.exceptionMsg(e));
         }
         return movies;
-    }
-
-    private Movie getMovieFromResSet(ResultSet rs) throws SQLException {
-        final Actor director = createActorDAO().getDirectorFromResSet(rs);
-        return new Movie(
-                rs.getInt("id"), rs.getString("title"),
-                rs.getString("country"), rs.getDate("date_production"), director);
     }
 
     public boolean deleteMoviesOlderThan(final int maxYear) {
